@@ -1,0 +1,56 @@
+{
+  "campaign_id": "cmp_1024",
+  "campaign": {
+    "campaign_id": "cmp_1024",
+    "name": "Opt-in lead gen",
+    "opt_in": true,
+    "compliance_ok": true,
+    "budget": 1000,
+    "target_cpa": 50,
+    "target_roas": 1.4
+  },
+  "events": [
+    {
+      "event_id": "evt_impressions",
+      "campaign_id": "cmp_1024",
+      "kind": "impression",
+      "occurred_at": "2026-06-19T00:00:00Z",
+      "value": 30,
+      "count": 150
+    },
+    {
+      "event_id": "evt_clicks",
+      "campaign_id": "cmp_1024",
+      "kind": "click",
+      "occurred_at": "2026-06-19T00:05:00Z",
+      "value": 20,
+      "count": 30
+    },
+    {
+      "event_id": "evt_conversions",
+      "campaign_id": "cmp_1024",
+      "kind": "conversion",
+      "occurred_at": "2026-06-19T00:10:00Z",
+      "value": 180,
+      "count": 4,
+      "metadata": {
+        "spend": 50
+      }
+    }
+  ],
+  "policy": {
+    "opt_in_required": true,
+    "min_impressions": 100,
+    "min_clicks": 25,
+    "min_conversions": 3,
+    "pause_cpa_multiplier": 1.5,
+    "scale_roas_multiplier": 1.2,
+    "scale_cpa_multiplier": 0.8,
+    "scale_min_ctr": 0.02,
+    "scale_min_cvr": 0.02,
+    "create_test_min_clicks": 30,
+    "create_test_max_conversions": 2,
+    "scale_budget_fraction": 0.15,
+    "test_variant_count": 1
+  }
+}

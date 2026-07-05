@@ -1,0 +1,32 @@
+{
+  "id": "cinematic_fiapi_pipeline",
+  "name": "Cinematic FIAPI Image Pipeline",
+  "description": "Gera prompts cinematograficos CTO e envia para FIAPI para geracao de imagens reais com IA.",
+  "version": "1.0",
+  "steps": [
+    {
+      "id": "offer_lookup",
+      "agent": "offer_lookup",
+      "depends_on": [],
+      "description": "Busca ofertas relevantes para o nicho."
+    },
+    {
+      "id": "seo_research",
+      "agent": "seo_research",
+      "depends_on": [],
+      "description": "Pesquisa keywords cinematograficas para os prompts."
+    },
+    {
+      "id": "content_preview",
+      "agent": "content_generator",
+      "depends_on": ["offer_lookup", "seo_research"],
+      "description": "Gera titulos e artigos para usar nos prompts de imagem."
+    },
+    {
+      "id": "cinematic_fiapi_images",
+      "agent": "cinematic_fiapi_gen",
+      "depends_on": ["content_preview"],
+      "description": "Gera prompts CTO cinematograficos e envia para FIAPI -> imagens salvas em output/images/."
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "id": "seo_news_cycle",
+  "name": "Ciclo de Conteúdo SEO — ADR-002",
+  "vertical": "news",
+  "defaults": {
+    "niche": "tecnologia",
+    "site_url": "https://seudominio.com",
+    "site_name": "Portal Tech",
+    "section": "tecnologia",
+    "default_word_count": 1500,
+    "max_articles_per_cycle": 3,
+    "preferred_intents": ["informational", "commercial"],
+    "eeat_score_threshold": 70
+  },
+  "niches": {
+    "tecnologia": {
+      "label": "Tecnologia",
+      "site_url": "https://tech.seudominio.com",
+      "site_name": "Portal Tech",
+      "author": "Ricardo Martins",
+      "keywords": ["notebook", "smartphone", "inteligencia artificial", "games"]
+    },
+    "financas": {
+      "label": "Finanças",
+      "site_url": "https://financas.seudominio.com",
+      "site_name": "Guia Financeiro",
+      "author": "Ana Paula Oliveira",
+      "keywords": ["investir", "economizar", "cartao de credito", "renda extra"]
+    },
+    "saude": {
+      "label": "Saúde",
+      "site_url": "https://saude.seudominio.com",
+      "site_name": "Viver Bem",
+      "author": "Dra. Mariana Costa",
+      "keywords": ["emagrecer", "alimentacao", "exercicios", "ansiedade"]
+    },
+    "carreira": {
+      "label": "Carreira",
+      "site_url": "https://carreira.seudominio.com",
+      "site_name": "Guia de Carreira",
+      "author": "Pedro Alves",
+      "keywords": ["curriculo", "entrevista", "cursos", "linkedin"]
+    }
+  }
+}

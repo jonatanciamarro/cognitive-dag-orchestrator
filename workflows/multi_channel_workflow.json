@@ -1,0 +1,99 @@
+{
+  "name": "multi_channel_workflow",
+  "description": "Workflow multi-canal completo: blog → YouTube → email marketing. Gera conteúdo para 3 canais orgânicos simultaneamente.",
+  "max_workers": 6,
+  "steps": [
+    {
+      "id": "seo_research",
+      "agent": "seo_research",
+      "depends_on": [],
+      "description": "Pesquisar palavras-chave e tópicos no nicho.",
+      "deps": []
+    },
+    {
+      "id": "compliance",
+      "agent": "compliance",
+      "depends_on": [],
+      "description": "Validar nicho e ofertas contra regras de compliance.",
+      "deps": []
+    },
+    {
+      "id": "memory_lookup",
+      "agent": "memory_lookup",
+      "depends_on": [],
+      "description": "Buscar lições de ciclos anteriores.",
+      "deps": []
+    },
+    {
+      "id": "offer_lookup",
+      "agent": "offer_lookup",
+      "depends_on": [
+        "seo_research"
+      ],
+      "description": "Encontrar ofertas de afiliados compatíveis com as keywords.",
+      "deps": []
+    },
+    {
+      "id": "content_planner",
+      "agent": "content_planner",
+      "depends_on": [
+        "seo_research",
+        "offer_lookup",
+        "memory_lookup"
+      ],
+      "description": "Combinar pesquisa + ofertas em briefings de conteúdo.",
+      "deps": []
+    },
+    {
+      "id": "content_generator",
+      "agent": "content_generator",
+      "depends_on": [
+        "content_planner"
+      ],
+      "description": "Gerar artigos para blog a partir dos briefings.",
+      "deps": []
+    },
+    {
+      "id": "youtube_marketing",
+      "agent": "youtube_marketing",
+      "depends_on": [
+        "seo_research",
+        "offer_lookup"
+      ],
+      "description": "Gerar scripts de vídeo, descrições e tags para YouTube.",
+      "deps": []
+    },
+    {
+      "id": "email_marketing",
+      "agent": "email_marketing",
+      "depends_on": [
+        "seo_research",
+        "offer_lookup"
+      ],
+      "description": "Gerar sequências de email marketing com ofertas.",
+      "deps": []
+    },
+    {
+      "id": "wp_publisher",
+      "agent": "wp_publisher",
+      "depends_on": [
+        "content_generator",
+        "compliance"
+      ],
+      "description": "Publicar artigos gerados (simulado ou WordPress real).",
+      "deps": []
+    }
+  ],
+  "workflow_id": "multi_channel_workflow",
+  "entry_points": [
+    "seo_research",
+    "compliance",
+    "memory_lookup",
+    "offer_lookup",
+    "content_planner",
+    "content_generator",
+    "youtube_marketing",
+    "email_marketing",
+    "wp_publisher"
+  ]
+}

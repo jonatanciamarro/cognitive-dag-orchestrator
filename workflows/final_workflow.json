@@ -1,0 +1,271 @@
+{
+  "name": "final_workflow",
+  "description": "🏆 WORKFLOW FINAL — Análise → Conteúdo → Otimização → Rank Tracking → Publicação em Lote → Receita. Sistema completo de ponta a ponta.",
+  "max_workers": 14,
+  "steps": [
+    {
+      "id": "competitor_analysis",
+      "agent": "competitor_analysis",
+      "depends_on": [],
+      "description": "Analisar concorrentes e gaps.",
+      "deps": []
+    },
+    {
+      "id": "seo_scraper",
+      "agent": "seo_scraper",
+      "depends_on": [],
+      "description": "Dados reais de SEO.",
+      "deps": []
+    },
+    {
+      "id": "compliance",
+      "agent": "compliance",
+      "depends_on": [],
+      "description": "Validar compliance.",
+      "deps": []
+    },
+    {
+      "id": "memory_lookup",
+      "agent": "memory_lookup",
+      "depends_on": [],
+      "description": "Lições de ciclos anteriores.",
+      "deps": []
+    },
+    {
+      "id": "offer_lookup",
+      "agent": "offer_lookup",
+      "depends_on": [
+        "seo_scraper",
+        "competitor_analysis"
+      ],
+      "description": "Ofertas baseadas em gaps.",
+      "deps": []
+    },
+    {
+      "id": "content_planner",
+      "agent": "content_planner",
+      "depends_on": [
+        "seo_scraper",
+        "offer_lookup",
+        "memory_lookup"
+      ],
+      "description": "Briefings de conteúdo.",
+      "deps": []
+    },
+    {
+      "id": "content_generator",
+      "agent": "content_generator",
+      "depends_on": [
+        "content_planner"
+      ],
+      "description": "Gerar artigos.",
+      "deps": []
+    },
+    {
+      "id": "content_repurposer",
+      "agent": "content_repurposer",
+      "depends_on": [
+        "content_generator",
+        "offer_lookup"
+      ],
+      "description": "Multiplicar para 5 canais.",
+      "deps": []
+    },
+    {
+      "id": "free_image_gen",
+      "agent": "free_image_gen",
+      "depends_on": [
+        "content_generator",
+        "content_repurposer"
+      ],
+      "description": "Gerar imagens gratuitas (Pillow) para blog, YouTube, Pinterest, Instagram.",
+      "deps": []
+    },
+    {
+      "id": "free_video_producer",
+      "agent": "free_video_producer",
+      "depends_on": [
+        "content_generator",
+        "content_repurposer"
+      ],
+      "description": "Produzir vídeos gratuitos (moviepy) para YouTube e TikTok.",
+      "deps": []
+    },
+    {
+      "id": "platform_compliance",
+      "agent": "platform_compliance",
+      "depends_on": [
+        "content_generator",
+        "content_repurposer",
+        "free_image_gen",
+        "free_video_producer"
+      ],
+      "description": "Validar conteúdo contra regras de cada plataforma para evitar bloqueios.",
+      "deps": []
+    },
+    {
+      "id": "instagram_marketing",
+      "agent": "instagram_marketing",
+      "depends_on": [
+        "seo_scraper",
+        "offer_lookup",
+        "content_generator"
+      ],
+      "description": "Posts para Instagram.",
+      "deps": []
+    },
+    {
+      "id": "tiktok_marketing",
+      "agent": "tiktok_marketing",
+      "depends_on": [
+        "seo_scraper",
+        "offer_lookup",
+        "content_generator"
+      ],
+      "description": "Vídeos para TikTok.",
+      "deps": []
+    },
+    {
+      "id": "twitter_marketing",
+      "agent": "twitter_marketing",
+      "depends_on": [
+        "seo_scraper",
+        "offer_lookup",
+        "content_generator"
+      ],
+      "description": "Threads para Twitter.",
+      "deps": []
+    },
+    {
+      "id": "content_optimizer",
+      "agent": "content_optimizer",
+      "depends_on": [
+        "content_generator",
+        "content_repurposer",
+        "seo_scraper"
+      ],
+      "description": "Otimizar SEO do conteúdo.",
+      "deps": []
+    },
+    {
+      "id": "wp_publisher",
+      "agent": "wp_publisher",
+      "depends_on": [
+        "content_generator",
+        "compliance"
+      ],
+      "description": "Publicar no WordPress.",
+      "deps": []
+    },
+    {
+      "id": "rank_tracker",
+      "agent": "rank_tracker",
+      "depends_on": [
+        "seo_scraper"
+      ],
+      "description": "Trackear rankings no Google.",
+      "deps": []
+    },
+    {
+      "id": "bulk_publisher",
+      "agent": "bulk_publisher",
+      "depends_on": [
+        "content_generator",
+        "content_repurposer",
+        "wp_publisher",
+        "content_generator"
+      ],
+      "description": "Agendar tudo em lote.",
+      "deps": []
+    },
+    {
+      "id": "revenue_monitor",
+      "agent": "revenue_monitor",
+      "depends_on": [
+        "content_repurposer",
+        "offer_lookup",
+        "rank_tracker",
+        "content_optimizer"
+      ],
+      "description": "Projeção de receita.",
+      "deps": []
+    },
+    {
+      "id": "analytics_feedback",
+      "agent": "analytics_feedback",
+      "depends_on": [
+        "content_optimizer",
+        "revenue_monitor",
+        "rank_tracker",
+        "bulk_publisher"
+      ],
+      "description": "Feedback e aprendizado.",
+      "deps": []
+    },
+    {
+      "id": "organic_growth",
+      "agent": "organic_growth",
+      "depends_on": [
+        "analytics_feedback",
+        "platform_compliance",
+        "revenue_monitor"
+      ],
+      "description": "Analisar ciclo e gerar recomendações de growth hacking orgânico.",
+      "deps": []
+    },
+    {
+      "id": "agent_perf_monitor",
+      "agent": "agent_perf_monitor",
+      "depends_on": [
+        "organic_growth"
+      ],
+      "description": "Monitorar performance individual de cada agente no ciclo.",
+      "deps": []
+    },
+    {
+      "id": "meta_orchestrator",
+      "agent": "meta_orchestrator",
+      "depends_on": [
+        "agent_perf_monitor"
+      ],
+      "description": "Auto-observar execução e modificar estrutura do workflow.",
+      "deps": []
+    },
+    {
+      "id": "strategy_evolution",
+      "agent": "strategy_evolution",
+      "depends_on": [
+        "meta_orchestrator"
+      ],
+      "description": "Planejamento estratégico evolutivo entre ciclos.",
+      "deps": []
+    }
+  ],
+  "workflow_id": "final_workflow",
+  "entry_points": [
+    "competitor_analysis",
+    "seo_scraper",
+    "compliance",
+    "memory_lookup",
+    "offer_lookup",
+    "content_planner",
+    "content_generator",
+    "content_repurposer",
+    "free_image_gen",
+    "free_video_producer",
+    "platform_compliance",
+    "instagram_marketing",
+    "tiktok_marketing",
+    "twitter_marketing",
+    "content_optimizer",
+    "wp_publisher",
+    "rank_tracker",
+    "bulk_publisher",
+    "revenue_monitor",
+    "analytics_feedback",
+    "organic_growth",
+    "agent_perf_monitor",
+    "meta_orchestrator",
+    "strategy_evolution"
+  ]
+}

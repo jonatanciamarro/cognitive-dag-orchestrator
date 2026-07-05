@@ -1,0 +1,71 @@
+{
+  "name": "organic_to_flywheel",
+  "description": "🔄 Ciclo Completo: Orgânico → Parallel Revenue Tree → Flywheel → Tráfego Pago",
+  "version": "1.0.0",
+  "steps": [
+    {
+      "id": "parallel_revenue",
+      "agent": "parallel_revenue_tree",
+      "description": "1. Dispara 13 fontes de renda em paralelo",
+      "depends_on": [],
+      "deps": []
+    },
+    {
+      "id": "flywheel_decision",
+      "agent": "paid_traffic_flywheel",
+      "description": "2. Calcula fase do flywheel e orçamento de tráfego pago",
+      "depends_on": [
+        "parallel_revenue"
+      ],
+      "deps": []
+    },
+    {
+      "id": "google_ads_campaign",
+      "agent": "paid_traffic_flywheel",
+      "description": "3. Google Ads — se fase >= 1 e orçamento disponível",
+      "depends_on": [
+        "flywheel_decision"
+      ],
+      "deps": []
+    },
+    {
+      "id": "meta_ads_campaign",
+      "agent": "paid_traffic_flywheel",
+      "description": "4. Meta Ads — se fase >= 1",
+      "depends_on": [
+        "flywheel_decision"
+      ],
+      "deps": []
+    },
+    {
+      "id": "native_ads_campaign",
+      "agent": "paid_traffic_flywheel",
+      "description": "5. Native Ads — se fase >= 2",
+      "depends_on": [
+        "flywheel_decision"
+      ],
+      "deps": []
+    },
+    {
+      "id": "performance_report",
+      "agent": "paid_traffic_flywheel",
+      "description": "6. Relatório consolidado orgânico + pago",
+      "depends_on": [
+        "google_ads_campaign",
+        "meta_ads_campaign",
+        "native_ads_campaign"
+      ],
+      "deps": []
+    }
+  ],
+  "workflow_id": "organic_to_flywheel",
+  "max_workers": 6,
+  "entry_points": [
+    "parallel_revenue",
+    "flywheel_decision",
+    "google_ads_campaign",
+    "meta_ads_campaign",
+    "native_ads_campaign",
+    "performance_report"
+  ]
+}

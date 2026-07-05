@@ -1,0 +1,558 @@
+{
+  "name": "production_workflow",
+  "description": "🏭 WORKFLOW DE PRODUÇÃO COMPLETO — 9 canais de tráfego orgânico. Concorrência → SEO → Conteúdo → 9 Canais → Site → Receita. Máquina completa de monetização orgânica sem tráfego pago.",
+  "max_workers": 14,
+  "steps": [
+    {
+      "id": "competitor_analysis",
+      "agent": "competitor_analysis",
+      "depends_on": [],
+      "description": "Analisar concorrentes e encontrar gaps de conteúdo.",
+      "deps": []
+    },
+    {
+      "id": "seo_scraper",
+      "agent": "seo_scraper",
+      "depends_on": [],
+      "description": "Dados reais de SEO do Google.",
+      "deps": []
+    },
+    {
+      "id": "compliance",
+      "agent": "compliance",
+      "depends_on": [],
+      "description": "Validar compliance do conteúdo e ofertas.",
+      "deps": []
+    },
+    {
+      "id": "memory_lookup",
+      "agent": "memory_lookup",
+      "depends_on": [],
+      "description": "Lições de ciclos anteriores.",
+      "deps": []
+    },
+    {
+      "id": "offer_lookup",
+      "agent": "offer_lookup",
+      "depends_on": [
+        "seo_scraper",
+        "competitor_analysis"
+      ],
+      "description": "Ofertas de afiliados baseadas em gaps.",
+      "deps": []
+    },
+    {
+      "id": "content_planner",
+      "agent": "content_planner",
+      "depends_on": [
+        "seo_scraper",
+        "competitor_analysis",
+        "offer_lookup",
+        "memory_lookup"
+      ],
+      "description": "Briefings baseados em oportunidades reais.",
+      "deps": []
+    },
+    {
+      "id": "storytelling_specialist",
+      "agent": "storytelling_specialist",
+      "depends_on": [
+        "content_planner"
+      ],
+      "description": "Selecionar estrutura narrativa ideal e gerar hooks.",
+      "deps": []
+    },
+    {
+      "id": "psychology_specialist",
+      "agent": "psychology_specialist",
+      "depends_on": [
+        "content_planner"
+      ],
+      "description": "Aplicar vieses cognitivos e princípios de persuasão.",
+      "deps": []
+    },
+    {
+      "id": "neuromarketing_specialist",
+      "agent": "neuromarketing_specialist",
+      "depends_on": [
+        "content_planner"
+      ],
+      "description": "Otimizar conteúdo para resposta cerebral.",
+      "deps": []
+    },
+    {
+      "id": "content_excellence",
+      "agent": "content_excellence",
+      "depends_on": [
+        "storytelling_specialist",
+        "psychology_specialist",
+        "neuromarketing_specialist"
+      ],
+      "description": "Orquestrar todas as melhorias de conteúdo.",
+      "deps": []
+    },
+    {
+      "id": "content_generator",
+      "agent": "content_generator",
+      "depends_on": [
+        "content_planner",
+        "content_excellence"
+      ],
+      "description": "Artigos otimizados para SEO.",
+      "deps": []
+    },
+    {
+      "id": "content_repurposer",
+      "agent": "content_repurposer",
+      "depends_on": [
+        "content_generator",
+        "offer_lookup"
+      ],
+      "description": "Multiplicar para todos os canais.",
+      "deps": []
+    },
+    {
+      "id": "storyboard",
+      "agent": "storyboard",
+      "depends_on": [
+        "content_generator",
+        "seo_scraper"
+      ],
+      "description": "Planejar storyboards visuais para vídeos e imagens.",
+      "deps": []
+    },
+    {
+      "id": "cinematic_image_gen",
+      "agent": "cinematic_image_gen",
+      "depends_on": [
+        "content_generator",
+        "storyboard"
+      ],
+      "description": "Gerar imagens cinematográficas (color grading, iluminação, tipografia).",
+      "deps": []
+    },
+    {
+      "id": "audio_production",
+      "agent": "audio_production",
+      "depends_on": [
+        "content_repurposer",
+        "storyboard"
+      ],
+      "description": "Produzir narração TTS + música de fundo + mixagem profissional.",
+      "deps": []
+    },
+    {
+      "id": "cinematic_video_producer",
+      "agent": "cinematic_video_producer",
+      "depends_on": [
+        "storyboard",
+        "audio_production",
+        "content_repurposer"
+      ],
+      "description": "Produzir vídeos cinematográficos com Ken Burns, transições e áudio.",
+      "deps": []
+    },
+    {
+      "id": "media_pipeline",
+      "agent": "media_pipeline",
+      "depends_on": [
+        "cinematic_image_gen",
+        "cinematic_video_producer",
+        "audio_production"
+      ],
+      "description": "Orquestrar pipeline de mídia e gerar relatório de qualidade.",
+      "deps": []
+    },
+    {
+      "id": "free_image_gen",
+      "agent": "free_image_gen",
+      "depends_on": [
+        "site_deploy",
+        "cinematic_image_gen",
+        "content_repurposer",
+        "content_generator"
+      ],
+      "description": "Gerar imagens (fallback) gratuitas (Pillow) para blog, YouTube, Pinterest, Instagram.",
+      "deps": []
+    },
+    {
+      "id": "free_video_producer",
+      "agent": "free_video_producer",
+      "depends_on": [
+        "site_deploy",
+        "cinematic_video_producer",
+        "content_repurposer",
+        "content_generator"
+      ],
+      "description": "Produzir (fallback) vídeos gratuitos (moviepy) para YouTube e TikTok.",
+      "deps": []
+    },
+    {
+      "id": "platform_compliance",
+      "agent": "platform_compliance",
+      "depends_on": [
+        "content_generator",
+        "content_repurposer",
+        "free_image_gen",
+        "free_video_producer"
+      ],
+      "description": "Validar conteúdo contra regras de cada plataforma para evitar bloqueios.",
+      "deps": []
+    },
+    {
+      "id": "wp_publisher",
+      "agent": "wp_publisher",
+      "depends_on": [
+        "content_generator",
+        "compliance"
+      ],
+      "description": "Publicar no WordPress.",
+      "deps": []
+    },
+    {
+      "id": "lead_capture",
+      "agent": "lead_capture",
+      "depends_on": [
+        "seo_scraper",
+        "offer_lookup",
+        "content_generator"
+      ],
+      "description": "Lead magnets para captura de emails.",
+      "deps": []
+    },
+    {
+      "id": "youtube_marketing",
+      "agent": "youtube_marketing",
+      "depends_on": [
+        "seo_scraper",
+        "offer_lookup",
+        "content_generator"
+      ],
+      "description": "Scripts de vídeo e SEO para YouTube.",
+      "deps": []
+    },
+    {
+      "id": "email_marketing",
+      "agent": "email_marketing",
+      "depends_on": [
+        "seo_scraper",
+        "offer_lookup"
+      ],
+      "description": "Sequências de email marketing.",
+      "deps": []
+    },
+    {
+      "id": "pinterest_marketing",
+      "agent": "pinterest_marketing",
+      "depends_on": [
+        "seo_scraper",
+        "offer_lookup",
+        "content_generator"
+      ],
+      "description": "Pins otimizados para Pinterest.",
+      "deps": []
+    },
+    {
+      "id": "instagram_marketing",
+      "agent": "instagram_marketing",
+      "depends_on": [
+        "seo_scraper",
+        "offer_lookup",
+        "content_generator"
+      ],
+      "description": "Posts, reels e carrosséis para Instagram.",
+      "deps": []
+    },
+    {
+      "id": "tiktok_marketing",
+      "agent": "tiktok_marketing",
+      "depends_on": [
+        "seo_scraper",
+        "offer_lookup",
+        "content_generator"
+      ],
+      "description": "Scripts de vídeos curtos para TikTok.",
+      "deps": []
+    },
+    {
+      "id": "twitter_marketing",
+      "agent": "twitter_marketing",
+      "depends_on": [
+        "seo_scraper",
+        "offer_lookup",
+        "content_generator"
+      ],
+      "description": "Threads e posts para Twitter/X.",
+      "deps": []
+    },
+    {
+      "id": "whatsapp_marketing",
+      "agent": "whatsapp_marketing",
+      "depends_on": [
+        "seo_scraper",
+        "offer_lookup",
+        "content_generator"
+      ],
+      "description": "Mensagens para WhatsApp Marketing.",
+      "deps": []
+    },
+    {
+      "id": "site_deploy",
+      "agent": "site_deploy",
+      "depends_on": [
+        "content_generator",
+        "content_repurposer",
+        "lead_capture"
+      ],
+      "description": "Gerar site estático completo.",
+      "deps": []
+    },
+    {
+      "id": "content_optimizer",
+      "agent": "content_optimizer",
+      "depends_on": [
+        "content_generator",
+        "content_repurposer",
+        "seo_scraper"
+      ],
+      "description": "Otimizar SEO do conteúdo.",
+      "deps": []
+    },
+    {
+      "id": "rank_tracker",
+      "agent": "rank_tracker",
+      "depends_on": [
+        "seo_scraper"
+      ],
+      "description": "Trackear rankings no Google.",
+      "deps": []
+    },
+    {
+      "id": "bulk_publisher",
+      "agent": "bulk_publisher",
+      "depends_on": [
+        "content_generator",
+        "content_repurposer",
+        "wp_publisher"
+      ],
+      "description": "Agendar tudo em lote.",
+      "deps": []
+    },
+    {
+      "id": "revenue_monitor",
+      "agent": "revenue_monitor",
+      "depends_on": [
+        "content_repurposer",
+        "offer_lookup",
+        "rank_tracker",
+        "youtube_marketing",
+        "email_marketing",
+        "pinterest_marketing"
+      ],
+      "description": "Projeção de receita multi-canal.",
+      "deps": []
+    },
+    {
+      "id": "analytics_feedback",
+      "agent": "analytics_feedback",
+      "depends_on": [
+        "content_optimizer",
+        "revenue_monitor",
+        "rank_tracker",
+        "bulk_publisher",
+        "site_deploy",
+        "youtube_marketing",
+        "instagram_marketing",
+        "tiktok_marketing",
+        "twitter_marketing",
+        "whatsapp_marketing"
+      ],
+      "description": "Feedback e aprendizado completo do ciclo.",
+      "deps": []
+    },
+    {
+      "id": "organic_growth",
+      "agent": "organic_growth",
+      "depends_on": [
+        "analytics_feedback",
+        "platform_compliance",
+        "revenue_monitor"
+      ],
+      "description": "Analisar ciclo e gerar recomendações de growth hacking orgânico.",
+      "deps": []
+    },
+    {
+      "id": "agent_perf_monitor",
+      "agent": "agent_perf_monitor",
+      "depends_on": [
+        "organic_growth"
+      ],
+      "description": "Monitorar performance individual de cada agente no ciclo.",
+      "deps": []
+    },
+    {
+      "id": "meta_orchestrator",
+      "agent": "meta_orchestrator",
+      "depends_on": [
+        "agent_perf_monitor"
+      ],
+      "description": "Auto-observar execução e modificar estrutura do workflow.",
+      "deps": []
+    },
+    {
+      "id": "strategy_evolution",
+      "agent": "strategy_evolution",
+      "depends_on": [
+        "meta_orchestrator"
+      ],
+      "description": "Planejamento estratégico evolutivo entre ciclos.",
+      "deps": []
+    },
+    {
+      "id": "self_healing",
+      "agent": "self_healing",
+      "depends_on": [
+        "strategy_evolution"
+      ],
+      "description": "Auto-reparo: verificar saúde do sistema e executar ações corretivas.",
+      "deps": []
+    },
+    {
+      "id": "agent_factory",
+      "agent": "agent_factory",
+      "depends_on": [
+        "self_healing"
+      ],
+      "description": "Detectar gaps e criar novos agentes automaticamente.",
+      "deps": []
+    },
+    {
+      "id": "evolution_engine",
+      "agent": "evolution_engine",
+      "depends_on": [
+        "agent_factory"
+      ],
+      "description": "Aplicar prescrições do MetaOrchestrator nos workflows.",
+      "deps": []
+    },
+    {
+      "id": "circuit_breaker",
+      "agent": "circuit_breaker",
+      "depends_on": [
+        "agent_factory"
+      ],
+      "description": "Monitorar saúde do sistema e ativar modos de emergência.",
+      "deps": []
+    },
+    {
+      "id": "third_order_orchestrator",
+      "agent": "third_order_orchestrator",
+      "depends_on": [
+        "epistemic",
+        "observer_fusion",
+        "value_evolution",
+        "recursive_observer"
+      ],
+      "description": "Síntese transcendente e recomendações de auto-evolução.",
+      "deps": []
+    },
+    {
+      "id": "recursive_observer",
+      "agent": "recursive_observer",
+      "depends_on": [
+        "meta_orchestrator"
+      ],
+      "description": "Auditar governança do MetaOrchestrator.",
+      "deps": []
+    },
+    {
+      "id": "value_evolution",
+      "agent": "value_evolution",
+      "depends_on": [
+        "epistemic"
+      ],
+      "description": "Evolução do sistema de valores baseada em performance.",
+      "deps": []
+    },
+    {
+      "id": "observer_fusion",
+      "agent": "observer_fusion",
+      "depends_on": [
+        "epistemic"
+      ],
+      "description": "Análise multi-perspectiva da estratégia.",
+      "deps": []
+    },
+    {
+      "id": "epistemic",
+      "agent": "epistemic",
+      "depends_on": [
+        "revenue_monitor",
+        "analytics_feedback"
+      ],
+      "description": "Auto-questionamento epistêmico: mapear conhecimento e pontos cegos.",
+      "deps": []
+    },
+    {
+      "id": "ui_design",
+      "agent": "ui_design",
+      "depends_on": [
+        "epistemic"
+      ],
+      "description": "Gerar landing pages com design system Lyzer Labs.",
+      "deps": []
+    }
+  ],
+  "workflow_id": "production_workflow",
+  "entry_points": [
+    "competitor_analysis",
+    "seo_scraper",
+    "compliance",
+    "memory_lookup",
+    "offer_lookup",
+    "content_planner",
+    "storytelling_specialist",
+    "psychology_specialist",
+    "neuromarketing_specialist",
+    "content_excellence",
+    "content_generator",
+    "content_repurposer",
+    "storyboard",
+    "cinematic_image_gen",
+    "audio_production",
+    "cinematic_video_producer",
+    "media_pipeline",
+    "free_image_gen",
+    "free_video_producer",
+    "platform_compliance",
+    "wp_publisher",
+    "lead_capture",
+    "youtube_marketing",
+    "email_marketing",
+    "pinterest_marketing",
+    "instagram_marketing",
+    "tiktok_marketing",
+    "twitter_marketing",
+    "whatsapp_marketing",
+    "site_deploy",
+    "content_optimizer",
+    "rank_tracker",
+    "bulk_publisher",
+    "revenue_monitor",
+    "analytics_feedback",
+    "organic_growth",
+    "agent_perf_monitor",
+    "meta_orchestrator",
+    "strategy_evolution",
+    "self_healing",
+    "agent_factory",
+    "evolution_engine",
+    "circuit_breaker",
+    "third_order_orchestrator",
+    "recursive_observer",
+    "value_evolution",
+    "observer_fusion",
+    "epistemic",
+    "ui_design"
+  ]
+}

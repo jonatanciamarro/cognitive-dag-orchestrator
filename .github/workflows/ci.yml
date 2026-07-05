@@ -1,0 +1,101 @@
+name: 🧪 CI — Campaign Autopilot
+
+on:
+  push:
+    branches: [main, master]
+  pull_request:
+    branches: [main, master]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Import check
+        run: |
+          PYTHONPATH="src" python -c "
+          from campaign_autopilot import *
+          print(f'✅ Package imports OK — {len(__all__)} public names')
+          "
+
+  test-core:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ["3.10", "3.11", "3.12"]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Install pytest
+        run: pip install pytest
+      - name: Run core tests
+        run: |
+          PYTHONPATH="src" python -m unittest \
+            tests.test_metrics tests.test_models tests.test_policy tests.test_memory \
+            tests.test_workflow tests.test_workflow_runner tests.test_affiliate \
+            tests.test_analytics_feedback tests.test_bulk_publisher tests.test_cli \
+            tests.test_content_generator tests.test_content_optimizer \
+            tests.test_content_repurposer tests.test_creative_engine \
+            tests.test_email_marketing tests.test_free_variant \
+            tests.test_lead_capture tests.test_orchestrator tests.test_organic_cycle \
+            tests.test_pinterest_marketing tests.test_platform_agents \
+            tests.test_revenue_agents tests.test_revenue_monitor \
+            tests.test_safe_mass_posting tests.test_site_deploy \
+            tests.test_traffic_recycler tests.test_whatsapp_marketing \
+            tests.test_wp_publisher tests.test_youtube_marketing \
+            tests.test_compliance tests.test_optimization tests.test_content_planner \
+            tests.test_seo_scraper tests.test_seo_research tests.test_offer_lookup \
+            tests.test_circuit_breaker tests.test_self_healing \
+            tests.test_meta_orchestrator tests.test_epistemic_agent \
+            tests.test_strategy_evolution \
+            -v
+        timeout-minutes: 3
+
+  test-stores:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ["3.10", "3.11", "3.12"]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Install pytest
+        run: pip install pytest
+      - name: Run store tests
+        run: |
+          PYTHONPATH="src" python -m unittest \
+            tests.test_semantic_memory tests.test_synthesis \
+            tests.test_goals tests.test_feedback tests.test_epistemic \
+            tests.test_meta_cognitive tests.test_kollektiv \
+            tests.test_hotmart_agents tests.test_hotmart_product_selection \
+            tests.test_temporal_engine tests.test_competitor_analysis \
+            tests.test_rank_tracker tests.test_campaign_integration \
+            tests.test_organic_integration tests.test_affiliate_integration \
+            -v
+        timeout-minutes: 5
+
+  test-cli-subprocess:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ["3.12"]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Run subprocess tests
+        run: |
+          PYTHONPATH="src" python -m unittest tests.test_cli_subprocess -v
+        timeout-minutes: 2

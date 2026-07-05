@@ -1,0 +1,1664 @@
+{
+  "_instructions": "Coloque seus IDs de afiliado nos campos abaixo. As ofertas são sugestões — personalize os links com seus próprios códigos.",
+  "_env_example": {
+    "HOTMART_AFFILIATE_ID": "usar links individuais com ?aff=",
+    "MERCADOLIVRE_AFFILIATE_ID": "seu_codigo_ml",
+    "SHOPEE_AFFILIATE_ID": "seu_codigo_shopee",
+    "SHEIN_AFFILIATE_ID": "seu_codigo_shein",
+    "ALIEXPRESS_AFFILIATE_ID": "seu_codigo_aliexpress",
+    "MONETIZZE_AFFILIATE_ID": "seu_codigo_monetizze",
+    "KIWIFY_AFFILIATE_ID": "seu_codigo_kiwify",
+    "EDUZZ_AFFILIATE_ID": "seu_codigo_eduzz"
+  },
+  "affiliate_ids": {
+    "hotmart": "TEST123",
+    "monetizze": "rFer1XGSY9vzM84PIBwSgUXKAV9MBKWY",
+    "kiwify": "{affiliate_id}",
+    "eduzz": "{affiliate_id}",
+    "mercadolivre": "{affiliate_id}",
+    "shopee": "{affiliate_id}",
+    "shein": "{affiliate_id}",
+    "aliexpress": "{affiliate_id}"
+  },
+  "offers_by_niche": {
+    "tecnologia": [
+      {
+        "network": "amazon",
+        "product_name": "Notebook Dell XPS 15",
+        "product_url": "https://amzn.to/3XABCD1",
+        "commission_type": "percentage",
+        "commission_value": 3.0,
+        "keywords": [
+          "notebook",
+          "dell",
+          "xps",
+          "laptop",
+          "trabalho"
+        ],
+        "cookie_days": 1,
+        "price": 149.9
+      },
+      {
+        "network": "amazon",
+        "product_name": "Smartphone Samsung Galaxy S26",
+        "product_url": "https://amzn.to/3XABCD2",
+        "commission_type": "percentage",
+        "commission_value": 2.5,
+        "keywords": [
+          "smartphone",
+          "celular",
+          "samsung",
+          "galaxy",
+          "android"
+        ],
+        "cookie_days": 1,
+        "price": 149.9
+      },
+      {
+        "network": "hotmart",
+        "product_name": "Curso de Programação Completo",
+        "product_url": "https://go.hotmart.com/TEST123?src=ca&product=curso-de-programação-completo",
+        "commission_type": "percentage",
+        "commission_value": 60.0,
+        "keywords": [
+          "programação",
+          "curso",
+          "aprender",
+          "codigo",
+          "desenvolvedor"
+        ],
+        "cookie_days": 30,
+        "price": 97.0
+      },
+      {
+        "network": "hotmart",
+        "product_name": "Ferramenta de IA para Produtividade",
+        "product_url": "https://go.hotmart.com/TEST123?src=ca&product=ferramenta-de-ia-para-produtiv",
+        "commission_type": "percentage",
+        "commission_value": 40.0,
+        "keywords": [
+          "inteligencia artificial",
+          "ia",
+          "produtividade",
+          "ferramenta",
+          "automacao"
+        ],
+        "cookie_days": 30,
+        "price": 97.0
+      },
+      {
+        "network": "amazon",
+        "product_name": "Mouse Sem Fio Logitech MX Master 3S",
+        "product_url": "https://amzn.to/3XABCD3",
+        "commission_type": "percentage",
+        "commission_value": 4.0,
+        "keywords": [
+          "mouse",
+          "logitech",
+          "sem fio",
+          "ergonomia",
+          "acessorio"
+        ],
+        "cookie_days": 1,
+        "price": 149.9
+      },
+      {
+        "network": "hotmart",
+        "product_name": "Curso Completo de Python",
+        "product_url": "https://hotm.art/produto?aff=python",
+        "commission_type": "percentage",
+        "commission_value": 50.0,
+        "keywords": [
+          "python",
+          "programacao",
+          "curso",
+          "desenvolvimento",
+          "programador"
+        ],
+        "cookie_days": 30,
+        "description": "Aprenda Python do zero ao avançado com projetos reais",
+        "category": "cursos",
+        "price": 97.0
+      },
+      {
+        "network": "hotmart",
+        "product_name": "Inteligência Artificial para Iniciantes",
+        "product_url": "https://hotm.art/produto?aff=ia",
+        "commission_type": "percentage",
+        "commission_value": 60.0,
+        "keywords": [
+          "inteligencia artificial",
+          "ia",
+          "machine learning",
+          "chatgpt",
+          "ia generativa"
+        ],
+        "cookie_days": 30,
+        "description": "Domine IA sem saber programar",
+        "category": "cursos",
+        "price": 97.0
+      },
+      {
+        "network": "monetizze",
+        "product_name": "Curso de Python Completo",
+        "product_url": "https://monetizze.com.br/curso-de-python-comp?af=rFer1XGSY9vzM84PIBwSgUXKAV9MBKWY",
+        "commission_type": "percentage",
+        "commission_value": 50.0,
+        "keywords": [
+          "python",
+          "programacao",
+          "curso",
+          "codigo",
+          "desenvolvedor"
+        ],
+        "cookie_days": 30,
+        "price": 77.0
+      },
+      {
+        "network": "monetizze",
+        "product_name": "Pacote Excel do Zero ao Avancado",
+        "product_url": "https://monetizze.com.br/pacote-excel-do-zero?af=rFer1XGSY9vzM84PIBwSgUXKAV9MBKWY",
+        "commission_type": "percentage",
+        "commission_value": 60.0,
+        "keywords": [
+          "excel",
+          "planilhas",
+          "escritorio",
+          "trabalho",
+          "produtividade"
+        ],
+        "cookie_days": 30,
+        "price": 77.0
+      },
+      {
+        "network": "eduzz",
+        "product_name": "Curso de Desenvolvimento Web Full Stack",
+        "product_url": "https://eduzz.com/curso-fullstack?afiliado={affiliate_id}",
+        "commission_type": "percentage",
+        "commission_value": 50.0,
+        "keywords": [
+          "desenvolvimento",
+          "web",
+          "fullstack",
+          "programacao",
+          "site"
+        ],
+        "cookie_days": 30,
+        "price": 87.0
+      },
+      {
+        "network": "eduzz",
+        "product_name": "Pacote Microsoft Office Completo",
+        "product_url": "https://eduzz.com/pacote-office?afiliado={affiliate_id}",
+        "commission_type": "percentage",
+        "commission_value": 60.0,
+        "keywords": [
+          "office",
+          "word",
+          "excel",
+          "powerpoint",
+          "escritorio"
+        ],
+        "cookie_days": 30,
+        "price": 87.0
+      },
+      {
+        "network": "kiwify",
+        "product_name": "Curso de JavaScript Completo",
+        "product_url": "https://kiwify.app/curso-javascript?aff={affiliate_id}",
+        "commission_type": "percentage",
+        "commission_value": 60.0,
+        "keywords": [
+          "javascript",
+          "programacao",
+          "curso",
+          "web",
+          "frontend"
+        ],
+        "cookie_days": 30,
+        "price": 67.0
+      },
+      {
+        "network": "kiwify",
+        "product_name": "Pacote de Cursos de TI",
+        "product_url": "https://kiwify.app/pacote-ti?aff={affiliate_id}",
+        "commission_type": "percentage",
+        "commission_value": 50.0,
+        "keywords": [
+          "ti",
+          "tecnologia",
+          "curso",
+          "pacote",
+          "carreira"
+        ],
+        "cookie_days": 30,
+        "price": 67.0
+      },
+      {
+        "network": "mercadolivre",
+        "product_name": "Notebook Lenovo IdeaPad 3",
+        "product_url": "https://mercadolivre.com.br/notebook-lenovo",
+        "commission_type": "percentage",
+        "commission_value": 3.0,
+        "keywords": [
+          "notebook",
+          "lenovo",
+          "ideaPad",
+          "laptop",
+          "trabalho"
+        ],
+        "cookie_days": 1,
+        "price": 89.9
+      },
+      {
+        "network": "shopee",
+        "product_name": "Fone Bluetooth Xiaomi",
+        "product_url": "https://shopee.com.br/fone-xiaomi",
+        "commission_type": "percentage",
+        "commission_value": 5.0,
+        "keywords": [
+          "fone",
+          "bluetooth",
+          "xiaomi",
+          "audio",
+          "sem fio"
+        ],
+        "cookie_days": 7,
+        "price": 59.9
+      },
+      {
+        "network": "shein",
+        "product_name": "Suporte Notebook Ergonomico",
+        "product_url": "https://shein.com/suporte-notebook",
+        "commission_type": "percentage",
+        "commission_value": 8.0,
+        "keywords": [
+          "suporte",
+          "notebook",
+          "ergonomico",
+          "escritorio",
+          "acessorio"
+        ],
+        "cookie_days": 7,
+        "price": 39.9
+      },
+      {
+        "network": "aliexpress",
+        "product_name": "Teclado Mecanico RGB",
+        "product_url": "https://aliexpress.com/teclado-mecanico",
+        "commission_type": "percentage",
+        "commission_value": 4.0,
+        "keywords": [
+          "teclado",
+          "mecanico",
+          "rgb",
+          "gamer",
+          "periferico"
+        ],
+        "cookie_days": 7,
+        "price": 45.9
+      },
+      {
+        "network": "hotmart",
+        "product_name": "Curso Completo Programacao Em Profitchart",
+        "product_url": "https://hotm.art/B41470454S?aff=TEST123",
+        "commission_type": "percentage",
+        "commission_value": 50.0,
+        "keywords": [
+          "curso completo programacao em profitchart",
+          "tecnologia"
+        ],
+        "cookie_days": 30,
+        "auto_collected": true,
+        "search_term": "curso programacao",
+        "price": 97.0
+      },
+      {
+        "network": "hotmart",
+        "product_name": "Curso De Aspire",
+        "product_url": "https://hotm.art/G39102604S?aff=TEST123",
+        "commission_type": "percentage",
+        "commission_value": 50.0,
+        "keywords": [
+          "curso de aspire",
+          "tecnologia"
+        ],
+        "cookie_days": 30,
+        "auto_collected": true,
+        "search_term": "curso programacao",
+        "price": 97.0
+      },
+      {
+        "network": "mercadolivre",
+        "product_name": "Smartphone Samsung Galaxy A15",
+        "product_url": "https://mercadolivre.com.br/p/MLB2345678?afiliado={affiliate_id}",
+        "product_id": "MLB2345678",
+        "commission_type": "percentage",
+        "commission_value": 2.5,
+        "keywords": [
+          "smartphone",
+          "samsung",
+          "celular"
+        ],
+        "cookie_days": 7,
+        "auto_collected": true,
+        "price": 89.9
+      },
+      {
+        "network": "mercadolivre",
+        "product_name": "Fone Bluetooth JBL Tune",
+        "product_url": "https://mercadolivre.com.br/p/MLB3456789?afiliado={affiliate_id}",
+        "product_id": "MLB3456789",
+        "commission_type": "percentage",
+        "commission_value": 3.0,
+        "keywords": [
+          "fone",
+          "bluetooth",
+          "jbl",
+          "audio"
+        ],
+        "cookie_days": 7,
+        "auto_collected": true,
+        "price": 89.9
+      },
+      {
+        "network": "mercadolivre",
+        "product_name": "Mouse Logitech MX Anywhere",
+        "product_url": "https://mercadolivre.com.br/p/MLB4567890?afiliado={affiliate_id}",
+        "product_id": "MLB4567890",
+        "commission_type": "percentage",
+        "commission_value": 3.0,
+        "keywords": [
+          "mouse",
+          "logitech",
+          "sem fio"
+        ],
+        "cookie_days": 7,
+        "auto_collected": true,
+        "price": 89.9
+      },
+      {
+        "network": "shopee",
+        "product_name": "Carregador Wireless",
+        "product_url": "https://shopee.com.br/product/876543210/234567890?af_id={affiliate_id}",
+        "product_id": "234567890",
+        "commission_type": "percentage",
+        "commission_value": 6.0,
+        "keywords": [
+          "carregador",
+          "wireless",
+          "carregamento"
+        ],
+        "cookie_days": 7,
+        "auto_collected": true,
+        "price": 59.9
+      },
+      {
+        "network": "shopee",
+        "product_name": "Suporte Notebook Ajustavel",
+        "product_url": "https://shopee.com.br/product/765432109/345678901?af_id={affiliate_id}",
+        "product_id": "345678901",
+        "commission_type": "percentage",
+        "commission_value": 5.0,
+        "keywords": [
+          "suporte",
+          "notebook",
+          "ergonomico"
+        ],
+        "cookie_days": 7,
+        "auto_collected": true,
+        "price": 59.9
+      },
+      {
+        "network": "shopee",
+        "product_name": "Capa Celular Personalizada",
+        "product_url": "https://shopee.com.br/product/654321098/456789012?af_id={affiliate_id}",
+        "product_id": "456789012",
+        "commission_type": "percentage",
+        "commission_value": 7.0,
+        "keywords": [
+          "capa",
+          "celular",
+          "protecao"
+        ],
+        "cookie_days": 7,
+        "auto_collected": true,
+        "price": 59.9
+      },
+      {
+        "network": "shein",
+        "product_name": "Tenis Casual Masculino",
+        "product_url": "https://shein.com.br/p/10000006.html?aff={affiliate_id}",
+        "product_id": "10000006",
+        "commission_type": "percentage",
+        "commission_value": 6.0,
+        "keywords": [
+          "tenis",
+          "casual",
+          "masculino"
+        ],
+        "cookie_days": 7,
+        "auto_collected": true,
+        "price": 39.9
+      },
+      {
+        "network": "aliexpress",
+        "product_name": "Mini Projetor Portatil",
+        "product_url": "https://www.aliexpress.com/item/1005001234567.html?aff_fcid={affiliate_id}",
+        "product_id": "1005001234567",
+        "commission_type": "percentage",
+        "commission_value": 5.0,
+        "keywords": [
+          "projetor",
+          "portatil",
+          "mini"
+        ],
+        "cookie_days": 7,
+        "auto_collected": true,
+        "price": 45.9
+      },
+      {
+        "network": "aliexpress",
+        "product_name": "Fone TWS Xiaomi",
+        "product_url": "https://www.aliexpress.com/item/1005002345678.html?aff_fcid={affiliate_id}",
+        "product_id": "1005002345678",
+        "commission_type": "percentage",
+        "commission_value": 5.0,
+        "keywords": [
+          "fone",
+          "tws",
+          "xiaomi",
+          "bluetooth"
+        ],
+        "cookie_days": 7,
+        "auto_collected": true,
+        "price": 45.9
+      },
+      {
+        "network": "aliexpress",
+        "product_name": "Teclado Mecanico 60%",
+        "product_url": "https://www.aliexpress.com/item/1005003456789.html?aff_fcid={affiliate_id}",
+        "product_id": "1005003456789",
+        "commission_type": "percentage",
+        "commission_value": 4.0,
+        "keywords": [
+          "teclado",
+          "mecanico",
+          "60"
+        ],
+        "cookie_days": 7,
+        "auto_collected": true,
+        "price": 45.9
+      },
+      {
+        "network": "kiwify",
+        "product_name": "Curso de Inteligência Artificial com Python",
+        "commission_type": "percentage",
+        "commission_value": 70,
+        "cookie_days": 30,
+        "product_url": "https://kiwify.app/curso-de-inteligênci?aff={affiliate_id}",
+        "price": 67.0
+      },
+      {
+        "network": "kiwify",
+        "product_name": "Pacote Premium Excel VBA",
+        "commission_type": "percentage",
+        "commission_value": 70,
+        "cookie_days": 30,
+        "product_url": "https://kiwify.app/pacote-premium-excel?aff={affiliate_id}",
+        "price": 67.0
+      },
+      {
+        "network": "eduzz",
+        "product_name": "Curso Desenvolvimento Web Full Stack",
+        "commission_type": "percentage",
+        "commission_value": 50,
+        "cookie_days": 30,
+        "product_url": "https://eduzz.com/curso-desenvolviment?af={affiliate_id}",
+        "price": 87.0
+      }
+    ],
+    "financas": [
+      {
+        "network": "hotmart",
+        "product_name": "Curso de Educação Financeira",
+        "product_url": "https://go.hotmart.com/TEST123?src=ca&product=curso-de-educação-financeira",
+        "commission_type": "percentage",
+        "commission_value": 50.0,
+        "keywords": [
+          "educação financeira",
+          "financas",
+          "dinheiro",
+          "economizar",
+          "investir"
+        ],
+        "cookie_days": 30,
+        "price": 147.0
+      },
+      {
+        "network": "hotmart",
+        "product_name": "Planilha de Orçamento Inteligente",
+        "product_url": "https://go.hotmart.com/TEST123?src=ca&product=planilha-de-orçamento-intelige",
+        "commission_type": "percentage",
+        "commission_value": 70.0,
+        "keywords": [
+          "planilha",
+          "orcamento",
+          "gastos",
+          "receitas",
+          "controle"
+        ],
+        "cookie_days": 30,
+        "price": 147.0
+      },
+      {
+        "network": "amazon",
+        "product_name": "Livro: Pai Rico, Pai Pobre",
+        "product_url": "https://amzn.to/3XABCD4",
+        "commission_type": "percentage",
+        "commission_value": 10.0,
+        "keywords": [
+          "livro",
+          "educação financeira",
+          "investimentos",
+          "riqueza"
+        ],
+        "cookie_days": 1,
+        "price": 49.9
+      },
+      {
+        "network": "hotmart",
+        "product_name": "Método de Investimentos para Iniciantes",
+        "product_url": "https://hotm.art/produto?aff=invest",
+        "commission_type": "percentage",
+        "commission_value": 50.0,
+        "keywords": [
+          "investir",
+          "acoes",
+          "renda variavel",
+          "bolsa de valores",
+          "renda passiva"
+        ],
+        "cookie_days": 30,
+        "description": "Aprenda a investir do zero com segurança",
+        "category": "cursos",
+        "price": 147.0
+      },
+      {
+        "network": "hotmart",
+        "product_name": "Planilha de Controle Financeiro",
+        "product_url": "https://hotm.art/produto?aff=planilha",
+        "commission_type": "percentage",
+        "commission_value": 70.0,
+        "keywords": [
+          "planilha",
+          "controle financeiro",
+          "orcamento",
+          "gastos",
+          "economizar"
+        ],
+        "cookie_days": 30,
+        "description": "Planilha completa para organizar suas finanças",
+        "category": "ferramentas",
+        "price": 147.0
+      },
+      {
+        "network": "monetizze",
+        "product_name": "Metodo de Investimento para Iniciantes",
+        "product_url": "https://monetizze.com.br/metodo-de-investimen?af=rFer1XGSY9vzM84PIBwSgUXKAV9MBKWY",
+        "commission_type": "percentage",
+        "commission_value": 50.0,
+        "keywords": [
+          "investir",
+          "bolsa",
+          "acoes",
+          "renda",
+          "iniciante"
+        ],
+        "cookie_days": 30,
+        "price": 87.0
+      },
+      {
+        "network": "monetizze",
+        "product_name": "Curso Financas Pessoais",
+        "product_url": "https://monetizze.com.br/curso-financas-pesso?af=rFer1XGSY9vzM84PIBwSgUXKAV9MBKWY",
+        "commission_type": "percentage",
+        "commission_value": 60.0,
+        "keywords": [
+          "financas",
+          "dinheiro",
+          "economizar",
+          "orcamento",
+          "dividas"
+        ],
+        "cookie_days": 30,
+        "price": 87.0
+      },
+      {
+        "network": "eduzz",
+        "product_name": "Curso de Bolsa de Valores para Iniciantes",
+        "product_url": "https://eduzz.com/bolsa-valores?afiliado={affiliate_id}",
+        "commission_type": "percentage",
+        "commission_value": 50.0,
+        "keywords": [
+          "bolsa",
+          "valores",
+          "acoes",
+          "investir",
+          "iniciante"
+        ],
+        "cookie_days": 30,
+        "price": 97.0
+      },
+      {
+        "network": "eduzz",
+        "product_name": "Metodo de Renda Extra Online",
+        "product_url": "https://eduzz.com/renda-extra?afiliado={affiliate_id}",
+        "commission_type": "percentage",
+        "commission_value": 60.0,
+        "keywords": [
+          "renda",
+          "extra",
+          "online",
+          "dinheiro",
+          "trabalhar"
+        ],
+        "cookie_days": 30,
+        "price": 97.0
+      },
+      {
+        "network": "kiwify",
+        "product_name": "Guia de Renda Passiva",
+        "product_url": "https://kiwify.app/guia-renda-passiva?aff={affiliate_id}",
+        "commission_type": "percentage",
+        "commission_value": 70.0,
+        "keywords": [
+          "renda passiva",
+          "investimento",
+          "guia",
+          "financas",
+          "dinheiro"
+        ],
+        "cookie_days": 30,
+        "price": 67.0
+      },
+      {
+        "network": "kiwify",
+        "product_name": "Planilha de Gastos Inteligente",
+        "product_url": "https://kiwify.app/planilha-gastos?aff={affiliate_id}",
+        "commission_type": "percentage",
+        "commission_value": 80.0,
+        "keywords": [
+          "planilha",
+          "gastos",
+          "orcamento",
+          "financas",
+          "controle"
+        ],
+        "cookie_days": 30,
+        "price": 67.0
+      },
+      {
+        "network": "mercadolivre",
+        "product_name": "Livro: O Homem Mais Rico da Babilonia",
+        "product_url": "https://mercadolivre.com.br/livro-homem-rico-babilonia",
+        "commission_type": "percentage",
+        "commission_value": 5.0,
+        "keywords": [
+          "livro",
+          "financas",
+          "babilonia",
+          "investimento",
+          "educacao financeira"
+        ],
+        "cookie_days": 1,
+        "price": 59.9
+      },
+      {
+        "network": "shopee",
+        "product_name": "Cofrinho Eletronico",
+        "product_url": "https://shopee.com.br/cofrinho-eletronico",
+        "commission_type": "percentage",
+        "commission_value": 7.0,
+        "keywords": [
+          "cofrinho",
+          "economizar",
+          "poupanca",
+          "dinheiro",
+          "presente"
+        ],
+        "cookie_days": 7,
+        "price": 39.9
+      },
+      {
+        "network": "shein",
+        "product_name": "Carteira Anti-RFID",
+        "product_url": "https://shein.com/carteira-anti-rfid",
+        "commission_type": "percentage",
+        "commission_value": 6.0,
+        "keywords": [
+          "carteira",
+          "rfid",
+          "seguranca",
+          "protecao",
+          "acessorio"
+        ],
+        "cookie_days": 7,
+        "price": 29.9
+      },
+      {
+        "network": "aliexpress",
+        "product_name": "Calculadora Cientifica",
+        "product_url": "https://aliexpress.com/calculadora-cientifica",
+        "commission_type": "percentage",
+        "commission_value": 5.0,
+        "keywords": [
+          "calculadora",
+          "cientifica",
+          "matematica",
+          "estudo",
+          "investimento"
+        ],
+        "cookie_days": 7,
+        "price": 35.9
+      },
+      {
+        "network": "mercadolivre",
+        "product_name": "Livro Pai Rico Pai Pobre",
+        "product_url": "https://mercadolivre.com.br/p/MLB6789012?afiliado={affiliate_id}",
+        "product_id": "MLB6789012",
+        "commission_type": "percentage",
+        "commission_value": 5.0,
+        "keywords": [
+          "livro",
+          "financas",
+          "investimento"
+        ],
+        "cookie_days": 7,
+        "auto_collected": true,
+        "price": 59.9
+      },
+      {
+        "network": "mercadolivre",
+        "product_name": "Cofre Eletronico Portatil",
+        "product_url": "https://mercadolivre.com.br/p/MLB7890123?afiliado={affiliate_id}",
+        "product_id": "MLB7890123",
+        "commission_type": "percentage",
+        "commission_value": 4.0,
+        "keywords": [
+          "cofre",
+          "economizar",
+          "dinheiro"
+        ],
+        "cookie_days": 7,
+        "auto_collected": true,
+        "price": 59.9
+      },
+      {
+        "network": "mercadolivre",
+        "product_name": "Carteira Anti-RFID",
+        "product_url": "https://mercadolivre.com.br/p/MLB8901234?afiliado={affiliate_id}",
+        "product_id": "MLB8901234",
+        "commission_type": "percentage",
+        "commission_value": 5.0,
+        "keywords": [
+          "carteira",
+          "rfid",
+          "protecao"
+        ],
+        "cookie_days": 7,
+        "auto_collected": true,
+        "price": 59.9
+      },
+      {
+        "network": "kiwify",
+        "product_name": "Método Renda Extra Urgente",
+        "commission_type": "percentage",
+        "commission_value": 70,
+        "cookie_days": 30,
+        "product_url": "https://kiwify.app/método-renda-extra-u?aff={affiliate_id}",
+        "price": 67.0
+      },
+      {
+        "network": "eduzz",
+        "product_name": "Curso Bolsa de Valores Avançado",
+        "commission_type": "percentage",
+        "commission_value": 50,
+        "cookie_days": 30,
+        "product_url": "https://eduzz.com/curso-bolsa-de-valor?af={affiliate_id}",
+        "price": 87.0
+      }
+    ],
+    "saude": [
+      {
+        "network": "hotmart",
+        "product_name": "Guia de Alimentação Saudável",
+        "product_url": "https://go.hotmart.com/TEST123?src=ca&product=guia-de-alimentação-saudável",
+        "commission_type": "percentage",
+        "commission_value": 60.0,
+        "keywords": [
+          "alimentação",
+          "saudavel",
+          "dieta",
+          "nutricao",
+          "emagrecer"
+        ],
+        "cookie_days": 30,
+        "price": 97.0
+      },
+      {
+        "network": "hotmart",
+        "product_name": "Curso de Exercícios em Casa",
+        "product_url": "https://go.hotmart.com/TEST123?src=ca&product=curso-de-exercícios-em-casa",
+        "commission_type": "percentage",
+        "commission_value": 50.0,
+        "keywords": [
+          "exercicio",
+          "treino",
+          "casa",
+          "academia",
+          "corpo"
+        ],
+        "cookie_days": 30,
+        "price": 97.0
+      },
+      {
+        "network": "amazon",
+        "product_name": "Tapete de Yoga Profissional",
+        "product_url": "https://amzn.to/3XABCD5",
+        "commission_type": "percentage",
+        "commission_value": 5.0,
+        "keywords": [
+          "yoga",
+          "tapete",
+          "exercicio",
+          "alongamento",
+          "meditacao"
+        ],
+        "cookie_days": 1,
+        "price": 79.9
+      },
+      {
+        "network": "monetizze",
+        "product_name": "Guia Alimentacao Saudavel",
+        "product_url": "https://monetizze.com.br/guia-alimentacao-sau?af=rFer1XGSY9vzM84PIBwSgUXKAV9MBKWY",
+        "commission_type": "percentage",
+        "commission_value": 60.0,
+        "keywords": [
+          "alimentacao",
+          "dieta",
+          "saudavel",
+          "nutricao",
+          "emagrecer"
+        ],
+        "cookie_days": 30,
+        "price": 67.0
+      },
+      {
+        "network": "eduzz",
+        "product_name": "Guia de Emagrecimento Saudavel",
+        "product_url": "https://eduzz.com/emagrecimento-saudavel?afiliado={affiliate_id}",
+        "commission_type": "percentage",
+        "commission_value": 60.0,
+        "keywords": [
+          "emagrecer",
+          "dieta",
+          "saude",
+          "corpo",
+          "peso"
+        ],
+        "cookie_days": 30,
+        "price": 77.0
+      },
+      {
+        "network": "kiwify",
+        "product_name": "Curso de Meditacao Guiada",
+        "product_url": "https://kiwify.app/meditacao-guiada?aff={affiliate_id}",
+        "commission_type": "percentage",
+        "commission_value": 60.0,
+        "keywords": [
+          "meditacao",
+          "saude mental",
+          "relaxamento",
+          "curso",
+          "bem-estar"
+        ],
+        "cookie_days": 30,
+        "price": 57.0
+      },
+      {
+        "network": "kiwify",
+        "product_name": "Guia de Sono Reparador",
+        "product_url": "https://kiwify.app/sono-reparador?aff={affiliate_id}",
+        "commission_type": "percentage",
+        "commission_value": 50.0,
+        "keywords": [
+          "sono",
+          "insonia",
+          "saude",
+          "guia",
+          "bem-estar"
+        ],
+        "cookie_days": 30,
+        "price": 57.0
+      },
+      {
+        "network": "mercadolivre",
+        "product_name": "Kit Faixa Elasticas Exercicio",
+        "product_url": "https://mercadolivre.com.br/kit-faixas-elasticas",
+        "commission_type": "percentage",
+        "commission_value": 6.0,
+        "keywords": [
+          "faixa elastica",
+          "exercicio",
+          "musculacao",
+          "fitness",
+          "treino"
+        ],
+        "cookie_days": 1,
+        "price": 69.9
+      },
+      {
+        "network": "shopee",
+        "product_name": "Garrafa Termica Inox 1L",
+        "product_url": "https://shopee.com.br/garrafa-termica-inox",
+        "commission_type": "percentage",
+        "commission_value": 6.0,
+        "keywords": [
+          "garrafa",
+          "termica",
+          "inox",
+          "agua",
+          "saude"
+        ],
+        "cookie_days": 7,
+        "price": 49.9
+      },
+      {
+        "network": "shein",
+        "product_name": "Tapete Yoga Antiderrapante",
+        "product_url": "https://shein.com/tapete-yoga-antiderrapante",
+        "commission_type": "percentage",
+        "commission_value": 7.0,
+        "keywords": [
+          "tapete",
+          "yoga",
+          "antiderrapante",
+          "exercicio",
+          "bem-estar"
+        ],
+        "cookie_days": 7,
+        "price": 39.9
+      },
+      {
+        "network": "aliexpress",
+        "product_name": "Massageador Eletrico Portatil",
+        "product_url": "https://aliexpress.com/massageador-portatil",
+        "commission_type": "percentage",
+        "commission_value": 5.0,
+        "keywords": [
+          "massageador",
+          "eletrico",
+          "portatil",
+          "relaxamento",
+          "dor muscular"
+        ],
+        "cookie_days": 7,
+        "price": 42.9
+      },
+      {
+        "network": "mercadolivre",
+        "product_name": "Kit Faixas Elasticas",
+        "product_url": "https://mercadolivre.com.br/p/MLB9012345?afiliado={affiliate_id}",
+        "product_id": "MLB9012345",
+        "commission_type": "percentage",
+        "commission_value": 4.0,
+        "keywords": [
+          "faixa elastica",
+          "exercicio",
+          "fitness"
+        ],
+        "cookie_days": 7,
+        "auto_collected": true,
+        "price": 69.9
+      },
+      {
+        "network": "mercadolivre",
+        "product_name": "Garrafa Termica Inox 1L",
+        "product_url": "https://mercadolivre.com.br/p/MLB0123456?afiliado={affiliate_id}",
+        "product_id": "MLB0123456",
+        "commission_type": "percentage",
+        "commission_value": 3.0,
+        "keywords": [
+          "garrafa",
+          "termica",
+          "agua"
+        ],
+        "cookie_days": 7,
+        "auto_collected": true,
+        "price": 69.9
+      },
+      {
+        "network": "mercadolivre",
+        "product_name": "Tapete Yoga",
+        "product_url": "https://mercadolivre.com.br/p/MLB1122334?afiliado={affiliate_id}",
+        "product_id": "MLB1122334",
+        "commission_type": "percentage",
+        "commission_value": 4.0,
+        "keywords": [
+          "tapete",
+          "yoga",
+          "exercicio"
+        ],
+        "cookie_days": 7,
+        "auto_collected": true,
+        "price": 69.9
+      },
+      {
+        "network": "shopee",
+        "product_name": "Garrafa Squeeze Academia",
+        "product_url": "https://shopee.com.br/product/321098765/789012345?af_id={affiliate_id}",
+        "product_id": "789012345",
+        "commission_type": "percentage",
+        "commission_value": 6.0,
+        "keywords": [
+          "garrafa",
+          "squeeze",
+          "academia"
+        ],
+        "cookie_days": 7,
+        "auto_collected": true,
+        "price": 49.9
+      },
+      {
+        "network": "shopee",
+        "product_name": "Kit Resistencia Elastica",
+        "product_url": "https://shopee.com.br/product/210987654/890123456?af_id={affiliate_id}",
+        "product_id": "890123456",
+        "commission_type": "percentage",
+        "commission_value": 5.0,
+        "keywords": [
+          "resistencia",
+          "elastico",
+          "treino"
+        ],
+        "cookie_days": 7,
+        "auto_collected": true,
+        "price": 49.9
+      },
+      {
+        "network": "shein",
+        "product_name": "Top Academia Feminino",
+        "product_url": "https://shein.com.br/p/10000004.html?aff={affiliate_id}",
+        "product_id": "10000004",
+        "commission_type": "percentage",
+        "commission_value": 9.0,
+        "keywords": [
+          "top",
+          "academia",
+          "feminino",
+          "treino"
+        ],
+        "cookie_days": 7,
+        "auto_collected": true,
+        "price": 39.9
+      },
+      {
+        "network": "shein",
+        "product_name": "Legging Compressao",
+        "product_url": "https://shein.com.br/p/10000005.html?aff={affiliate_id}",
+        "product_id": "10000005",
+        "commission_type": "percentage",
+        "commission_value": 8.0,
+        "keywords": [
+          "legging",
+          "compressao",
+          "academia"
+        ],
+        "cookie_days": 7,
+        "auto_collected": true,
+        "price": 39.9
+      },
+      {
+        "network": "aliexpress",
+        "product_name": "Relogio Smartwatch S8",
+        "product_url": "https://www.aliexpress.com/item/1005006789012.html?aff_fcid={affiliate_id}",
+        "product_id": "1005006789012",
+        "commission_type": "percentage",
+        "commission_value": 4.0,
+        "keywords": [
+          "relogio",
+          "smartwatch",
+          "fitness"
+        ],
+        "cookie_days": 7,
+        "auto_collected": true,
+        "price": 42.9
+      },
+      {
+        "network": "kiwify",
+        "product_name": "Protocolo Emagrecimento Rápido",
+        "commission_type": "percentage",
+        "commission_value": 70,
+        "cookie_days": 30,
+        "product_url": "https://kiwify.app/protocolo-emagrecime?aff={affiliate_id}",
+        "price": 67.0
+      },
+      {
+        "network": "eduzz",
+        "product_name": "Guia de Yoga e Meditação",
+        "commission_type": "percentage",
+        "commission_value": 50,
+        "cookie_days": 30,
+        "product_url": "https://eduzz.com/guia-de-yoga-e-medit?af={affiliate_id}",
+        "price": 87.0
+      }
+    ],
+    "carreira": [
+      {
+        "network": "hotmart",
+        "product_name": "Curso de LinkedIn para Iniciantes",
+        "product_url": "https://go.hotmart.com/TEST123?src=ca&product=curso-de-linkedin-para-inician",
+        "commission_type": "percentage",
+        "commission_value": 60.0,
+        "keywords": [
+          "linkedin",
+          "curriculo",
+          "emprego",
+          "carreira",
+          "perfil"
+        ],
+        "cookie_days": 30,
+        "price": 127.0
+      },
+      {
+        "network": "hotmart",
+        "product_name": "Guia de Entrevista de Emprego",
+        "product_url": "https://go.hotmart.com/TEST123?src=ca&product=guia-de-entrevista-de-emprego",
+        "commission_type": "percentage",
+        "commission_value": 70.0,
+        "keywords": [
+          "entrevista",
+          "emprego",
+          "selecao",
+          "rh",
+          "contratacao"
+        ],
+        "cookie_days": 30,
+        "price": 127.0
+      },
+      {
+        "network": "amazon",
+        "product_name": "Livro: Como Fazer Amigos e Influenciar Pessoas",
+        "product_url": "https://amzn.to/3XABCD6",
+        "commission_type": "percentage",
+        "commission_value": 10.0,
+        "keywords": [
+          "livro",
+          "carreira",
+          "networking",
+          "influencia",
+          "comunicacao"
+        ],
+        "cookie_days": 1,
+        "price": 59.9
+      },
+      {
+        "network": "monetizze",
+        "product_name": "Curso de Linkedin para Vagas",
+        "product_url": "https://monetizze.com.br/curso-de-linkedin-pa?af=rFer1XGSY9vzM84PIBwSgUXKAV9MBKWY",
+        "commission_type": "percentage",
+        "commission_value": 50.0,
+        "keywords": [
+          "linkedin",
+          "emprego",
+          "vagas",
+          "curriculo",
+          "carreira"
+        ],
+        "cookie_days": 30,
+        "price": 77.0
+      },
+      {
+        "network": "eduzz",
+        "product_name": "Curso de Oratoria e Comunicacao",
+        "product_url": "https://eduzz.com/oratoria-comunicacao?afiliado={affiliate_id}",
+        "commission_type": "percentage",
+        "commission_value": 50.0,
+        "keywords": [
+          "oratoria",
+          "comunicacao",
+          "falar",
+          "apresentar",
+          "carreira"
+        ],
+        "cookie_days": 30,
+        "price": 97.0
+      },
+      {
+        "network": "kiwify",
+        "product_name": "Curso de Marketing Digital",
+        "product_url": "https://kiwify.app/marketing-digital?aff={affiliate_id}",
+        "commission_type": "percentage",
+        "commission_value": 50.0,
+        "keywords": [
+          "marketing digital",
+          "curso",
+          "carreira",
+          "online",
+          "negocios"
+        ],
+        "cookie_days": 30,
+        "price": 67.0
+      },
+      {
+        "network": "kiwify",
+        "product_name": "Guia de Freelancer de Sucesso",
+        "product_url": "https://kiwify.app/freelancer-sucesso?aff={affiliate_id}",
+        "commission_type": "percentage",
+        "commission_value": 60.0,
+        "keywords": [
+          "freelancer",
+          "trabalho",
+          "carreira",
+          "guia",
+          "renda"
+        ],
+        "cookie_days": 30,
+        "price": 67.0
+      },
+      {
+        "network": "mercadolivre",
+        "product_name": "Agenda Planner 2026",
+        "product_url": "https://mercadolivre.com.br/agenda-planner-2026",
+        "commission_type": "percentage",
+        "commission_value": 5.0,
+        "keywords": [
+          "agenda",
+          "planner",
+          "2026",
+          "organizacao",
+          "produtividade"
+        ],
+        "cookie_days": 1,
+        "price": 69.9
+      },
+      {
+        "network": "shopee",
+        "product_name": "Caneta Digitadora Smart",
+        "product_url": "https://shopee.com.br/caneta-digitadora",
+        "commission_type": "percentage",
+        "commission_value": 8.0,
+        "keywords": [
+          "caneta",
+          "digitadora",
+          "smart",
+          "eficiencia",
+          "escritorio"
+        ],
+        "cookie_days": 7,
+        "price": 49.9
+      },
+      {
+        "network": "shein",
+        "product_name": "Mochila Executiva Couro",
+        "product_url": "https://shein.com/mochila-executiva-couro",
+        "commission_type": "percentage",
+        "commission_value": 6.0,
+        "keywords": [
+          "mochila",
+          "executiva",
+          "couro",
+          "trabalho",
+          "profissional"
+        ],
+        "cookie_days": 7,
+        "price": 39.9
+      },
+      {
+        "network": "aliexpress",
+        "product_name": "Kit Home Office Completo",
+        "product_url": "https://aliexpress.com/kit-home-office",
+        "commission_type": "percentage",
+        "commission_value": 4.0,
+        "keywords": [
+          "home office",
+          "kit",
+          "escritorio",
+          "trabalho",
+          "produtividade"
+        ],
+        "cookie_days": 7,
+        "price": 35.9
+      },
+      {
+        "network": "mercadolivre",
+        "product_name": "Caneta Smart Gravador",
+        "product_url": "https://mercadolivre.com.br/p/MLB3344556?afiliado={affiliate_id}",
+        "product_id": "MLB3344556",
+        "commission_type": "percentage",
+        "commission_value": 4.0,
+        "keywords": [
+          "caneta",
+          "smart",
+          "gravador"
+        ],
+        "cookie_days": 7,
+        "auto_collected": true,
+        "price": 69.9
+      },
+      {
+        "network": "mercadolivre",
+        "product_name": "Mochila Notebook 15.6",
+        "product_url": "https://mercadolivre.com.br/p/MLB4455667?afiliado={affiliate_id}",
+        "product_id": "MLB4455667",
+        "commission_type": "percentage",
+        "commission_value": 3.0,
+        "keywords": [
+          "mochila",
+          "notebook",
+          "trabalho"
+        ],
+        "cookie_days": 7,
+        "auto_collected": true,
+        "price": 69.9
+      },
+      {
+        "network": "shopee",
+        "product_name": "Organizador Mesa Escritorio",
+        "product_url": "https://shopee.com.br/product/543210987/567890123?af_id={affiliate_id}",
+        "product_id": "567890123",
+        "commission_type": "percentage",
+        "commission_value": 6.0,
+        "keywords": [
+          "organizador",
+          "mesa",
+          "escritorio"
+        ],
+        "cookie_days": 7,
+        "auto_collected": true,
+        "price": 49.9
+      },
+      {
+        "network": "shopee",
+        "product_name": "Kit Canetas Coloridas",
+        "product_url": "https://shopee.com.br/product/432109876/678901234?af_id={affiliate_id}",
+        "product_id": "678901234",
+        "commission_type": "percentage",
+        "commission_value": 8.0,
+        "keywords": [
+          "canetas",
+          "coloridas",
+          "material"
+        ],
+        "cookie_days": 7,
+        "auto_collected": true,
+        "price": 49.9
+      },
+      {
+        "network": "shein",
+        "product_name": "Vestido Midi Floral",
+        "product_url": "https://shein.com.br/p/10000001.html?aff={affiliate_id}",
+        "product_id": "10000001",
+        "commission_type": "percentage",
+        "commission_value": 8.0,
+        "keywords": [
+          "vestido",
+          "midi",
+          "floral",
+          "feminino"
+        ],
+        "cookie_days": 7,
+        "auto_collected": true,
+        "price": 39.9
+      },
+      {
+        "network": "shein",
+        "product_name": "Blusa Social Feminina",
+        "product_url": "https://shein.com.br/p/10000002.html?aff={affiliate_id}",
+        "product_id": "10000002",
+        "commission_type": "percentage",
+        "commission_value": 8.0,
+        "keywords": [
+          "blusa",
+          "social",
+          "feminina",
+          "trabalho"
+        ],
+        "cookie_days": 7,
+        "auto_collected": true,
+        "price": 39.9
+      },
+      {
+        "network": "shein",
+        "product_name": "Calca Sarja Masculina",
+        "product_url": "https://shein.com.br/p/10000003.html?aff={affiliate_id}",
+        "product_id": "10000003",
+        "commission_type": "percentage",
+        "commission_value": 7.0,
+        "keywords": [
+          "calca",
+          "sarja",
+          "masculina",
+          "trabalho"
+        ],
+        "cookie_days": 7,
+        "auto_collected": true,
+        "price": 39.9
+      },
+      {
+        "network": "aliexpress",
+        "product_name": "Caderno Inteligente Rocketbook",
+        "product_url": "https://www.aliexpress.com/item/1005004567890.html?aff_fcid={affiliate_id}",
+        "product_id": "1005004567890",
+        "commission_type": "percentage",
+        "commission_value": 5.0,
+        "keywords": [
+          "caderno",
+          "inteligente",
+          "reutilizavel"
+        ],
+        "cookie_days": 7,
+        "auto_collected": true,
+        "price": 35.9
+      },
+      {
+        "network": "aliexpress",
+        "product_name": "Caneta Digital Tablet",
+        "product_url": "https://www.aliexpress.com/item/1005005678901.html?aff_fcid={affiliate_id}",
+        "product_id": "1005005678901",
+        "commission_type": "percentage",
+        "commission_value": 6.0,
+        "keywords": [
+          "caneta",
+          "digital",
+          "tablet",
+          "stylus"
+        ],
+        "cookie_days": 7,
+        "auto_collected": true,
+        "price": 35.9
+      },
+      {
+        "network": "kiwify",
+        "product_name": "Carreira Blindada com LinkedIn",
+        "commission_type": "percentage",
+        "commission_value": 70,
+        "cookie_days": 30,
+        "product_url": "https://kiwify.app/carreira-blindada-co?aff={affiliate_id}",
+        "price": 67.0
+      },
+      {
+        "network": "eduzz",
+        "product_name": "Curso de Oratória e Persuasão",
+        "commission_type": "percentage",
+        "commission_value": 50,
+        "cookie_days": 30,
+        "product_url": "https://eduzz.com/curso-de-oratória-e-?af={affiliate_id}",
+        "price": 87.0
+      }
+    ]
+  },
+  "_disclaimer": "Substitua os links exemplo (amzn.to, hotm.art) pelos seus links reais de afiliado.",
+  "cpa_offers": {
+    "_description": "Ofertas CPA para tráfego pago (ativado quando receita > R$ 500/mês)",
+    "networks": {
+      "veriente": {
+        "env_var": "VERIENTE_API_KEY",
+        "products": [
+          {
+            "name": "Cartão de Crédito",
+            "payout": 20.0,
+            "keywords": [
+              "cartão",
+              "crédito",
+              "cartao"
+            ]
+          },
+          {
+            "name": "Seguro de Vida",
+            "payout": 15.0,
+            "keywords": [
+              "seguro",
+              "proteção",
+              "vida"
+            ]
+          },
+          {
+            "name": "Empréstimo Pessoal",
+            "payout": 12.0,
+            "keywords": [
+              "emprestimo",
+              "dinheiro"
+            ]
+          }
+        ]
+      },
+      "pagbrasil": {
+        "env_var": "PAGBRASIL_API_KEY",
+        "products": [
+          {
+            "name": "Lead Curso Online",
+            "payout": 8.0,
+            "keywords": [
+              "curso",
+              "aprender"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "hotmart_offers": {
+    "tecnologia": [
+      {
+        "network": "hotmart",
+        "product_name": "Curso Completo de Python",
+        "product_url": "https://hotm.art/seulink_python",
+        "commission_type": "percentage",
+        "commission_value": 50.0,
+        "keywords": [
+          "python",
+          "programacao",
+          "curso",
+          "desenvolvimento",
+          "programador"
+        ],
+        "cookie_days": 30,
+        "description": "Aprenda Python do zero ao avançado com projetos reais",
+        "category": "cursos"
+      },
+      {
+        "network": "hotmart",
+        "product_name": "Inteligência Artificial para Iniciantes",
+        "product_url": "https://hotm.art/seulink_ia",
+        "commission_type": "percentage",
+        "commission_value": 60.0,
+        "keywords": [
+          "inteligencia artificial",
+          "ia",
+          "machine learning",
+          "chatgpt",
+          "ia generativa"
+        ],
+        "cookie_days": 30,
+        "description": "Domine IA sem saber programar",
+        "category": "cursos"
+      }
+    ],
+    "financas": [
+      {
+        "network": "hotmart",
+        "product_name": "Método de Investimentos para Iniciantes",
+        "product_url": "https://hotm.art/seulink_invest",
+        "commission_type": "percentage",
+        "commission_value": 50.0,
+        "keywords": [
+          "investir",
+          "acoes",
+          "renda variavel",
+          "bolsa de valores",
+          "renda passiva"
+        ],
+        "cookie_days": 30,
+        "description": "Aprenda a investir do zero com segurança",
+        "category": "cursos"
+      },
+      {
+        "network": "hotmart",
+        "product_name": "Planilha de Controle Financeiro",
+        "product_url": "https://hotm.art/seulink_planilha",
+        "commission_type": "percentage",
+        "commission_value": 70.0,
+        "keywords": [
+          "planilha",
+          "controle financeiro",
+          "orcamento",
+          "gastos",
+          "economizar"
+        ],
+        "cookie_days": 30,
+        "description": "Planilha completa para organizar suas finanças",
+        "category": "ferramentas"
+      }
+    ],
+    "saude": [
+      {
+        "network": "hotmart",
+        "product_name": "Guia de Alimentação Saudável",
+        "product_url": "https://hotm.art/seulink_saude",
+        "commission_type": "percentage",
+        "commission_value": 60.0,
+        "keywords": [
+          "alimentacao",
+          "dieta",
+          "nutricao",
+          "saudavel",
+          "emagrecer"
+        ],
+        "cookie_days": 30,
+        "description": "Guia completo para uma vida mais saudável",
+        "category": "ebooks"
+      }
+    ],
+    "carreira": [
+      {
+        "network": "hotmart",
+        "product_name": "Curso de LinkedIn para Iniciantes",
+        "product_url": "https://hotm.art/seulink_linkedin",
+        "commission_type": "percentage",
+        "commission_value": 50.0,
+        "keywords": [
+          "linkedin",
+          "carreira",
+          "emprego",
+          "networking",
+          "curriculo"
+        ],
+        "cookie_days": 30,
+        "description": "Transforme seu LinkedIn em uma máquina de oportunidades",
+        "category": "cursos"
+      }
+    ]
+  }
+}

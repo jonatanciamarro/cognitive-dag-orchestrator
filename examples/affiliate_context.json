@@ -1,0 +1,36 @@
+{
+  "campaign": {
+    "campaign_id": "aff_1001",
+    "objective": "gerar receita com marketing de afiliados",
+    "niche": "marketing digital para iniciantes",
+    "channels": ["seo", "newsletter", "youtube"],
+    "headline": "Guia Completo de Marketing de Afiliados para Iniciantes",
+    "description": "Conteúdo informativo e comercial sobre marketing de afiliados, com links para produtos recomendados.",
+    "copy": "Aprenda como começar no marketing de afiliados do zero, sem investimento inicial. (disclosure_afiliado - alguns links são de afiliados e eu posso ganhar comissão)",
+    "cta": "Comece agora",
+    "budget": 1,
+    "target_cpa": 0,
+    "target_roas": 0
+  },
+  "signals": {
+    "daily_published": [0, 0, 0],
+    "daily_clicks": [0, 0, 0],
+    "daily_conversions": [0, 0, 0],
+    "daily_revenue": [0, 0, 0]
+  },
+  "memory": [
+    {
+      "name": "nicho marketing digital",
+      "lessons": "Conteúdo para iniciantes gera mais tráfego orgânico. Reviews de ferramentas convertem melhor."
+    }
+  ],
+  "policy": {
+    "restricted_terms": ["garantido", "dinheiro fácil", "enriqueça"],
+    "required_disclosures": ["disclosure_afiliado"],
+    "guardrails": [
+      "Sempre incluir disclosure de afiliado.",
+      "Não prometer resultados financeiros.",
+      "Conteúdo deve ter valor real, não ser apenas venda."
+    ]
+  }
+}

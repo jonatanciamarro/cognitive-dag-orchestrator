@@ -1,0 +1,204 @@
+{
+  "id": "revenue_orchestration",
+  "name": "Onda 2 — Orquestração de Múltiplas Fontes de Renda",
+  "description": "Analisa portfólio, detecta oportunidades, cria produtos, otimiza alocação e reinveste (ADR-002)",
+  "vertical": "money",
+  "schedule": {
+    "type": "interval",
+    "hours": 168
+  },
+  "steps": [
+    {
+      "id": "opportunity_scan",
+      "agent": "OpportunityDetectorAgent",
+      "description": "Escaneia mercado em busca de novas oportunidades de receita",
+      "dependencies": [],
+      "timeout": 120,
+      "config": {
+        "scan_deep": true
+      },
+      "deps": []
+    },
+    {
+      "id": "portfolio_analysis",
+      "agent": "PortfolioOptimizerAgent",
+      "description": "Analisa portfólio atual de fontes de renda e recomenda alocação",
+      "dependencies": [
+        "opportunity_scan"
+      ],
+      "timeout": 120,
+      "config": {
+        "include_simulation": true
+      },
+      "deps": []
+    },
+    {
+      "id": "digital_product_creation",
+      "agent": "DigitalProductAgent",
+      "description": "Cria produtos digitais baseados nas oportunidades detectadas",
+      "dependencies": [
+        "opportunity_scan"
+      ],
+      "timeout": 300,
+      "config": {
+        "product_types": [
+          "ebook",
+          "template",
+          "checklist"
+        ]
+      },
+      "foreach": "product_ideas",
+      "deps": []
+    },
+    {
+      "id": "membership_planning",
+      "agent": "MembershipAgent",
+      "description": "Planeja planos de assinatura e conteúdo exclusivo",
+      "dependencies": [
+        "portfolio_analysis"
+      ],
+      "timeout": 120,
+      "config": {
+        "max_tiers": 3
+      },
+      "deps": []
+    },
+    {
+      "id": "email_sequence_upgrade",
+      "agent": "EmailMarketingAgent",
+      "description": "Atualiza sequências de email para novas ofertas e produtos",
+      "dependencies": [
+        "digital_product_creation",
+        "membership_planning"
+      ],
+      "timeout": 180,
+      "deps": []
+    },
+    {
+      "id": "compounding_plan",
+      "agent": "CompoundingEngine",
+      "description": "Calcula reinvestimento: receita direta → passiva → residual",
+      "dependencies": [
+        "portfolio_analysis"
+      ],
+      "timeout": 60,
+      "deps": []
+    },
+    {
+      "id": "revenue_dashboard",
+      "agent": "RevenueOrchestratorAgent",
+      "description": "Gera dashboard completo de todas as 13 fontes de renda",
+      "dependencies": [],
+      "timeout": 60,
+      "config": {
+        "action": "dashboard"
+      },
+      "deps": []
+    },
+    {
+      "id": "revenue_protocol_check",
+      "agent": "RevenueProtocolAgent",
+      "description": "Verifica status de configuracao de cada fonte de renda",
+      "dependencies": [
+        "revenue_dashboard"
+      ],
+      "timeout": 60,
+      "config": {
+        "action": "status"
+      },
+      "deps": []
+    },
+    {
+      "id": "generic_affiliate_scan",
+      "agent": "GenericAffiliateNetworkAgent",
+      "description": "Valida links das redes genericas (Monetizze, Kiwify, Eduzz)",
+      "dependencies": [
+        "revenue_protocol_check"
+      ],
+      "timeout": 60,
+      "config": {
+        "network": "monetizze",
+        "action": "validate"
+      },
+      "foreach": [
+        "monetizze",
+        "kiwify",
+        "eduzz"
+      ],
+      "deps": []
+    },
+    {
+      "id": "adsense_optimization",
+      "agent": "AdSenseAgent",
+      "description": "Otimiza unidades de anuncio do Google AdSense",
+      "dependencies": [
+        "revenue_protocol_check"
+      ],
+      "timeout": 60,
+      "config": {
+        "action": "optimize"
+      },
+      "deps": []
+    },
+    {
+      "id": "cpa_discovery",
+      "agent": "CPAAgent",
+      "description": "Descobre novas ofertas CPA nos nichos ativos",
+      "dependencies": [
+        "revenue_protocol_check"
+      ],
+      "timeout": 120,
+      "config": {
+        "action": "discover"
+      },
+      "deps": []
+    },
+    {
+      "id": "revenue_next_steps",
+      "agent": "RevenueOrchestratorAgent",
+      "description": "Recomenda proximos passos baseado no estado atual",
+      "dependencies": [
+        "generic_affiliate_scan",
+        "adsense_optimization",
+        "cpa_discovery"
+      ],
+      "timeout": 60,
+      "config": {
+        "action": "next_steps"
+      },
+      "deps": []
+    },
+    {
+      "id": "revenue_report",
+      "agent": "RevenueMonitorAgent",
+      "description": "Compila relatório completo de receita por fonte",
+      "dependencies": [
+        "compounding_plan",
+        "email_sequence_upgrade"
+      ],
+      "timeout": 60,
+      "config": {
+        "generate_pdf": false,
+        "include_projections": true
+      },
+      "deps": []
+    }
+  ],
+  "workflow_id": "revenue_orchestration_workflow",
+  "max_workers": 8,
+  "entry_points": [
+    "opportunity_scan",
+    "portfolio_analysis",
+    "digital_product_creation",
+    "membership_planning",
+    "email_sequence_upgrade",
+    "compounding_plan",
+    "revenue_dashboard",
+    "revenue_protocol_check",
+    "generic_affiliate_scan",
+    "adsense_optimization",
+    "cpa_discovery",
+    "revenue_next_steps",
+    "revenue_report"
+  ]
+}

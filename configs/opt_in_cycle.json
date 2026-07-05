@@ -1,0 +1,50 @@
+{
+  "name": "opt_in_only_cycle",
+  "description": "Campaign optimization cycle that only runs for explicit opt-in traffic.",
+  "mode": "opt_in_only",
+  "defaults": {
+    "dry_run": true,
+    "require_approval": true,
+    "record_memory": true
+  },
+  "policy": {
+    "requires_explicit_opt_in": true,
+    "requires_consent_record": true,
+    "requires_compliance_pass": true,
+    "block_on_missing_consent": true,
+    "allow_execution_only_after_approval": true
+  },
+  "metrics": {
+    "minimum_sample_size": 200,
+    "success_rate_min": 0.9,
+    "ctr_min": 0.02,
+    "cpa_max": 50.0,
+    "lookback_days": 7
+  },
+  "workflow": {
+    "states": [
+      "load_inputs",
+      "consent_gate",
+      "metrics_check",
+      "policy_review",
+      "generate_plan",
+      "await_approval",
+      "execute",
+      "record_memory"
+    ],
+    "stop_conditions": [
+      "missing_opt_in",
+      "missing_consent_record",
+      "metrics_below_threshold",
+      "policy_failure",
+      "approval_denied"
+    ]
+  },
+  "agents": [
+    "orchestrator",
+    "analytics",
+    "compliance",
+    "optimization",
+    "memory"
+  ]
+}

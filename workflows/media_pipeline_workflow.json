@@ -1,0 +1,62 @@
+{
+  "name": "media_pipeline",
+  "description": "🎬 PIPELINE CINEMATOGRÁFICO DE MÍDIA — Storyboard → Imagens → Vídeos → Áudio → Orquestração. Pipeline completo com qualidade cinematográfica usando ferramentas gratuitas.",
+  "max_workers": 3,
+  "steps": [
+    {
+      "id": "storyboard",
+      "agent": "storyboard",
+      "depends_on": [],
+      "description": "Planejar storyboards visuais para vídeos e imagens.",
+      "deps": []
+    },
+    {
+      "id": "cinematic_image_gen",
+      "agent": "cinematic_image_gen",
+      "depends_on": [
+        "storyboard"
+      ],
+      "description": "Gerar imagens cinematográficas com color grading, iluminação, tipografia.",
+      "deps": []
+    },
+    {
+      "id": "audio_production",
+      "agent": "audio_production",
+      "depends_on": [
+        "storyboard"
+      ],
+      "description": "Produzir narração TTS + música de fundo + mixagem profissional.",
+      "deps": []
+    },
+    {
+      "id": "cinematic_video_producer",
+      "agent": "cinematic_video_producer",
+      "depends_on": [
+        "storyboard",
+        "audio_production",
+        "cinematic_image_gen"
+      ],
+      "description": "Produzir vídeos cinematográficos com Ken Burns, transições e áudio.",
+      "deps": []
+    },
+    {
+      "id": "media_pipeline",
+      "agent": "media_pipeline",
+      "depends_on": [
+        "cinematic_image_gen",
+        "cinematic_video_producer",
+        "audio_production"
+      ],
+      "description": "Orquestrar pipeline de mídia e gerar relatório de qualidade.",
+      "deps": []
+    }
+  ],
+  "workflow_id": "media_pipeline_workflow",
+  "entry_points": [
+    "storyboard",
+    "cinematic_image_gen",
+    "audio_production",
+    "cinematic_video_producer",
+    "media_pipeline"
+  ]
+}

@@ -1,0 +1,34 @@
+version: "3.8"
+
+services:
+  autopilot:
+    build: .
+    container_name: campaign-autopilot
+    volumes:
+      - ./.state:/app/.state
+      - ./output:/app/output
+      - ./reports:/app/reports
+    env_file:
+      - .env
+    command: >
+      python scripts/autopilot.py
+      --workflow workflows/revenue_workflow.json
+      --context examples/content_workflow_context.json
+      --db .state/autopilot.db
+      --loop
+      --interval 48
+    restart: unless-stopped
+
+  dashboard:
+    build: .
+    container_name: campaign-autopilot-dashboard
+    ports:
+      - "8501:8501"
+    volumes:
+      - ./.state:/app/.state
+    env_file:
+      - .env
+    command: streamlit run dashboard/app.py --server.port=8501 --server.address=0.0.0.0
+    restart: unless-stopped
+    depends_on:
+      - autopilot

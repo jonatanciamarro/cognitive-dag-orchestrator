@@ -1,0 +1,100 @@
+{
+  "workflow_id": "hotmart_intelligence_pipeline",
+  "description": "Hotmart Affiliate Intelligence Protocol v1 — Pipeline de 10 fases para selecao e ativacao de produtos",
+  "version": "1.0.0",
+  "entry_points": [
+    "hotmart_discovery"
+  ],
+  "max_workers": 4,
+  "steps": [
+    {
+      "id": "hotmart_discovery",
+      "agent": "hotmart_discovery",
+      "description": "Fase 1 — Mapear produtos elegiveis no marketplace Hotmart",
+      "deps": [],
+      "timeout_s": 120
+    },
+    {
+      "id": "hotmart_triage",
+      "agent": "hotmart_triage",
+      "description": "Fase 2 — Triagem inicial: eliminar produtos inadequados",
+      "deps": [
+        "hotmart_discovery"
+      ],
+      "timeout_s": 60
+    },
+    {
+      "id": "hotmart_scoring",
+      "agent": "hotmart_scoring",
+      "description": "Fase 3 — Score de oportunidade (0-100) para produtos aprovados",
+      "deps": [
+        "hotmart_triage"
+      ],
+      "timeout_s": 60
+    },
+    {
+      "id": "hotmart_due_diligence",
+      "agent": "hotmart_due_diligence",
+      "description": "Fase 4 — Due diligence: pagina, presenca digital, produtor",
+      "deps": [
+        "hotmart_scoring"
+      ],
+      "timeout_s": 120
+    },
+    {
+      "id": "hotmart_affiliation",
+      "agent": "hotmart_affiliation",
+      "description": "Fase 5 — Afiliacao apos aprovacao da diligence",
+      "deps": [
+        "hotmart_due_diligence"
+      ],
+      "timeout_s": 60
+    },
+    {
+      "id": "hotmart_asset_collector",
+      "agent": "hotmart_asset_collector",
+      "description": "Fase 6 — Coleta de ativos (criativos, links, conteudo)",
+      "deps": [
+        "hotmart_affiliation"
+      ],
+      "timeout_s": 120
+    },
+    {
+      "id": "hotmart_normalizer",
+      "agent": "hotmart_normalizer",
+      "description": "Fase 7 — Normalizacao para formato padrao",
+      "deps": [
+        "hotmart_asset_collector"
+      ],
+      "timeout_s": 60
+    },
+    {
+      "id": "hotmart_ingestion",
+      "agent": "hotmart_ingestion",
+      "description": "Fase 8 — Ingestao na Product Knowledge Base",
+      "deps": [
+        "hotmart_normalizer"
+      ],
+      "timeout_s": 60
+    },
+    {
+      "id": "hotmart_enrichment",
+      "agent": "hotmart_enrichment",
+      "description": "Fase 9 — Enriquecimento: personas, mapas, analises",
+      "deps": [
+        "hotmart_ingestion"
+      ],
+      "timeout_s": 120
+    },
+    {
+      "id": "hotmart_activation",
+      "agent": "hotmart_activation",
+      "description": "Fase 10 — Ativacao: gerar dossie operacional completo",
+      "deps": [
+        "hotmart_enrichment"
+      ],
+      "timeout_s": 120
+    }
+  ],
+  "name": "hotmart_intelligence_pipeline"
+}

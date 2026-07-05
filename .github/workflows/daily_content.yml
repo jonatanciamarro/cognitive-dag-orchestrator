@@ -1,0 +1,71 @@
+name: 📰 Daily Content — Campaign Autopilot
+
+on:
+  schedule:
+    - cron: '0 6 * * *'   # 06:00 UTC = 03:00 BR
+    - cron: '0 18 * * *'  # 18:00 UTC = 15:00 BR
+  workflow_dispatch:       # Manual trigger
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
+      - name: 📥 Checkout
+        uses: actions/checkout@v4
+
+      - name: 🐍 Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      - name: 📦 Install Dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt 2>/dev/null || true
+
+      - name: 🧪 Test API Keys
+        env:
+          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: |
+          echo "Testing LLM providers..."
+          python3 -c "
+import sys; sys.path.insert(0, 'src')
+from campaign_autopilot.free_llm_providers import generate_text
+result = generate_text('Say hello in one word.', max_tokens=20)
+print(f'LLM Result: {result}')
+assert result is not None, 'LLM failed'
+print('✅ LLM working')
+"
+
+      - name: 🚀 Generate Content
+        env:
+          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: |
+          python3 scripts/run_all_niches.py --articles 2
+
+      - name: 📄 Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./site
+          force_orphan: true
+
+      - name: 📊 Report
+        run: |
+          echo "### 📰 Content Generated" >> $GITHUB_STEP_SUMMARY
+          echo "- Check the site: https://$(echo ${{ github.repository }} | cut -d'/' -f1).github.io/$(echo ${{ github.repository }} | cut -d'/' -f2)/" >> $GITHUB_STEP_SUMMARY
+          echo "- $(ls site/*/index.html 2>/dev/null | wc -l) articles published" >> $GITHUB_STEP_SUMMARY

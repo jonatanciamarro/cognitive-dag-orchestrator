@@ -1,0 +1,63 @@
+{
+  "_metadata": {
+    "name": "Traffic Recycling Workflow",
+    "description": "Reaproveita tráfego existente para múltiplas formas de monetização em camadas. Cria lead magnets, interstitials, exit-intent popups, cross-niche CTAs e tracking.",
+    "version": "1.0.0",
+    "trigger": "post_content_cycle",
+    "mode": "automatic"
+  },
+  "config": {
+    "recycle_threshold_visitors": 100,
+    "max_paths_per_article": 5,
+    "enable_exit_intent": true,
+    "enable_lead_magnet": true,
+    "enable_cross_niche": true,
+    "enable_interstitial": true
+  },
+  "steps": [
+    {
+      "id": "traffic_recycling_analysis",
+      "agent": "traffic_recycler",
+      "description": "Analisa artigos e recomenda caminhos de monetização adicionais",
+      "dependencies": [],
+      "deps": []
+    },
+    {
+      "id": "generate_interstitials",
+      "agent": "traffic_recycler",
+      "description": "Gera HTML para elementos de monetização (lead magnet, popup, cross-niche)",
+      "dependencies": [
+        "traffic_recycling_analysis"
+      ],
+      "deps": []
+    },
+    {
+      "id": "update_site_template",
+      "agent": "site_deploy",
+      "description": "Adiciona elementos de reciclagem ao template do site",
+      "dependencies": [
+        "generate_interstitials"
+      ],
+      "deps": []
+    },
+    {
+      "id": "memory_update",
+      "agent": "traffic_recycler",
+      "description": "Atualiza memória com dados de conversão e performance",
+      "dependencies": [
+        "traffic_recycling_analysis"
+      ],
+      "deps": []
+    }
+  ],
+  "workflow_id": "traffic_recycling_workflow",
+  "description": "Workflow traffic_recycling_workflow",
+  "max_workers": 4,
+  "entry_points": [
+    "traffic_recycling_analysis",
+    "generate_interstitials",
+    "update_site_template",
+    "memory_update"
+  ],
+  "name": "traffic_recycling_workflow"
+}

@@ -1,0 +1,39 @@
+[Unit]
+Description=Campaign Autopilot — 24/7 Marketing Automation
+After=network.target network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=root
+WorkingDirectory=/root/Documents/Codex/2026-05-30/New Project (1)
+ExecStart=/root/Documents/Codex/2026-05-30/New Project (1)/.venv/bin/python scripts/autopilot_daemon.py \
+    --workflow workflows/money_workflow.json \
+    --context examples/content_workflow_context.json \
+    --db .state/autopilot.db \
+    --interval 48 \
+    --max-restarts 5
+ExecStop=/root/Documents/Codex/2026-05-30/New Project (1)/.venv/bin/python scripts/autopilot_daemon.py --stop
+ExecReload=/bin/kill -HUP $MAINPID
+
+# Auto-restart on crash
+Restart=always
+RestartSec=30
+StartLimitInterval=600
+StartLimitBurst=5
+
+# Logging
+StandardOutput=append:/root/Documents/Codex/2026-05-30/New Project (1)/.state/logs/systemd.log
+StandardError=append:/root/Documents/Codex/2026-05-30/New Project (1)/.state/logs/systemd-error.log
+
+# Environment
+Environment=PYTHONUNBUFFERED=1
+Environment=AUTOPILOT_LOG_LEVEL=INFO
+
+# Security
+NoNewPrivileges=true
+ProtectSystem=full
+PrivateTmp=true
+
+[Install]
+WantedBy=multi-user.target

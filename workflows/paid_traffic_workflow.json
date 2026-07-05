@@ -1,0 +1,128 @@
+{
+  "_metadata": {
+    "name": "Paid Traffic Workflow",
+    "description": "Ativa tráfego pago automaticamente quando a receita orgânica atinge o threshold. Cria campanhas em Google Ads, Meta Ads e Native Ads.",
+    "version": "1.0.0",
+    "trigger": "post_content_cycle",
+    "mode": "automatic_when_funded"
+  },
+  "config": {
+    "min_monthly_revenue": 500,
+    "reinvest_percentage": 0.4,
+    "max_daily_budget": 200,
+    "min_roas": 1.5,
+    "platforms": [
+      "google_ads",
+      "meta_ads",
+      "native_ads"
+    ],
+    "allowed_niches": [
+      "tecnologia",
+      "financas",
+      "saude",
+      "carreira"
+    ]
+  },
+  "steps": [
+    {
+      "id": "revenue_monitor",
+      "agent": "revenue_monitor",
+      "description": "Verifica se receita mensal atingiu threshold para ativar tráfego pago",
+      "dependencies": [],
+      "deps": []
+    },
+    {
+      "id": "budget_optimizer",
+      "agent": "budget_optimizer",
+      "description": "Aloca orçamento entre plataformas baseado em ROAS histórico",
+      "dependencies": [
+        "revenue_monitor"
+      ],
+      "deps": []
+    },
+    {
+      "id": "paid_traffic_orchestrator",
+      "agent": "paid_traffic_orchestrator",
+      "description": "Cria plano de campanhas multi-plataforma",
+      "dependencies": [
+        "revenue_monitor",
+        "budget_optimizer"
+      ],
+      "deps": []
+    },
+    {
+      "id": "ad_copy_generator",
+      "agent": "ad_copy_generator",
+      "description": "Gera criativos de anúncio a partir de artigos existentes",
+      "dependencies": [
+        "paid_traffic_orchestrator"
+      ],
+      "deps": []
+    },
+    {
+      "id": "landing_page_generator",
+      "agent": "landing_page",
+      "description": "Cria landing pages otimizadas para conversão",
+      "dependencies": [
+        "paid_traffic_orchestrator"
+      ],
+      "deps": []
+    },
+    {
+      "id": "google_ads_setup",
+      "agent": "google_ads",
+      "description": "Configura campanha no Google Ads",
+      "dependencies": [
+        "ad_copy_generator",
+        "landing_page_generator"
+      ],
+      "deps": []
+    },
+    {
+      "id": "meta_ads_setup",
+      "agent": "meta_ads",
+      "description": "Configura campanha no Meta Ads",
+      "dependencies": [
+        "ad_copy_generator",
+        "landing_page_generator"
+      ],
+      "deps": []
+    },
+    {
+      "id": "native_ads_setup",
+      "agent": "native_ads",
+      "description": "Configura campanha de native ads",
+      "dependencies": [
+        "ad_copy_generator",
+        "landing_page_generator"
+      ],
+      "deps": []
+    },
+    {
+      "id": "performance_tracker",
+      "agent": "performance_tracker",
+      "description": "Monitora ROAS e recomenda ações (escalar, manter, reduzir, pausar)",
+      "dependencies": [
+        "google_ads_setup",
+        "meta_ads_setup",
+        "native_ads_setup"
+      ],
+      "deps": []
+    }
+  ],
+  "workflow_id": "paid_traffic_workflow",
+  "description": "Workflow paid_traffic_workflow",
+  "max_workers": 8,
+  "entry_points": [
+    "revenue_monitor",
+    "budget_optimizer",
+    "paid_traffic_orchestrator",
+    "ad_copy_generator",
+    "landing_page_generator",
+    "google_ads_setup",
+    "meta_ads_setup",
+    "native_ads_setup",
+    "performance_tracker"
+  ],
+  "name": "paid_traffic_workflow"
+}

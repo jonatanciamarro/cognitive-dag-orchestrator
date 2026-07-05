@@ -1,0 +1,48 @@
+{
+  "name": "fourth_order_workflow",
+  "description": "4a Ordem: Inteligencia Coletiva Cross-Nicho. Conecta todos os nichos em barramento de conhecimento. Detecta padroes, distribui estrategias, evolui ontologia compartilhada.",
+  "max_workers": 3,
+  "steps": [
+    {
+      "id": "kollektiv_collect",
+      "agent": "kollektiv",
+      "depends_on": [],
+      "description": "Coletar resultados de todos os nichos do ciclo atual.",
+      "deps": []
+    },
+    {
+      "id": "kollektiv_analyze",
+      "agent": "kollektiv",
+      "depends_on": [
+        "kollektiv_collect"
+      ],
+      "description": "Analisar padroes cross-nicho e detectar estrategias vencedoras.",
+      "deps": []
+    },
+    {
+      "id": "kollektiv_recommend",
+      "agent": "kollektiv",
+      "depends_on": [
+        "kollektiv_analyze"
+      ],
+      "description": "Distribuir recomendacoes para cada nicho baseado em aprendizados dos outros.",
+      "deps": []
+    },
+    {
+      "id": "kollektiv_report",
+      "agent": "kollektiv",
+      "depends_on": [
+        "kollektiv_recommend"
+      ],
+      "description": "Gerar sintese com vault health, padroes encontrados e ontologia compartilhada.",
+      "deps": []
+    }
+  ],
+  "workflow_id": "fourth_order_workflow",
+  "entry_points": [
+    "kollektiv_collect",
+    "kollektiv_analyze",
+    "kollektiv_recommend",
+    "kollektiv_report"
+  ]
+}

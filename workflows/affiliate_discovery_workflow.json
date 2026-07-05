@@ -1,0 +1,52 @@
+{
+  "name": "affiliate_discovery_pipeline",
+  "description": "Automacao de descoberta de produtos afiliados — navega marketplaces, extrai links reais e registra no ProductLinkRegistry",
+  "max_workers": 1,
+  "steps": [
+    {
+      "id": "niche_strategy",
+      "agent": "seo_research",
+      "depends_on": [],
+      "description": "Define nichos prioritarios com base em demanda de pesquisa"
+    },
+    {
+      "id": "hotmart_browser_scan",
+      "agent": "hotmart_discovery",
+      "depends_on": ["niche_strategy"],
+      "description": "Varre Hotmart Marketplace em busca de produtos para cada nicho"
+    },
+    {
+      "id": "kiwify_browser_scan",
+      "agent": "offer_lookup",
+      "depends_on": ["niche_strategy"],
+      "description": "Varre Kiwify Marketplace em busca de produtos"
+    },
+    {
+      "id": "hotmart_scoring",
+      "agent": "hotmart_scoring",
+      "depends_on": ["hotmart_browser_scan"],
+      "description": "Aplica scoring de oportunidade nos produtos encontrados"
+    },
+    {
+      "id": "hotmart_due_diligence",
+      "agent": "hotmart_due_diligence",
+      "depends_on": ["hotmart_scoring"],
+      "description": "Due diligence nos produtos aprovados"
+    },
+    {
+      "id": "register_links",
+      "agent": "offer_lookup",
+      "depends_on": ["hotmart_due_diligence"],
+      "description": "Registra links aprovados no ProductLinkRegistry"
+    },
+    {
+      "id": "report",
+      "agent": "analytics",
+      "depends_on": ["register_links"],
+      "description": "Relatorio final da operacao"
+    }
+  ],
+  "workflow_id": "affiliate_discovery_pipeline",
+  "entry_points": ["niche_strategy"],
+  "version": "1.0.0"
+}

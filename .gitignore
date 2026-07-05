@@ -1,0 +1,28 @@
+
+# IDE
+# OS
+# Python
+# SQLite databases
+# Virtual environment
+*.egg-info/
+*.py[cod]
+*.sqlite3
+.DS_Store
+.env
+.env.backup
+.idea/
+.state/
+.venv/
+.vscode/
+__pycache__/
+build/
+dist/
+output/
+venv/
+
+# Generated artifacts
+reports/
+site/
+
+# Old version copies
+free/

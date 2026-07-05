@@ -1,0 +1,59 @@
+{
+  "id": "hotmart_product_selection",
+  "name": "Hotmart — Seleção Inteligente de Produtos",
+  "description": "Pipeline que pesquisa, ranqueia e seleciona os melhores produtos Hotmart para afiliacao, priorizando ganhos rapidos",
+  "vertical": "revenue",
+  "schedule": {
+    "type": "manual",
+    "description": "Executar sempre que quiser adicionar novos produtos Hotmart"
+  },
+  "steps": [
+    {
+      "id": "research_products",
+      "agent": "hotmart_product_researcher",
+      "description": "Pesquisa produtos Hotmart em todos os nichos e ranqueia por potencial de ganho",
+      "dependencies": [],
+      "timeout": 60,
+      "config": {
+        "niche": "all",
+        "max_results": 5,
+        "min_velocity": 0.0
+      },
+      "deps": []
+    },
+    {
+      "id": "select_best",
+      "agent": "hotmart_affiliate_selector",
+      "description": "Seleciona os 3 melhores produtos priorizando velocidade de ganhos",
+      "dependencies": [
+        "research_products"
+      ],
+      "timeout": 30,
+      "config": {
+        "budget_tier": "rapido",
+        "max_per_niche": 3
+      },
+      "deps": []
+    },
+    {
+      "id": "generate_hunt_list",
+      "agent": "hotmart_product_researcher",
+      "description": "Gera lista final de produtos para o usuario coletar links",
+      "dependencies": [
+        "select_best"
+      ],
+      "timeout": 30,
+      "config": {
+        "action": "summarize"
+      },
+      "deps": []
+    }
+  ],
+  "workflow_id": "hotmart_product_selection_workflow",
+  "max_workers": 3,
+  "entry_points": [
+    "research_products",
+    "select_best",
+    "generate_hunt_list"
+  ]
+}

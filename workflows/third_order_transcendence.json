@@ -1,0 +1,119 @@
+{
+  "id": "third_order_transcendence",
+  "name": "Onda 3 — Transcendência: Sistema Autopilot de 3ª Ordem",
+  "description": "Ciclo de auto-transcendência: conecta Onda 1 (SEO) + Onda 2 (Receita) + aprende + evolui + cruza domínios",
+  "vertical": "meta",
+  "schedule": {
+    "type": "interval",
+    "hours": 720
+  },
+  "steps": [
+    {
+      "id": "knowledge_synthesis",
+      "agent": "KnowledgeSynthesisBridge",
+      "description": "Sintetiza conhecimento de todos os domínios: SEO, Receita, Conteúdo, Meta",
+      "dependencies": [],
+      "timeout": 60,
+      "deps": []
+    },
+    {
+      "id": "cross_pollination",
+      "agent": "CrossPollinationHub",
+      "description": "Ativa loops virtuosos entre domínios: conteúdo → produto → receita → mais conteúdo",
+      "dependencies": [
+        "knowledge_synthesis"
+      ],
+      "timeout": 120,
+      "deps": []
+    },
+    {
+      "id": "epistemic",
+      "agent": "EpistemicAgent",
+      "description": "Auto-questionamento epistêmico: o que o sistema sabe, o que não sabe, pontos cegos",
+      "dependencies": [
+        "cross_pollination"
+      ],
+      "timeout": 120,
+      "deps": []
+    },
+    {
+      "id": "observer_fusion",
+      "agent": "ObserverFusionAgent",
+      "description": "Modelagem multi-perspectiva do estado atual do sistema",
+      "dependencies": [
+        "epistemic"
+      ],
+      "timeout": 120,
+      "deps": []
+    },
+    {
+      "id": "value_evolution",
+      "agent": "ValueEvolutionAgent",
+      "description": "Evolui os critérios de sucesso baseado em performance multi-domínio",
+      "dependencies": [
+        "observer_fusion",
+        "knowledge_synthesis"
+      ],
+      "timeout": 120,
+      "deps": []
+    },
+    {
+      "id": "agent_factory",
+      "agent": "AgentFactory",
+      "description": "Detecta necessidade de novos agentes e gera código",
+      "dependencies": [
+        "cross_pollination",
+        "value_evolution"
+      ],
+      "timeout": 120,
+      "deps": []
+    },
+    {
+      "id": "meta_orchestrator",
+      "agent": "MetaOrchestratorAgent",
+      "description": "Analisa performance de todos os ciclos e gera prescrições de evolução",
+      "dependencies": [
+        "agent_factory",
+        "value_evolution"
+      ],
+      "timeout": 120,
+      "deps": []
+    },
+    {
+      "id": "recursive_observer",
+      "agent": "RecursiveObserverAgent",
+      "description": "Meta-meta: observa o MetaOrchestrator e sugere melhorias na governança",
+      "dependencies": [
+        "meta_orchestrator"
+      ],
+      "timeout": 120,
+      "deps": []
+    },
+    {
+      "id": "third_order_orchestrator",
+      "agent": "ThirdOrderOrchestrator",
+      "description": "Sintetiza todos os insights de 3ª ordem em recomendações transcendentes",
+      "dependencies": [
+        "recursive_observer",
+        "value_evolution",
+        "knowledge_synthesis",
+        "agent_factory"
+      ],
+      "timeout": 180,
+      "deps": []
+    }
+  ],
+  "workflow_id": "third_order_transcendence",
+  "max_workers": 8,
+  "entry_points": [
+    "knowledge_synthesis",
+    "cross_pollination",
+    "epistemic",
+    "observer_fusion",
+    "value_evolution",
+    "agent_factory",
+    "meta_orchestrator",
+    "recursive_observer",
+    "third_order_orchestrator"
+  ]
+}

@@ -1,0 +1,81 @@
+{
+  "name": "ui_design_workflow",
+  "description": "Gera landing pages completas com componentes UI/UX estilo 21st.dev. Inclui hero, pricing, FAQ, testimonials e composição final com qualidade check.",
+  "max_workers": 3,
+  "steps": [
+    {
+      "id": "niche_analysis",
+      "agent": "analytics",
+      "depends_on": [],
+      "description": "Analisa o nicho e objetivo para determinar o design approach.",
+      "deps": []
+    },
+    {
+      "id": "hero_generation",
+      "agent": "ui_hero",
+      "depends_on": [
+        "niche_analysis"
+      ],
+      "description": "Gera hero section com badge, títulos e CTAs otimizados.",
+      "deps": []
+    },
+    {
+      "id": "pricing_generation",
+      "agent": "ui_pricing",
+      "depends_on": [
+        "niche_analysis"
+      ],
+      "description": "Gera tabela de preços com 3 planos e destaque do recomendado.",
+      "deps": []
+    },
+    {
+      "id": "faq_generation",
+      "agent": "ui_faq",
+      "depends_on": [
+        "niche_analysis"
+      ],
+      "description": "Gera seção FAQ com accordion e schema.org markup.",
+      "deps": []
+    },
+    {
+      "id": "testimonial_generation",
+      "agent": "ui_testimonial",
+      "depends_on": [
+        "niche_analysis"
+      ],
+      "description": "Gera cards de depoimento com avaliações e social proof.",
+      "deps": []
+    },
+    {
+      "id": "page_composition",
+      "agent": "ui_full_page",
+      "depends_on": [
+        "hero_generation",
+        "pricing_generation",
+        "faq_generation",
+        "testimonial_generation"
+      ],
+      "description": "Compõe landing page completa com todos os componentes gerados.",
+      "deps": []
+    },
+    {
+      "id": "quality_check",
+      "agent": "memory_lookup",
+      "depends_on": [
+        "page_composition"
+      ],
+      "description": "Valida qualidade do output com OutputCritic (mínimo 85/100).",
+      "deps": []
+    }
+  ],
+  "workflow_id": "ui_design_workflow",
+  "entry_points": [
+    "niche_analysis",
+    "hero_generation",
+    "pricing_generation",
+    "faq_generation",
+    "testimonial_generation",
+    "page_composition",
+    "quality_check"
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "name": "organic_affiliate_cycle",
+  "description": "Ciclo de marketing de afiliados 100% orgânico — pesquisa SEO, ofertas, conteúdo, publicação.",
+  "mode": "organic_only",
+  "defaults": {
+    "dry_run": false,
+    "require_approval": false,
+    "record_memory": true
+  },
+  "policy": {
+    "requires_explicit_opt_in": false,
+    "requires_consent_record": false,
+    "requires_compliance_pass": true,
+    "block_on_missing_consent": false,
+    "allow_execution_only_after_approval": false,
+    "no_paid_media": true,
+    "required_disclosures": ["disclosure_afiliado"]
+  },
+  "metrics": {
+    "minimum_sample_size": 50,
+    "content_publish_frequency_days": 3,
+    "min_keywords_per_cycle": 3
+  },
+  "workflow": {
+    "states": [
+      "seo_research",
+      "compliance",
+      "offer_lookup",
+      "content_planning",
+      "publishing_plan",
+      "memory_write"
+    ]
+  },
+  "channels": ["seo", "community", "newsletter", "youtube"]
+}

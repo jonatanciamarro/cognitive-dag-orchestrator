@@ -1,0 +1,138 @@
+{
+  "id": "seo_content_daily",
+  "name": "Ciclo Diário de Conteúdo SEO-Otimizado",
+  "description": "Pesquisa, gera, valida e publica conteúdo otimizado para Google, Bing e Yahoo (ADR-002)",
+  "vertical": "news",
+  "schedule": {
+    "type": "interval",
+    "hours": 24
+  },
+  "steps": [
+    {
+      "id": "keyword_research",
+      "agent": "ContentResearchAgent",
+      "description": "Pesquisa keywords com potencial de busca, analisa concorrência e identifica gaps",
+      "dependencies": [],
+      "timeout": 300,
+      "retry": 2,
+      "config": {
+        "max_keywords_per_cycle": 10,
+        "preferred_intents": [
+          "informational",
+          "commercial"
+        ]
+      },
+      "deps": []
+    },
+    {
+      "id": "content_strategy",
+      "agent": "ContentStrategistAgent",
+      "description": "Define pauta baseada nos dados de pesquisa",
+      "dependencies": [
+        "keyword_research"
+      ],
+      "timeout": 120,
+      "deps": []
+    },
+    {
+      "id": "seo_content_writing",
+      "agent": "SEOContentWriterAgent",
+      "description": "Escreve artigos completos otimizados para múltiplos buscadores",
+      "dependencies": [
+        "content_strategy"
+      ],
+      "timeout": 600,
+      "retry": 1,
+      "config": {
+        "default_word_count": 1500,
+        "max_articles_per_cycle": 3
+      },
+      "foreach": "opportunities",
+      "deps": []
+    },
+    {
+      "id": "eeat_validation",
+      "agent": "EEATValidatorAgent",
+      "description": "Valida artigos contra critérios E-E-A-T do Google",
+      "dependencies": [
+        "seo_content_writing"
+      ],
+      "timeout": 180,
+      "config": {
+        "score_threshold": 70
+      },
+      "deps": []
+    },
+    {
+      "id": "seo_technical",
+      "agent": "SEOTechnicalAgent",
+      "description": "Aplica schema markup, meta tags, Open Graph, Twitter Cards",
+      "dependencies": [
+        "eeat_validation"
+      ],
+      "timeout": 60,
+      "deps": []
+    },
+    {
+      "id": "multimedia_generation",
+      "agent": "SEOMultimediaAgent",
+      "description": "Gera imagens destacadas, infográficos e tabelas comparativas",
+      "dependencies": [
+        "eeat_validation"
+      ],
+      "timeout": 120,
+      "parallel": true,
+      "deps": []
+    },
+    {
+      "id": "internal_linking",
+      "agent": "InternalLinkerAgent",
+      "description": "Cria malha de links internos entre artigos",
+      "dependencies": [
+        "seo_technical",
+        "multimedia_generation"
+      ],
+      "timeout": 60,
+      "deps": []
+    },
+    {
+      "id": "site_publish",
+      "agent": "SitePublisherAgent",
+      "description": "Publica site estático, sitemap.xml e robots.txt",
+      "dependencies": [
+        "seo_technical",
+        "multimedia_generation",
+        "internal_linking"
+      ],
+      "timeout": 120,
+      "deps": []
+    },
+    {
+      "id": "search_console_submit",
+      "agent": "SitePublisherAgent",
+      "description": "Notifica Google e Bing sobre novos artigos",
+      "dependencies": [
+        "site_publish"
+      ],
+      "timeout": 30,
+      "config": {
+        "ping_google": true,
+        "ping_bing": true
+      },
+      "deps": []
+    }
+  ],
+  "workflow_id": "seo_content_workflow",
+  "max_workers": 8,
+  "entry_points": [
+    "keyword_research",
+    "content_strategy",
+    "seo_content_writing",
+    "eeat_validation",
+    "seo_technical",
+    "multimedia_generation",
+    "internal_linking",
+    "site_publish",
+    "search_console_submit"
+  ]
+}

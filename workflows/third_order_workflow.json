@@ -1,0 +1,55 @@
+{
+  "name": "third_order",
+  "description": "🌀 PIPELINE DE AUTO-TRANSCENDÊNCIA (3ª ORDEM) — Epistêmico → Fusão de Observadores → Evolução de Valores → Observador Recursivo → Orquestração Transcendente. O sistema que observa como se observa.",
+  "max_workers": 4,
+  "steps": [
+    {
+      "id": "epistemic",
+      "agent": "epistemic",
+      "depends_on": [],
+      "description": "Auto-questionamento epistêmico: mapear conhecimento, detectar pontos cegos, gerar hipóteses alternativas.",
+      "deps": []
+    },
+    {
+      "id": "observer_fusion",
+      "agent": "observer_fusion",
+      "depends_on": [],
+      "description": "Modelagem multi-perspectiva: analisar problema sob múltiplos observadores simultaneamente.",
+      "deps": []
+    },
+    {
+      "id": "value_evolution",
+      "agent": "value_evolution",
+      "depends_on": [],
+      "description": "Evolução do sistema de valores: detectar conflitos e sugerir evolução dos critérios de sucesso.",
+      "deps": []
+    },
+    {
+      "id": "recursive_observer",
+      "agent": "recursive_observer",
+      "depends_on": [],
+      "description": "Meta-meta-orquestração: auditar a governança do sistema e sugerir melhorias no MetaOrchestrator.",
+      "deps": []
+    },
+    {
+      "id": "third_order_orchestrator",
+      "agent": "third_order_orchestrator",
+      "depends_on": [
+        "epistemic",
+        "observer_fusion",
+        "value_evolution",
+        "recursive_observer"
+      ],
+      "description": "Sintetizar insights de terceira ordem e gerar recomendações de auto-transcendência.",
+      "deps": []
+    }
+  ],
+  "workflow_id": "third_order_workflow",
+  "entry_points": [
+    "epistemic",
+    "observer_fusion",
+    "value_evolution",
+    "recursive_observer",
+    "third_order_orchestrator"
+  ]
+}

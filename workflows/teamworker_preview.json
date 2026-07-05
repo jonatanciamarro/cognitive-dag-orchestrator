@@ -1,0 +1,52 @@
+{
+  "name": "teamworker_preview",
+  "description": "Preview workflow — verifica ofertas disponiveis e simula conteudo antes da geracao real. Garante que produtos afiliados existam antes de gerar qualquer artefato.",
+  "max_workers": 4,
+  "steps": [
+    {
+      "id": "offer_lookup",
+      "agent": "offer_lookup",
+      "depends_on": [],
+      "description": "Busca produtos afiliados disponiveis em todas as redes (Hotmart, Kiwify, Eduzz, Amazon, etc)."
+    },
+    {
+      "id": "compliance",
+      "agent": "compliance",
+      "depends_on": [],
+      "description": "Verifica conformidade dos produtos encontrados."
+    },
+    {
+      "id": "content_planner",
+      "agent": "content_planner",
+      "depends_on": ["offer_lookup"],
+      "description": "Planeja conteudo com base nos produtos disponiveis."
+    },
+    {
+      "id": "content_preview",
+      "agent": "content_generator",
+      "depends_on": ["content_planner"],
+      "description": "Gera preview do conteudo (sem publicar) para validacao."
+    },
+    {
+      "id": "media_preview",
+      "agent": "free_image_gen",
+      "depends_on": ["content_preview"],
+      "description": "Gera preview das midias associadas ao conteudo."
+    },
+    {
+      "id": "ui_preview",
+      "agent": "ui_design",
+      "depends_on": ["content_preview"],
+      "description": "Gera preview do design/landing page."
+    },
+    {
+      "id": "preview_summary",
+      "agent": "analytics",
+      "depends_on": ["media_preview", "ui_preview"],
+      "description": "Consolida preview completo: produtos, conteudo, midias, design."
+    }
+  ],
+  "workflow_id": "teamworker_preview",
+  "entry_points": ["offer_lookup", "compliance"],
+  "version": "1.0.0"
+}

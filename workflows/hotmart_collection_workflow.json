@@ -1,0 +1,49 @@
+{
+  "name": "hotmart_collection_workflow",
+  "description": "Pipeline de coleta e validacao de links Hotmart: valida, armazena e atualiza config.",
+  "max_workers": 2,
+  "steps": [
+    {
+      "id": "validate_link",
+      "agent": "link_validator",
+      "depends_on": [],
+      "description": "Validar formato do link, presenca de ?aff=, detectar placeholders.",
+      "deps": []
+    },
+    {
+      "id": "match_product",
+      "agent": "product_matcher",
+      "depends_on": [
+        "validate_link"
+      ],
+      "description": "Analisar nome do produto e sugerir keywords, comissao, nicho.",
+      "deps": []
+    },
+    {
+      "id": "store_link",
+      "agent": "hotmart_link_manager",
+      "depends_on": [
+        "validate_link",
+        "match_product"
+      ],
+      "description": "Armazenar link no banco SQLite com metadados.",
+      "deps": []
+    },
+    {
+      "id": "update_config",
+      "agent": "config_updater",
+      "depends_on": [
+        "store_link"
+      ],
+      "description": "Sincronizar banco SQLite com configs/affiliate_offers.json.",
+      "deps": []
+    }
+  ],
+  "workflow_id": "hotmart_collection_workflow",
+  "entry_points": [
+    "validate_link",
+    "match_product",
+    "store_link",
+    "update_config"
+  ]
+}

@@ -1,0 +1,115 @@
+{
+  "_metadata": {
+    "name": "Safe Mass Posting Workflow",
+    "description": "Maximiza publicacao em multiplas plataformas sem ser spam. Valida conteudo, respeita limites, agenda timing ideal.",
+    "version": "1.0.0",
+    "trigger": "post_content_cycle",
+    "mode": "automatic"
+  },
+  "config": {
+    "account_age_days": 90,
+    "is_verified": false,
+    "platforms": [
+      "blog",
+      "pinterest",
+      "telegram",
+      "twitter",
+      "tiktok",
+      "instagram",
+      "facebook",
+      "youtube",
+      "linkedin",
+      "whatsapp"
+    ],
+    "enable_warm_up": true,
+    "strict_mode": false,
+    "min_variation_threshold": 0.3
+  },
+  "steps": [
+    {
+      "id": "collect_articles",
+      "agent": "content_generator",
+      "description": "Coleta artigos gerados para distribuicao",
+      "dependencies": [],
+      "deps": []
+    },
+    {
+      "id": "validate_all_posts",
+      "agent": "safe_mass_posting",
+      "description": "Valida cada artigo para cada plataforma contra limites de spam",
+      "dependencies": [
+        "collect_articles"
+      ],
+      "deps": []
+    },
+    {
+      "id": "check_compliance",
+      "agent": "platform_compliance",
+      "description": "Verifica regras especificas de cada plataforma (termos, copyright, disclosure)",
+      "dependencies": [
+        "collect_articles"
+      ],
+      "deps": []
+    },
+    {
+      "id": "generate_posting_plan",
+      "agent": "safe_mass_posting",
+      "description": "Gera plano de postagem com timing ideal e volume seguro",
+      "dependencies": [
+        "validate_all_posts"
+      ],
+      "deps": []
+    },
+    {
+      "id": "repurpose_for_platforms",
+      "agent": "content_repurposer",
+      "description": "Adapta cada artigo para o formato ideal de cada plataforma",
+      "dependencies": [
+        "check_compliance"
+      ],
+      "deps": []
+    },
+    {
+      "id": "schedule_posts",
+      "agent": "content_scheduler",
+      "description": "Agenda posts nos melhores horarios de cada plataforma",
+      "dependencies": [
+        "generate_posting_plan",
+        "repurpose_for_platforms"
+      ],
+      "deps": []
+    },
+    {
+      "id": "execute_posts",
+      "agent": "social_publishers",
+      "description": "Publica ou salva arquivos prontos para cada plataforma",
+      "dependencies": [
+        "schedule_posts"
+      ],
+      "deps": []
+    },
+    {
+      "id": "log_and_memory",
+      "agent": "safe_mass_posting",
+      "description": "Registra todos os posts publicados na memoria para controle anti-spam",
+      "dependencies": [
+        "execute_posts"
+      ],
+      "deps": []
+    }
+  ],
+  "workflow_id": "safe_mass_posting_workflow",
+  "description": "Workflow safe_mass_posting_workflow",
+  "max_workers": 8,
+  "entry_points": [
+    "collect_articles",
+    "validate_all_posts",
+    "check_compliance",
+    "generate_posting_plan",
+    "repurpose_for_platforms",
+    "schedule_posts",
+    "execute_posts",
+    "log_and_memory"
+  ],
+  "name": "safe_mass_posting_workflow"
+}

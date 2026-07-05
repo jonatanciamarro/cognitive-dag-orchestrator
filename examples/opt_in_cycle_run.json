@@ -1,0 +1,21 @@
+{
+  "campaign_id": "cmp_1024",
+  "customer_id": "cust_5531",
+  "opt_in": true,
+  "consent_recorded": true,
+  "compliance_status": "pass",
+  "approval_status": "approved",
+  "execution_mode": "execute",
+  "metrics": {
+    "sample_size": 280,
+    "success_rate": 0.93,
+    "ctr": 0.024,
+    "cpa": 41.25
+  },
+  "constraints": {
+    "channel": "email",
+    "allowed_audience": "opt_in_only",
+    "bid_change_limit_pct": 10
+  },
+  "notes": "Representative approved run with explicit opt-in and consent evidence."
+}

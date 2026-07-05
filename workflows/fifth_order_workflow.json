@@ -1,0 +1,38 @@
+{
+  "name": "fifth_order_workflow",
+  "description": "5a Ordem: Inteligencia Temporal. Conecta passado, presente e futuro. Detecta padroes sazonais, projeta trajetorias e otimiza timing estrategico.",
+  "max_workers": 2,
+  "steps": [
+    {
+      "id": "temporal_record",
+      "agent": "temporal_engine",
+      "depends_on": [],
+      "description": "Registrar ciclo atual na timeline e atualizar NarrativeSelf.",
+      "deps": []
+    },
+    {
+      "id": "temporal_foresight",
+      "agent": "temporal_engine",
+      "depends_on": [
+        "temporal_record"
+      ],
+      "description": "Projetar 30/60/90 dias e detectar eventos sazonais.",
+      "deps": []
+    },
+    {
+      "id": "temporal_recommend",
+      "agent": "temporal_engine",
+      "depends_on": [
+        "temporal_foresight"
+      ],
+      "description": "Gerar recomendacoes de timing de conteudo e metas.",
+      "deps": []
+    }
+  ],
+  "workflow_id": "fifth_order_workflow",
+  "entry_points": [
+    "temporal_record",
+    "temporal_foresight",
+    "temporal_recommend"
+  ]
+}

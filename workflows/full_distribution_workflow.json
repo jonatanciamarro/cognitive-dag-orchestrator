@@ -1,0 +1,124 @@
+{
+  "name": "full_distribution_workflow",
+  "description": "Workflow completo de distribuição multi-canal: blog + YouTube + email + Pinterest + feedback analítico.",
+  "max_workers": 8,
+  "steps": [
+    {
+      "id": "seo_research",
+      "agent": "seo_research",
+      "depends_on": [],
+      "description": "Pesquisar palavras-chave e tópicos no nicho.",
+      "deps": []
+    },
+    {
+      "id": "compliance",
+      "agent": "compliance",
+      "depends_on": [],
+      "description": "Validar nicho e ofertas contra regras de compliance.",
+      "deps": []
+    },
+    {
+      "id": "memory_lookup",
+      "agent": "memory_lookup",
+      "depends_on": [],
+      "description": "Buscar lições de ciclos anteriores.",
+      "deps": []
+    },
+    {
+      "id": "offer_lookup",
+      "agent": "offer_lookup",
+      "depends_on": [
+        "seo_research"
+      ],
+      "description": "Encontrar ofertas de afiliados compatíveis.",
+      "deps": []
+    },
+    {
+      "id": "content_planner",
+      "agent": "content_planner",
+      "depends_on": [
+        "seo_research",
+        "offer_lookup",
+        "memory_lookup"
+      ],
+      "description": "Briefings de conteúdo integrados.",
+      "deps": []
+    },
+    {
+      "id": "content_generator",
+      "agent": "content_generator",
+      "depends_on": [
+        "content_planner"
+      ],
+      "description": "Artigos para blog.",
+      "deps": []
+    },
+    {
+      "id": "youtube_marketing",
+      "agent": "youtube_marketing",
+      "depends_on": [
+        "seo_research",
+        "offer_lookup"
+      ],
+      "description": "Scripts de vídeo para YouTube.",
+      "deps": []
+    },
+    {
+      "id": "email_marketing",
+      "agent": "email_marketing",
+      "depends_on": [
+        "seo_research",
+        "offer_lookup"
+      ],
+      "description": "Sequências de email marketing.",
+      "deps": []
+    },
+    {
+      "id": "pinterest_marketing",
+      "agent": "pinterest_marketing",
+      "depends_on": [
+        "seo_research",
+        "offer_lookup"
+      ],
+      "description": "Pins e boards para Pinterest.",
+      "deps": []
+    },
+    {
+      "id": "wp_publisher",
+      "agent": "wp_publisher",
+      "depends_on": [
+        "content_generator",
+        "compliance"
+      ],
+      "description": "Publicar artigos no WordPress / arquivos.",
+      "deps": []
+    },
+    {
+      "id": "analytics_feedback",
+      "agent": "analytics_feedback",
+      "depends_on": [
+        "content_generator",
+        "youtube_marketing",
+        "email_marketing",
+        "pinterest_marketing",
+        "wp_publisher"
+      ],
+      "description": "Avaliar ciclo e alimentar aprendizado.",
+      "deps": []
+    }
+  ],
+  "workflow_id": "full_distribution_workflow",
+  "entry_points": [
+    "seo_research",
+    "compliance",
+    "memory_lookup",
+    "offer_lookup",
+    "content_planner",
+    "content_generator",
+    "youtube_marketing",
+    "email_marketing",
+    "pinterest_marketing",
+    "wp_publisher",
+    "analytics_feedback"
+  ]
+}

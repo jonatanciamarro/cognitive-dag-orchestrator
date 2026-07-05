@@ -1,0 +1,82 @@
+{
+  "name": "full_media_pipeline",
+  "description": "🎬 PIPELINE COMPLETA DE MÍDIA — Conteúdo → Imagens → Áudio → Vídeo → Design → Deploy. Geração automática com Pollinations + edge-tts + MoviePy + Open Design.",
+  "version": "2.0.0",
+  "max_workers": 6,
+  "steps": [
+    {
+      "id": "seo_research",
+      "agent": "seo_research",
+      "depends_on": [],
+      "description": "Pesquisar palavras-chave e tópicos no nicho.",
+      "deps": []
+    },
+    {
+      "id": "content_generator",
+      "agent": "content_generator",
+      "depends_on": [
+        "seo_research"
+      ],
+      "description": "Gerar artigo otimizado para SEO com base nas keywords.",
+      "deps": []
+    },
+    {
+      "id": "free_image_gen",
+      "agent": "free_image_gen",
+      "depends_on": [
+        "content_generator"
+      ],
+      "description": "Gerar imagens com Pollinations.ai (grátis, sem chave).",
+      "deps": []
+    },
+    {
+      "id": "audio_production",
+      "agent": "audio_production",
+      "depends_on": [
+        "content_generator"
+      ],
+      "description": "Produzir narração TTS com edge-tts/gTTS (grátis, sem chave).",
+      "deps": []
+    },
+    {
+      "id": "media_pipeline",
+      "agent": "media_pipeline",
+      "depends_on": [
+        "free_image_gen",
+        "audio_production"
+      ],
+      "description": "Orquestrar pipeline de mídia e gerar relatório de qualidade.",
+      "deps": []
+    },
+    {
+      "id": "ui_design",
+      "agent": "ui_design",
+      "depends_on": [
+        "content_generator",
+        "free_image_gen"
+      ],
+      "description": "Gerar landing page com Open Design + imagem de fundo.",
+      "deps": []
+    },
+    {
+      "id": "site_deploy",
+      "agent": "site_deploy",
+      "depends_on": [
+        "ui_design",
+        "content_generator"
+      ],
+      "description": "Implantar site estático com todos os artefatos.",
+      "deps": []
+    }
+  ],
+  "workflow_id": "full_media_workflow",
+  "entry_points": [
+    "seo_research",
+    "content_generator",
+    "free_image_gen",
+    "audio_production",
+    "media_pipeline",
+    "ui_design",
+    "site_deploy"
+  ]
+}

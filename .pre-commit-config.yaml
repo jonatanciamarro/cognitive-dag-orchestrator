@@ -1,0 +1,62 @@
+# Campaign Autopilot — Pre-commit Hooks
+# Instalar: pre-commit install
+# Atualizar: pre-commit autoupdate
+# Rodar manual: pre-commit run --all-files
+
+repos:
+  # ── Segurança e qualidade básica ──
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v5.0.0
+    hooks:
+      - id: detect-private-key
+        name: detect-private-key
+        description: Detecta chaves privadas expostas
+      - id: detect-aws-credentials
+        name: detect-aws-credentials
+        args: [--allow-missing-credentials]
+        description: Detecta credenciais AWS
+      - id: trailing-whitespace
+        name: trailing-whitespace
+        description: Remove espaços em branco no final das linhas
+      - id: end-of-file-fixer
+        name: end-of-file-fixer
+        description: Garante que arquivos terminem com newline
+      - id: check-yaml
+        name: check-yaml
+        description: Valida sintaxe YAML
+      - id: check-json
+        name: check-json
+        description: Valida sintaxe JSON
+      - id: check-added-large-files
+        name: check-added-large-files
+        args: [--maxkb=500]
+        description: Previne arquivos grandes (>500KB)
+      - id: check-merge-conflict
+        name: check-merge-conflict
+        description: Detecta marcadores de conflito de merge
+      - id: check-case-conflict
+        name: check-case-conflict
+        description: Detecta conflitos de case em nomes de arquivo
+
+  # ── Ruff: linter + formatter Python ──
+  - repo: https://github.com/astral-sh/ruff-pre-commit
+    rev: v0.15.19
+    hooks:
+      - id: ruff
+        name: ruff-lint
+        args: [--fix, --exit-non-zero-on-fix]
+        description: Lint Python com correções automáticas
+      - id: ruff-format
+        name: ruff-format
+        description: Formata Python automaticamente
+
+  # ── Secret scan customizado ──
+  - repo: local
+    hooks:
+      - id: api-key-scan
+        name: api-key-scan
+        description: Detecta chaves de API em arquivos staged
+        entry: bash scripts/scan_secrets.sh
+        language: system
+        pass_filenames: false
+        stages: [pre-push, pre-commit]

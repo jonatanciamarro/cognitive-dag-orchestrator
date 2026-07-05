@@ -1,0 +1,77 @@
+{
+  "name": "organic_affiliate_cycle",
+  "description": "Ciclo completo de marketing de afiliados orgânico: pesquisa SEO → ofertas → conteúdo → compliance → publicação.",
+  "max_workers": 6,
+  "steps": [
+    {
+      "id": "seo_research",
+      "agent": "seo_research",
+      "depends_on": [],
+      "description": "Pesquisar palavras-chave e tópicos no nicho.",
+      "deps": []
+    },
+    {
+      "id": "compliance",
+      "agent": "compliance",
+      "depends_on": [],
+      "description": "Validar nicho e ofertas contra regras de compliance.",
+      "deps": []
+    },
+    {
+      "id": "memory_lookup",
+      "agent": "memory_lookup",
+      "depends_on": [],
+      "description": "Buscar lições de ciclos anteriores de conteúdo.",
+      "deps": []
+    },
+    {
+      "id": "offer_lookup",
+      "agent": "offer_lookup",
+      "depends_on": [
+        "seo_research"
+      ],
+      "description": "Encontrar ofertas de afiliados compatíveis com as keywords.",
+      "deps": []
+    },
+    {
+      "id": "content_planner",
+      "agent": "content_planner",
+      "depends_on": [
+        "seo_research",
+        "offer_lookup",
+        "memory_lookup"
+      ],
+      "description": "Combinar pesquisa + ofertas em briefings de conteúdo.",
+      "deps": []
+    },
+    {
+      "id": "publisher",
+      "agent": "publisher",
+      "depends_on": [
+        "content_planner",
+        "compliance"
+      ],
+      "description": "Criar cronograma de publicação e estimar resultados.",
+      "deps": []
+    },
+    {
+      "id": "ui_design",
+      "agent": "ui_design",
+      "depends_on": [
+        "publisher"
+      ],
+      "description": "Gerar landing page e email com Open Design.",
+      "deps": []
+    }
+  ],
+  "workflow_id": "organic_affiliate_cycle",
+  "entry_points": [
+    "seo_research",
+    "compliance",
+    "memory_lookup",
+    "offer_lookup",
+    "content_planner",
+    "publisher",
+    "ui_design"
+  ]
+}

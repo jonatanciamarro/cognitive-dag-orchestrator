@@ -1,0 +1,37 @@
+#!/bin/bash
+# Pre-push hook — Security + Quality checks
+# This runs BEFORE git push. If any check fails, push is blocked.
+
+set -e
+
+echo "🔍 Pre-push checks..."
+
+# ── 1. Pre-commit hooks (ruff, secret scan, etc.) ──
+if command -v pre-commit &> /dev/null; then
+    echo "   Running pre-commit hooks..."
+    pre-commit run --hook-stage push 2>&1
+    echo "   ✅ Pre-commit passed"
+fi
+
+# ── 2. API Key scan (staged files only) ──
+STAGED_FILES=$(git diff --cached --name-only)
+if [ -n "$STAGED_FILES" ]; then
+    SECRET_PATTERNS="sk-or-|gsk_|AIzaSy|ghp_|gho_|ghu_|ghs_|ghr_|rk_|AKIA|eyJ"
+    SECRETS=$(git diff --cached -U0 | grep -P "$SECRET_PATTERNS" || true)
+    if [ -n "$SECRETS" ]; then
+        echo "❌ API KEY DETECTADA nos arquivos staged!"
+        echo "   Revise os arquivos antes de enviar."
+        echo "   Use: git diff --cached | grep -E '($SECRET_PATTERNS)'"
+        exit 1
+    fi
+    echo "   ✅ No secrets in staged files"
+fi
+
+# ── 3. Check .env not staged ──
+if echo "$STAGED_FILES" | grep -qE "(^|/)\.env$"; then
+    echo "❌ .env file is staged! This would expose API keys."
+    echo "   Use: git reset HEAD .env"
+    exit 1
+fi
+
+echo "✅ All pre-push checks passed"

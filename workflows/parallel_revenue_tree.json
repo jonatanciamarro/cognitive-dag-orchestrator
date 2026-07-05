@@ -1,0 +1,137 @@
+{
+  "name": "parallel_revenue_tree",
+  "description": "🌳 Árvore de Múltiplas Fontes de Renda — 13 fontes em paralelo simultâneo",
+  "version": "2.0.0",
+  "steps": [
+    {
+      "id": "revenue_hotmart",
+      "agent": "revenue_hotmart",
+      "description": "Hotmart — Infoprodutos",
+      "depends_on": [],
+      "deps": []
+    },
+    {
+      "id": "revenue_kiwify",
+      "agent": "revenue_kiwify",
+      "description": "Kiwify — Infoprodutos",
+      "depends_on": [],
+      "deps": []
+    },
+    {
+      "id": "revenue_eduzz",
+      "agent": "revenue_eduzz",
+      "description": "Eduzz — Infoprodutos",
+      "depends_on": [],
+      "deps": []
+    },
+    {
+      "id": "revenue_monetizze",
+      "agent": "revenue_monetizze",
+      "description": "Monetizze — Infoprodutos",
+      "depends_on": [],
+      "deps": []
+    },
+    {
+      "id": "revenue_mercadolivre",
+      "agent": "revenue_mercadolivre",
+      "description": "Mercado Livre — Marketplace",
+      "depends_on": [],
+      "deps": []
+    },
+    {
+      "id": "revenue_shopee",
+      "agent": "revenue_shopee",
+      "description": "Shopee — Marketplace",
+      "depends_on": [],
+      "deps": []
+    },
+    {
+      "id": "revenue_shein",
+      "agent": "revenue_shein",
+      "description": "SheIn — Moda e Acessórios",
+      "depends_on": [],
+      "deps": []
+    },
+    {
+      "id": "revenue_aliexpress",
+      "agent": "revenue_aliexpress",
+      "description": "AliExpress — Marketplace Global",
+      "depends_on": [],
+      "deps": []
+    },
+    {
+      "id": "revenue_amazon",
+      "agent": "revenue_amazon",
+      "description": "Amazon Associates",
+      "depends_on": [],
+      "deps": []
+    },
+    {
+      "id": "revenue_adsense",
+      "agent": "revenue_adsense",
+      "description": "Google AdSense",
+      "depends_on": [],
+      "deps": []
+    },
+    {
+      "id": "revenue_cpa",
+      "agent": "revenue_cpa",
+      "description": "CPA Marketing",
+      "depends_on": [],
+      "deps": []
+    },
+    {
+      "id": "revenue_digital_product",
+      "agent": "revenue_digital_product",
+      "description": "Produtos Digitais Próprios",
+      "depends_on": [],
+      "deps": []
+    },
+    {
+      "id": "revenue_membership",
+      "agent": "revenue_membership",
+      "description": "Assinaturas / Membros",
+      "depends_on": [],
+      "deps": []
+    },
+    {
+      "id": "aggregate_revenue",
+      "agent": "parallel_revenue_tree",
+      "description": "Agrega resultados de TODAS as fontes",
+      "depends_on": [
+        "revenue_hotmart",
+        "revenue_kiwify",
+        "revenue_eduzz",
+        "revenue_monetizze",
+        "revenue_mercadolivre",
+        "revenue_shopee",
+        "revenue_shein",
+        "revenue_aliexpress",
+        "revenue_amazon",
+        "revenue_adsense",
+        "revenue_cpa",
+        "revenue_digital_product",
+        "revenue_membership"
+      ],
+      "deps": []
+    }
+  ],
+  "workflow_id": "parallel_revenue_tree",
+  "max_workers": 8,
+  "entry_points": [
+    "revenue_hotmart",
+    "revenue_kiwify",
+    "revenue_eduzz",
+    "revenue_monetizze",
+    "revenue_mercadolivre",
+    "revenue_shopee",
+    "revenue_shein",
+    "revenue_aliexpress",
+    "revenue_amazon",
+    "revenue_adsense",
+    "revenue_cpa",
+    "revenue_digital_product",
+    "revenue_membership",
+    "aggregate_revenue"
+  ]
+}

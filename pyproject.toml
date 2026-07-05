@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "campaign-autopilot"
+version = "0.1.0"
+description = "A minimal opt-in campaign optimization bot."
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "Codex" }]
+dependencies = [
+    "numpy>=1.24.0",
+    "Pillow>=10.0.0",
+    "moviepy>=1.0.3",
+    "gTTS>=2.3.0",
+    "pydub>=0.25.1",
+    "streamlit>=1.28.0",
+    "requests>=2.31.0",
+    "rich>=13.0.0",
+    "ponytail>=0.9.0",
+]
+
+[project.scripts]
+campaign-autopilot = "campaign_autopilot.cli:main"
+campaign-autopilot-v2 = "campaign_autopilot.cli_v2:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]

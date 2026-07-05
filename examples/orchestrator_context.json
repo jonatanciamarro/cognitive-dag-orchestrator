@@ -1,0 +1,35 @@
+{
+  "campaign": {
+    "campaign_id": "cmp_1024",
+    "objective": "grow opt-in leads",
+    "channels": ["email", "sms"],
+    "headline": "Approved opt-in offer",
+    "description": "Explicitly consented audience.",
+    "copy": "Disclosures included and opt-out respected.",
+    "cta": "Learn more",
+    "budget": 1000,
+    "target_cpa": 50,
+    "target_roas": 1.4
+  },
+  "signals": {
+    "daily_spend": [100, 105, 110],
+    "daily_conversions": [3, 4, 5],
+    "ctr": [2.2, 2.4, 2.5],
+    "cpa": [42, 41, 40]
+  },
+  "memory": [
+    {
+      "name": "past win",
+      "lessons": "Scale winners slowly and keep opt-in audience narrow."
+    }
+  ],
+  "policy": {
+    "restricted_terms": [],
+    "required_disclosures": ["disclosures"],
+    "guardrails": [
+      "Maintain opt-in only.",
+      "Preserve consent records.",
+      "Escalate borderline compliance cases."
+    ]
+  }
+}

@@ -1,0 +1,21 @@
+# Campaign Autopilot - Dependencies
+# Core
+numpy>=1.24.0
+Pillow>=10.0.0
+
+# Media pipeline
+moviepy>=1.0.3
+gTTS>=2.3.0
+pydub>=0.25.1
+
+# Dashboard
+streamlit>=1.28.0
+
+# HTTP (for real API integrations)
+requests>=2.31.0
+
+# CLI output formatting
+rich>=13.0.0
+
+# Log monitoring
+ponytail>=0.9.0

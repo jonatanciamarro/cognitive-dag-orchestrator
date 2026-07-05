@@ -1,0 +1,50 @@
+{
+  "name": "sixth_order_workflow",
+  "description": "6a Ordem: Inteligencia Criativa. Descobre novos nichos, cria configuracoes, gera produtos e ofertas. Expansao autonoma do sistema.",
+  "max_workers": 3,
+  "steps": [
+    {
+      "id": "market_scan",
+      "agent": "creative_engine",
+      "depends_on": [],
+      "description": "Escaneiar 15+ dominios de mercado e rankear oportunidades.",
+      "deps": []
+    },
+    {
+      "id": "niche_genesis",
+      "agent": "niche_genesis",
+      "depends_on": [
+        "market_scan"
+      ],
+      "description": "Criar configuracao completa de nicho para top oportunidades.",
+      "deps": []
+    },
+    {
+      "id": "value_generation",
+      "agent": "novel_value",
+      "depends_on": [
+        "niche_genesis"
+      ],
+      "description": "Gerar produtos digitais, servicos e angulos de conteudo.",
+      "deps": []
+    },
+    {
+      "id": "creative_synthesis",
+      "agent": "creative_engine",
+      "depends_on": [
+        "market_scan",
+        "niche_genesis",
+        "value_generation"
+      ],
+      "description": "Sintetizar resultados: nichos prontos para lancamento.",
+      "deps": []
+    }
+  ],
+  "workflow_id": "sixth_order_workflow",
+  "entry_points": [
+    "market_scan",
+    "niche_genesis",
+    "value_generation",
+    "creative_synthesis"
+  ]
+}

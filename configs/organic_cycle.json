@@ -1,0 +1,49 @@
+{
+  "name": "organic_free_cycle",
+  "description": "Local-only organic acquisition loop for opt-in growth.",
+  "mode": "organic_only",
+  "defaults": {
+    "dry_run": true,
+    "require_approval": true,
+    "record_memory": true
+  },
+  "policy": {
+    "requires_explicit_opt_in": true,
+    "requires_consent_record": true,
+    "requires_compliance_pass": true,
+    "block_on_missing_consent": true,
+    "allow_execution_only_after_approval": true,
+    "no_paid_media": true
+  },
+  "metrics": {
+    "minimum_sample_size": 100,
+    "lead_rate_min": 0.05,
+    "ctr_min": 0.015,
+    "conversion_max_cpa": 0.0,
+    "lookback_days": 14
+  },
+  "workflow": {
+    "states": [
+      "research",
+      "draft_content",
+      "distribution_plan",
+      "landing_page_capture",
+      "metrics_check",
+      "memory_write",
+      "approval"
+    ],
+    "stop_conditions": [
+      "missing_opt_in",
+      "missing_consent_record",
+      "policy_failure",
+      "approval_denied"
+    ]
+  },
+  "channels": [
+    "seo",
+    "community",
+    "newsletter",
+    "social",
+    "referrals"
+  ]
+}

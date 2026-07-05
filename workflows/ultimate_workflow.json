@@ -1,0 +1,315 @@
+{
+  "name": "ultimate_workflow",
+  "description": "🏆 WORKFLOW DEFINITIVO — 9 canais de tráfego orgânico: blog + YouTube + email + Pinterest + Instagram + TikTok + Twitter + WhatsApp + lead capture + site.",
+  "max_workers": 14,
+  "steps": [
+    {
+      "id": "competitor_analysis",
+      "agent": "competitor_analysis",
+      "depends_on": [],
+      "description": "Analisar concorrentes e gaps.",
+      "deps": []
+    },
+    {
+      "id": "seo_scraper",
+      "agent": "seo_scraper",
+      "depends_on": [
+        "competitor_analysis"
+      ],
+      "description": "Dados reais de SEO do Google.",
+      "deps": []
+    },
+    {
+      "id": "compliance",
+      "agent": "compliance",
+      "depends_on": [],
+      "description": "Validar compliance.",
+      "deps": []
+    },
+    {
+      "id": "memory_lookup",
+      "agent": "memory_lookup",
+      "depends_on": [],
+      "description": "Buscar lições de ciclos anteriores.",
+      "deps": []
+    },
+    {
+      "id": "offer_lookup",
+      "agent": "offer_lookup",
+      "depends_on": [
+        "seo_scraper",
+        "competitor_analysis"
+      ],
+      "description": "Ofertas de afiliados compatíveis.",
+      "deps": []
+    },
+    {
+      "id": "content_planner",
+      "agent": "content_planner",
+      "depends_on": [
+        "seo_scraper",
+        "offer_lookup",
+        "memory_lookup"
+      ],
+      "description": "Briefings integrados.",
+      "deps": []
+    },
+    {
+      "id": "content_generator",
+      "agent": "content_generator",
+      "depends_on": [
+        "content_planner"
+      ],
+      "description": "Artigos para blog.",
+      "deps": []
+    },
+    {
+      "id": "content_repurposer",
+      "agent": "content_repurposer",
+      "depends_on": [
+        "content_generator",
+        "offer_lookup"
+      ],
+      "description": "Multiplicar conteúdo para todos os canais.",
+      "deps": []
+    },
+    {
+      "id": "free_image_gen",
+      "agent": "free_image_gen",
+      "depends_on": [
+        "content_generator",
+        "content_repurposer",
+        "site_deploy"
+      ],
+      "description": "Gerar imagens gratuitas (Pillow) para blog, YouTube, Pinterest, Instagram.",
+      "deps": []
+    },
+    {
+      "id": "free_video_producer",
+      "agent": "free_video_producer",
+      "depends_on": [
+        "content_generator",
+        "content_repurposer",
+        "site_deploy"
+      ],
+      "description": "Produzir vídeos gratuitos (moviepy) para YouTube e TikTok.",
+      "deps": []
+    },
+    {
+      "id": "platform_compliance",
+      "agent": "platform_compliance",
+      "depends_on": [
+        "content_generator",
+        "content_repurposer",
+        "free_image_gen",
+        "free_video_producer"
+      ],
+      "description": "Validar conteúdo contra regras de cada plataforma para evitar bloqueios.",
+      "deps": []
+    },
+    {
+      "id": "youtube_marketing",
+      "agent": "youtube_marketing",
+      "depends_on": [
+        "seo_scraper",
+        "offer_lookup",
+        "content_generator"
+      ],
+      "description": "Scripts para YouTube.",
+      "deps": []
+    },
+    {
+      "id": "email_marketing",
+      "agent": "email_marketing",
+      "depends_on": [
+        "seo_scraper",
+        "offer_lookup"
+      ],
+      "description": "Sequências de email.",
+      "deps": []
+    },
+    {
+      "id": "pinterest_marketing",
+      "agent": "pinterest_marketing",
+      "depends_on": [
+        "seo_scraper",
+        "offer_lookup",
+        "content_generator"
+      ],
+      "description": "Pins para Pinterest.",
+      "deps": []
+    },
+    {
+      "id": "instagram_marketing",
+      "agent": "instagram_marketing",
+      "depends_on": [
+        "seo_scraper",
+        "offer_lookup",
+        "content_generator"
+      ],
+      "description": "Posts para Instagram.",
+      "deps": []
+    },
+    {
+      "id": "tiktok_marketing",
+      "agent": "tiktok_marketing",
+      "depends_on": [
+        "seo_scraper",
+        "offer_lookup",
+        "content_generator"
+      ],
+      "description": "Vídeos para TikTok.",
+      "deps": []
+    },
+    {
+      "id": "twitter_marketing",
+      "agent": "twitter_marketing",
+      "depends_on": [
+        "seo_scraper",
+        "offer_lookup",
+        "content_generator"
+      ],
+      "description": "Threads para Twitter.",
+      "deps": []
+    },
+    {
+      "id": "whatsapp_marketing",
+      "agent": "whatsapp_marketing",
+      "depends_on": [
+        "seo_scraper",
+        "offer_lookup",
+        "content_generator"
+      ],
+      "description": "Mensagens para WhatsApp.",
+      "deps": []
+    },
+    {
+      "id": "lead_capture",
+      "agent": "lead_capture",
+      "depends_on": [
+        "seo_scraper",
+        "offer_lookup",
+        "content_generator"
+      ],
+      "description": "Lead magnets e landing page.",
+      "deps": []
+    },
+    {
+      "id": "wp_publisher",
+      "agent": "wp_publisher",
+      "depends_on": [
+        "content_generator",
+        "compliance"
+      ],
+      "description": "Publicar no WordPress.",
+      "deps": []
+    },
+    {
+      "id": "site_deploy",
+      "agent": "site_deploy",
+      "depends_on": [
+        "content_generator",
+        "lead_capture"
+      ],
+      "description": "Gerar site estático.",
+      "deps": []
+    },
+    {
+      "id": "revenue_monitor",
+      "agent": "revenue_monitor",
+      "depends_on": [
+        "content_repurposer",
+        "offer_lookup",
+        "youtube_marketing",
+        "email_marketing"
+      ],
+      "description": "Projeção de receita.",
+      "deps": []
+    },
+    {
+      "id": "analytics_feedback",
+      "agent": "analytics_feedback",
+      "depends_on": [
+        "site_deploy",
+        "revenue_monitor",
+        "youtube_marketing",
+        "instagram_marketing",
+        "tiktok_marketing",
+        "twitter_marketing",
+        "whatsapp_marketing",
+        "lead_capture",
+        "wp_publisher"
+      ],
+      "description": "Avaliar ciclo e aprender.",
+      "deps": []
+    },
+    {
+      "id": "organic_growth",
+      "agent": "organic_growth",
+      "depends_on": [
+        "analytics_feedback",
+        "platform_compliance",
+        "revenue_monitor"
+      ],
+      "description": "Analisar ciclo e gerar recomendações de growth hacking orgânico.",
+      "deps": []
+    },
+    {
+      "id": "agent_perf_monitor",
+      "agent": "agent_perf_monitor",
+      "depends_on": [
+        "organic_growth"
+      ],
+      "description": "Monitorar performance individual de cada agente no ciclo.",
+      "deps": []
+    },
+    {
+      "id": "meta_orchestrator",
+      "agent": "meta_orchestrator",
+      "depends_on": [
+        "agent_perf_monitor"
+      ],
+      "description": "Auto-observar execução e modificar estrutura do workflow.",
+      "deps": []
+    },
+    {
+      "id": "strategy_evolution",
+      "agent": "strategy_evolution",
+      "depends_on": [
+        "meta_orchestrator"
+      ],
+      "description": "Planejamento estratégico evolutivo entre ciclos.",
+      "deps": []
+    }
+  ],
+  "workflow_id": "ultimate_workflow",
+  "entry_points": [
+    "competitor_analysis",
+    "seo_scraper",
+    "compliance",
+    "memory_lookup",
+    "offer_lookup",
+    "content_planner",
+    "content_generator",
+    "content_repurposer",
+    "free_image_gen",
+    "free_video_producer",
+    "platform_compliance",
+    "youtube_marketing",
+    "email_marketing",
+    "pinterest_marketing",
+    "instagram_marketing",
+    "tiktok_marketing",
+    "twitter_marketing",
+    "whatsapp_marketing",
+    "lead_capture",
+    "wp_publisher",
+    "site_deploy",
+    "revenue_monitor",
+    "analytics_feedback",
+    "organic_growth",
+    "agent_perf_monitor",
+    "meta_orchestrator",
+    "strategy_evolution"
+  ]
+}

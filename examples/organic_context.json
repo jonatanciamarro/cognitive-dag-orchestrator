@@ -1,0 +1,35 @@
+{
+  "campaign": {
+    "campaign_id": "org_1001",
+    "objective": "organic lead growth",
+    "channels": ["seo", "community", "newsletter"],
+    "headline": "Practical opt-in growth content",
+    "description": "Content-first organic acquisition with explicit consent.",
+    "copy": "Helpful content, opt-in capture, and clear disclosures.",
+    "cta": "Get the guide",
+    "budget": 1,
+    "target_cpa": 0,
+    "target_roas": 0
+  },
+  "signals": {
+    "daily_spend": [0, 0, 0],
+    "daily_conversions": [3, 4, 5],
+    "ctr": [2.0, 2.1, 2.2],
+    "cpa": [0, 0, 0]
+  },
+  "memory": [
+    {
+      "name": "organic win",
+      "lessons": "SEO tutorials and community posts produce qualified opt-in leads."
+    }
+  ],
+  "policy": {
+    "restricted_terms": [],
+    "required_disclosures": ["disclosures"],
+    "guardrails": [
+      "Maintain opt-in only.",
+      "Preserve consent records.",
+      "Avoid spammy community promotion."
+    ]
+  }
+}

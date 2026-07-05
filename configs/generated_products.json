@@ -1,0 +1,2082 @@
+[
+  {
+    "product_name": "Xiaomi Redmi 9A",
+    "price_brl": 899.0,
+    "commission_pct": 5,
+    "platform": "Mercado Livre",
+    "category": "celulares",
+    "niche": "tecnologia",
+    "keywords": [
+      "Xiaomi",
+      "Redmi",
+      "Celular"
+    ]
+  },
+  {
+    "product_name": "HP Pavilion Gaming Desktop",
+    "price_brl": 3499.0,
+    "commission_pct": 3,
+    "platform": "Buscapé",
+    "category": "computadores",
+    "niche": "tecnologia",
+    "keywords": [
+      "HP",
+      "Pavilion",
+      "Gaming"
+    ]
+  },
+  {
+    "product_name": "Samsung Galaxy Tab S8",
+    "price_brl": 2999.0,
+    "commission_pct": 4,
+    "platform": "Americanas",
+    "category": "tablets",
+    "niche": "tecnologia",
+    "keywords": [
+      "Samsung",
+      "Galaxy",
+      "Tablet"
+    ]
+  },
+  {
+    "product_name": "PlayStation 5",
+    "price_brl": 4499.0,
+    "commission_pct": 2,
+    "platform": "Submarino",
+    "category": "videogames",
+    "niche": "tecnologia",
+    "keywords": [
+      "PlayStation",
+      "PS5",
+      "Videogame"
+    ]
+  },
+  {
+    "product_name": "Canon EOS M50",
+    "price_brl": 2499.0,
+    "commission_pct": 5,
+    "platform": "Mercado Livre",
+    "category": "fotografia",
+    "niche": "tecnologia",
+    "keywords": [
+      "Canon",
+      "EOS",
+      "Camera"
+    ]
+  },
+  {
+    "product_name": "Asus ROG Zephyrus G15",
+    "price_brl": 7999.0,
+    "commission_pct": 3,
+    "platform": "Buscapé",
+    "category": "laptops",
+    "niche": "tecnologia",
+    "keywords": [
+      "Asus",
+      "ROG",
+      "Laptop"
+    ]
+  },
+  {
+    "product_name": "Google Pixel 6",
+    "price_brl": 2999.0,
+    "commission_pct": 4,
+    "platform": "Americanas",
+    "category": "celulares",
+    "niche": "tecnologia",
+    "keywords": [
+      "Google",
+      "Pixel",
+      "Celular"
+    ]
+  },
+  {
+    "product_name": "Nintendo Switch",
+    "price_brl": 1999.0,
+    "commission_pct": 2,
+    "platform": "Submarino",
+    "category": "videogames",
+    "niche": "tecnologia",
+    "keywords": [
+      "Nintendo",
+      "Switch",
+      "Videogame"
+    ]
+  },
+  {
+    "product_name": "Samsung Galaxy A12",
+    "price_brl": 1299.0,
+    "commission_pct": 5,
+    "platform": "Mercado Livre",
+    "category": "celulares",
+    "niche": "smartphones",
+    "keywords": [
+      "samsung",
+      "galaxy",
+      "a12"
+    ]
+  },
+  {
+    "product_name": "Xiaomi Redmi 9",
+    "price_brl": 899.0,
+    "commission_pct": 5,
+    "platform": "Shopee",
+    "category": "celulares",
+    "niche": "smartphones",
+    "keywords": [
+      "xiaomi",
+      "redmi",
+      "9"
+    ]
+  },
+  {
+    "product_name": "Apple iPhone 12",
+    "price_brl": 3999.0,
+    "commission_pct": 3,
+    "platform": "Apple Store",
+    "category": "celulares",
+    "niche": "smartphones",
+    "keywords": [
+      "apple",
+      "iphone",
+      "12"
+    ]
+  },
+  {
+    "product_name": "Motorola Moto G30",
+    "price_brl": 999.0,
+    "commission_pct": 5,
+    "platform": "Amazon",
+    "category": "celulares",
+    "niche": "smartphones",
+    "keywords": [
+      "motorola",
+      "moto",
+      "g30"
+    ]
+  },
+  {
+    "product_name": "Google Pixel 4a",
+    "price_brl": 1999.0,
+    "commission_pct": 5,
+    "platform": "Google Store",
+    "category": "celulares",
+    "niche": "smartphones",
+    "keywords": [
+      "google",
+      "pixel",
+      "4a"
+    ]
+  },
+  {
+    "product_name": "Asus Zenfone 7",
+    "price_brl": 2499.0,
+    "commission_pct": 5,
+    "platform": "Buscapé",
+    "category": "celulares",
+    "niche": "smartphones",
+    "keywords": [
+      "asus",
+      "zenfone",
+      "7"
+    ]
+  },
+  {
+    "product_name": "OnePlus 9 Pro",
+    "price_brl": 3499.0,
+    "commission_pct": 5,
+    "platform": "OnePlus Store",
+    "category": "celulares",
+    "niche": "smartphones",
+    "keywords": [
+      "oneplus",
+      "9",
+      "pro"
+    ]
+  },
+  {
+    "product_name": "Huawei P30 Lite",
+    "price_brl": 1499.0,
+    "commission_pct": 5,
+    "platform": "Huawei Store",
+    "category": "celulares",
+    "niche": "smartphones",
+    "keywords": [
+      "huawei",
+      "p30",
+      "lite"
+    ]
+  },
+  {
+    "product_name": "Notebook Acer Aspire 3",
+    "price_brl": 2499.0,
+    "commission_pct": 2,
+    "platform": "Buscapé",
+    "category": "notebooks",
+    "niche": "informatica",
+    "keywords": [
+      "notebook",
+      "Acer",
+      "Aspire 3"
+    ]
+  },
+  {
+    "product_name": "Processador AMD Ryzen 5 5600X",
+    "price_brl": 1299.0,
+    "commission_pct": 3,
+    "platform": "Amazon Brasil",
+    "category": "componentes",
+    "niche": "informatica",
+    "keywords": [
+      "processador",
+      "AMD",
+      "Ryzen 5"
+    ]
+  },
+  {
+    "product_name": "Placa-Mãe Gigabyte B450M DS3H",
+    "price_brl": 499.0,
+    "commission_pct": 4,
+    "platform": "Submarino",
+    "category": "componentes",
+    "niche": "informatica",
+    "keywords": [
+      "placa-mãe",
+      "Gigabyte",
+      "B450M"
+    ]
+  },
+  {
+    "product_name": "HD Externo Seagate Expansion 2TB",
+    "price_brl": 499.9,
+    "commission_pct": 5,
+    "platform": "Americanas",
+    "category": "armazenamento",
+    "niche": "informatica",
+    "keywords": [
+      "HD externo",
+      "Seagate",
+      "2TB"
+    ]
+  },
+  {
+    "product_name": "Smartphone Samsung Galaxy A12",
+    "price_brl": 1299.0,
+    "commission_pct": 2,
+    "platform": "Mercado Livre",
+    "category": "celulares",
+    "niche": "informatica",
+    "keywords": [
+      "smartphone",
+      "Samsung",
+      "Galaxy A12"
+    ]
+  },
+  {
+    "product_name": "Tablet Apple iPad 8ª Geração",
+    "price_brl": 2999.0,
+    "commission_pct": 1,
+    "platform": "Apple Store",
+    "category": "tablets",
+    "niche": "informatica",
+    "keywords": [
+      "tablet",
+      "Apple",
+      "iPad"
+    ]
+  },
+  {
+    "product_name": "Impressora Epson L380",
+    "price_brl": 499.0,
+    "commission_pct": 4,
+    "platform": "Ponto Frio",
+    "category": "impressoras",
+    "niche": "informatica",
+    "keywords": [
+      "impressora",
+      "Epson",
+      "L380"
+    ]
+  },
+  {
+    "product_name": "Headset HyperX Cloud II",
+    "price_brl": 299.9,
+    "commission_pct": 5,
+    "platform": "Terabyte",
+    "category": "acessórios",
+    "niche": "informatica",
+    "keywords": [
+      "headset",
+      "HyperX",
+      "Cloud II"
+    ]
+  },
+  {
+    "product_name": "PlayStation 5",
+    "price_brl": 4499.0,
+    "commission_pct": 2,
+    "platform": "Americanas",
+    "category": "consoles",
+    "niche": "games",
+    "keywords": [
+      "ps5",
+      "playstation",
+      "sony"
+    ]
+  },
+  {
+    "product_name": "Xbox Series S",
+    "price_brl": 3499.0,
+    "commission_pct": 2,
+    "platform": "Submarino",
+    "category": "consoles",
+    "niche": "games",
+    "keywords": [
+      "xbox",
+      "series s",
+      "microsoft"
+    ]
+  },
+  {
+    "product_name": "Nintendo Switch",
+    "price_brl": 2299.0,
+    "commission_pct": 3,
+    "platform": "Magazine Luiza",
+    "category": "consoles",
+    "niche": "games",
+    "keywords": [
+      "nintendo",
+      "switch",
+      "portatil"
+    ]
+  },
+  {
+    "product_name": "God of War Ragnarök",
+    "price_brl": 249.9,
+    "commission_pct": 5,
+    "platform": "PS Store",
+    "category": "jogos",
+    "niche": "games",
+    "keywords": [
+      "god of war",
+      "ragnarok",
+      "ps5"
+    ]
+  },
+  {
+    "product_name": "The Last of Us Part I",
+    "price_brl": 199.9,
+    "commission_pct": 5,
+    "platform": "Americanas",
+    "category": "jogos",
+    "niche": "games",
+    "keywords": [
+      "the last of us",
+      "part i",
+      "ps5"
+    ]
+  },
+  {
+    "product_name": "FIFA 23",
+    "price_brl": 199.9,
+    "commission_pct": 5,
+    "platform": "Xbox Store",
+    "category": "jogos",
+    "niche": "games",
+    "keywords": [
+      "fifa 23",
+      "xbox",
+      "esporte"
+    ]
+  },
+  {
+    "product_name": "Controlador de PS5 DualSense",
+    "price_brl": 399.0,
+    "commission_pct": 3,
+    "platform": "Submarino",
+    "category": "acessórios",
+    "niche": "games",
+    "keywords": [
+      "controlador",
+      "ps5",
+      "dualsense"
+    ]
+  },
+  {
+    "product_name": "Ratos de Jogos HyperX",
+    "price_brl": 299.0,
+    "commission_pct": 4,
+    "platform": "Terabyteshop",
+    "category": "periféricos",
+    "niche": "games",
+    "keywords": [
+      "ratos",
+      "jogos",
+      "hyperx"
+    ]
+  },
+  {
+    "product_name": "Nike Air Zoom Pegasus 38",
+    "price_brl": 699.9,
+    "commission_pct": 5,
+    "platform": "Mercado Livre",
+    "category": "esportes",
+    "niche": "fitness",
+    "keywords": [
+      "tênis",
+      "corrida",
+      "nike"
+    ]
+  },
+  {
+    "product_name": "Adidas Resistance Band",
+    "price_brl": 49.9,
+    "commission_pct": 5,
+    "platform": "Americanas",
+    "category": "esportes",
+    "niche": "fitness",
+    "keywords": [
+      "banda",
+      "resistência",
+      "adidas"
+    ]
+  },
+  {
+    "product_name": "Apple Watch Series 7",
+    "price_brl": 2999.9,
+    "commission_pct": 3,
+    "platform": "Buscapé",
+    "category": "eletrônicos",
+    "niche": "fitness",
+    "keywords": [
+      "smartwatch",
+      "apple",
+      "fitness tracker"
+    ]
+  },
+  {
+    "product_name": "Under Armour Sportstyle Camiseta",
+    "price_brl": 99.9,
+    "commission_pct": 5,
+    "platform": "Mercado Livre",
+    "category": "esportes",
+    "niche": "fitness",
+    "keywords": [
+      "camiseta",
+      "under armour",
+      "moda esportiva"
+    ]
+  },
+  {
+    "product_name": "Yoga Mat Lululemon",
+    "price_brl": 249.9,
+    "commission_pct": 5,
+    "platform": "Dafiti",
+    "category": "esportes",
+    "niche": "fitness",
+    "keywords": [
+      "yoga",
+      "mat",
+      "lululemon"
+    ]
+  },
+  {
+    "product_name": "Fitbit Charge 5",
+    "price_brl": 899.9,
+    "commission_pct": 3,
+    "platform": "Americanas",
+    "category": "eletrônicos",
+    "niche": "fitness",
+    "keywords": [
+      "fitness tracker",
+      "fitbit",
+      "monitor de atividade"
+    ]
+  },
+  {
+    "product_name": "Reebok CrossFit Nano 9",
+    "price_brl": 499.9,
+    "commission_pct": 5,
+    "platform": "Mercado Livre",
+    "category": "esportes",
+    "niche": "fitness",
+    "keywords": [
+      "tênis",
+      "crossfit",
+      "reebok"
+    ]
+  },
+  {
+    "product_name": "Hyperice Hypervolt",
+    "price_brl": 1299.9,
+    "commission_pct": 5,
+    "platform": "Buscapé",
+    "category": "esportes",
+    "niche": "fitness",
+    "keywords": [
+      "recuperação",
+      "massagem",
+      "hyperice"
+    ]
+  },
+  {
+    "product_name": "Vitamina C 1000mg da DHC",
+    "price_brl": 69.9,
+    "commission_pct": 5,
+    "platform": "Shopee",
+    "category": "suplementos",
+    "niche": "saude",
+    "keywords": [
+      "vitamina c",
+      "dhc",
+      "suplemento"
+    ]
+  },
+  {
+    "product_name": "Termômetro Digital Omron",
+    "price_brl": 49.9,
+    "commission_pct": 5,
+    "platform": "Mercado Livre",
+    "category": "medicina",
+    "niche": "saude",
+    "keywords": [
+      "termômetro digital",
+      "omron",
+      "medicina"
+    ]
+  },
+  {
+    "product_name": "Protetor Solar FPS 50 da La Roche-Posay",
+    "price_brl": 99.9,
+    "commission_pct": 8,
+    "platform": "Dafiti",
+    "category": "cuidado pessoal",
+    "niche": "saude",
+    "keywords": [
+      "protetor solar",
+      "la roche-posay",
+      "fps 50"
+    ]
+  },
+  {
+    "product_name": "Gengibre em Pó da NOW Foods",
+    "price_brl": 39.9,
+    "commission_pct": 10,
+    "platform": "Shopee",
+    "category": "suplementos",
+    "niche": "saude",
+    "keywords": [
+      "gengibre em pó",
+      "now foods",
+      "suplemento"
+    ]
+  },
+  {
+    "product_name": "Peso Digital da Tanita",
+    "price_brl": 129.9,
+    "commission_pct": 5,
+    "platform": "Buscapé",
+    "category": "medicina",
+    "niche": "saude",
+    "keywords": [
+      "peso digital",
+      "tanita",
+      "medicina"
+    ]
+  },
+  {
+    "product_name": "Vitamina D3 2000ui da Puritan's Pride",
+    "price_brl": 59.9,
+    "commission_pct": 10,
+    "platform": "Mercado Livre",
+    "category": "suplementos",
+    "niche": "saude",
+    "keywords": [
+      "vitamina d3",
+      "puritan's pride",
+      "suplemento"
+    ]
+  },
+  {
+    "product_name": "Creme Hidratante da Nivea",
+    "price_brl": 29.9,
+    "commission_pct": 8,
+    "platform": "Dafiti",
+    "category": "cuidado pessoal",
+    "niche": "saude",
+    "keywords": [
+      "creme hidratante",
+      "nivea",
+      "cuidado pessoal"
+    ]
+  },
+  {
+    "product_name": "Termômetro Infravermelho da Braun",
+    "price_brl": 149.9,
+    "commission_pct": 5,
+    "platform": "Shopee",
+    "category": "medicina",
+    "niche": "saude",
+    "keywords": [
+      "termômetro infravermelho",
+      "braun",
+      "medicina"
+    ]
+  },
+  {
+    "product_name": "Nivea Creme Hidratante",
+    "price_brl": 24.9,
+    "commission_pct": 5,
+    "platform": "Buscapé",
+    "category": "beleza",
+    "niche": "beleza",
+    "keywords": [
+      "creme",
+      "hidratação",
+      "nivea"
+    ]
+  },
+  {
+    "product_name": "L'Oréal Paris Shampoo Elseve",
+    "price_brl": 34.9,
+    "commission_pct": 5,
+    "platform": "Amazon Brasil",
+    "category": "beleza",
+    "niche": "beleza",
+    "keywords": [
+      "shampoo",
+      "loreal",
+      "elseve"
+    ]
+  },
+  {
+    "product_name": "Dove Sabonete Hidratante",
+    "price_brl": 12.9,
+    "commission_pct": 5,
+    "platform": "Mercado Livre",
+    "category": "beleza",
+    "niche": "beleza",
+    "keywords": [
+      "sabonete",
+      "dove",
+      "hidratação"
+    ]
+  },
+  {
+    "product_name": "Pantene Condicionador",
+    "price_brl": 29.9,
+    "commission_pct": 5,
+    "platform": "Submarino",
+    "category": "beleza",
+    "niche": "beleza",
+    "keywords": [
+      "condicionador",
+      "pantene",
+      "cabelo"
+    ]
+  },
+  {
+    "product_name": "Olay Regenerist Creme",
+    "price_brl": 99.9,
+    "commission_pct": 5,
+    "platform": "Amazon Brasil",
+    "category": "beleza",
+    "niche": "beleza",
+    "keywords": [
+      "creme",
+      "olay",
+      "regenerist"
+    ]
+  },
+  {
+    "product_name": "Gillette Razor Mach3",
+    "price_brl": 49.9,
+    "commission_pct": 5,
+    "platform": "Buscapé",
+    "category": "beleza",
+    "niche": "beleza",
+    "keywords": [
+      "barbear",
+      "gillette",
+      "mach3"
+    ]
+  },
+  {
+    "product_name": "Lancôme Tratamento Facial",
+    "price_brl": 249.9,
+    "commission_pct": 5,
+    "platform": "Submarino",
+    "category": "beleza",
+    "niche": "beleza",
+    "keywords": [
+      "tratamento",
+      "lancome",
+      "facial"
+    ]
+  },
+  {
+    "product_name": "Avon Lip Gloss",
+    "price_brl": 39.9,
+    "commission_pct": 5,
+    "platform": "Mercado Livre",
+    "category": "beleza",
+    "niche": "beleza",
+    "keywords": [
+      "brilho",
+      "avon",
+      "labios"
+    ]
+  },
+  {
+    "product_name": "Camiseta Polo Ralph Lauren",
+    "price_brl": 249.9,
+    "commission_pct": 5,
+    "platform": "Dafiti",
+    "category": "roupas",
+    "niche": "moda",
+    "keywords": [
+      "camiseta",
+      "polo",
+      "ralph lauren"
+    ]
+  },
+  {
+    "product_name": "Sapato Ankle Boot Via Marte",
+    "price_brl": 179.9,
+    "commission_pct": 8,
+    "platform": "Renner",
+    "category": "calçados",
+    "niche": "moda",
+    "keywords": [
+      "sapato",
+      "ankle boot",
+      "via marte"
+    ]
+  },
+  {
+    "product_name": "Bolsa de Ombro Michael Kors",
+    "price_brl": 499.9,
+    "commission_pct": 4,
+    "platform": "Saks",
+    "category": "acessórios",
+    "niche": "moda",
+    "keywords": [
+      "bolsa",
+      "michael kors",
+      "ombro"
+    ]
+  },
+  {
+    "product_name": "Jaqueta de Couro Hering",
+    "price_brl": 349.9,
+    "commission_pct": 6,
+    "platform": "C&A",
+    "category": "roupas",
+    "niche": "moda",
+    "keywords": [
+      "jaqueta",
+      "couro",
+      "hering"
+    ]
+  },
+  {
+    "product_name": "Shorts de Praia Oakley",
+    "price_brl": 129.9,
+    "commission_pct": 7,
+    "platform": "Netshoes",
+    "category": "roupas",
+    "niche": "moda",
+    "keywords": [
+      "shorts",
+      "praia",
+      "oakley"
+    ]
+  },
+  {
+    "product_name": "Cinto de Couro Gucci",
+    "price_brl": 699.9,
+    "commission_pct": 3,
+    "platform": "Farfetch",
+    "category": "acessórios",
+    "niche": "moda",
+    "keywords": [
+      "cinto",
+      "couro",
+      "gucci"
+    ]
+  },
+  {
+    "product_name": "Vestido Midi Zara",
+    "price_brl": 199.9,
+    "commission_pct": 5,
+    "platform": "Zattini",
+    "category": "roupas",
+    "niche": "moda",
+    "keywords": [
+      "vestido",
+      "midi",
+      "zara"
+    ]
+  },
+  {
+    "product_name": "Tênis Adidas Superstar",
+    "price_brl": 299.9,
+    "commission_pct": 8,
+    "platform": "Decathlon",
+    "category": "calçados",
+    "niche": "moda",
+    "keywords": [
+      "tênis",
+      "adidas",
+      "superstar"
+    ]
+  },
+  {
+    "product_name": "Mesa de Jantar com 4 Cadeiras",
+    "price_brl": 899.9,
+    "commission_pct": 5,
+    "platform": "Mercado Livre",
+    "category": "Móveis",
+    "niche": "casa",
+    "keywords": [
+      "mesa de jantar",
+      "cadeiras",
+      "móveis para casa"
+    ]
+  },
+  {
+    "product_name": "Cortina de Blackout",
+    "price_brl": 49.9,
+    "commission_pct": 8,
+    "platform": "Americanas",
+    "category": "Decoração",
+    "niche": "casa",
+    "keywords": [
+      "cortina",
+      "blackout",
+      "decoração de janela"
+    ]
+  },
+  {
+    "product_name": "Sofá Recliner em Couro",
+    "price_brl": 1299.0,
+    "commission_pct": 4,
+    "platform": "Extra",
+    "category": "Móveis",
+    "niche": "casa",
+    "keywords": [
+      "sofá",
+      "recliner",
+      "couro"
+    ]
+  },
+  {
+    "product_name": "Kit de Jardim com 10 Plantas",
+    "price_brl": 99.9,
+    "commission_pct": 10,
+    "platform": "Dafiti",
+    "category": "Jardim",
+    "niche": "casa",
+    "keywords": [
+      "jardim",
+      "plantas",
+      "kit de jardim"
+    ]
+  },
+  {
+    "product_name": "Lâmpada de Teto LED",
+    "price_brl": 79.9,
+    "commission_pct": 12,
+    "platform": "Submarino",
+    "category": "Iluminação",
+    "niche": "casa",
+    "keywords": [
+      "lâmpada",
+      "teto",
+      "led"
+    ]
+  },
+  {
+    "product_name": "Cama Queen Size com Colchão",
+    "price_brl": 999.0,
+    "commission_pct": 6,
+    "platform": "Ponto Frio",
+    "category": "Móveis",
+    "niche": "casa",
+    "keywords": [
+      "cama",
+      "queen size",
+      "colchão"
+    ]
+  },
+  {
+    "product_name": "Tapete de Sala em Fibras Naturais",
+    "price_brl": 199.9,
+    "commission_pct": 9,
+    "platform": "Buscapé",
+    "category": "Decoração",
+    "niche": "casa",
+    "keywords": [
+      "tapete",
+      "sala",
+      "fibras naturais"
+    ]
+  },
+  {
+    "product_name": "Mesa de Centro com Gavetas",
+    "price_brl": 299.9,
+    "commission_pct": 7,
+    "platform": "Mercado Livre",
+    "category": "Móveis",
+    "niche": "casa",
+    "keywords": [
+      "mesa de centro",
+      "gavetas",
+      "móveis para sala"
+    ]
+  },
+  {
+    "product_name": "Panela de Pressão 6 Litros Tramontina",
+    "price_brl": 199.9,
+    "commission_pct": 5,
+    "platform": "Mercado Livre",
+    "category": "cozinha",
+    "niche": "cozinha",
+    "keywords": [
+      "panela",
+      "pressão",
+      "cozinha"
+    ]
+  },
+  {
+    "product_name": "Liquidificador Philco 4 em 1",
+    "price_brl": 149.9,
+    "commission_pct": 5,
+    "platform": "Shopee",
+    "category": "eletrodomésticos",
+    "niche": "cozinha",
+    "keywords": [
+      "liquidificador",
+      "philco",
+      "4em1"
+    ]
+  },
+  {
+    "product_name": "Frigideira Elétrica Mondial 28cm",
+    "price_brl": 129.9,
+    "commission_pct": 5,
+    "platform": "Buscapé",
+    "category": "cozinha",
+    "niche": "cozinha",
+    "keywords": [
+      "frigideira",
+      "elétrica",
+      "mondial"
+    ]
+  },
+  {
+    "product_name": "Cafeteira Express Britânia 15 Bar",
+    "price_brl": 299.9,
+    "commission_pct": 5,
+    "platform": "Mercado Livre",
+    "category": "eletrodomésticos",
+    "niche": "cozinha",
+    "keywords": [
+      "cafeteira",
+      "express",
+      "britânia"
+    ]
+  },
+  {
+    "product_name": "Batedeira Mondial 5 Velocidades",
+    "price_brl": 179.9,
+    "commission_pct": 5,
+    "platform": "Shopee",
+    "category": "cozinha",
+    "niche": "cozinha",
+    "keywords": [
+      "batedeira",
+      "mondial",
+      "5velocidades"
+    ]
+  },
+  {
+    "product_name": "Conjunto de Facas Tramontina 6 Peças",
+    "price_brl": 99.9,
+    "commission_pct": 5,
+    "platform": "Buscapé",
+    "category": "cozinha",
+    "niche": "cozinha",
+    "keywords": [
+      "conjunto",
+      "facas",
+      "tramontina"
+    ]
+  },
+  {
+    "product_name": "Assador Elétrico Britânia 40 Litros",
+    "price_brl": 399.9,
+    "commission_pct": 5,
+    "platform": "Mercado Livre",
+    "category": "eletrodomésticos",
+    "niche": "cozinha",
+    "keywords": [
+      "assador",
+      "elétrico",
+      "britânia"
+    ]
+  },
+  {
+    "product_name": "Purificador de Água Electrolux 12 Litros",
+    "price_brl": 499.9,
+    "commission_pct": 5,
+    "platform": "Shopee",
+    "category": "cozinha",
+    "niche": "cozinha",
+    "keywords": [
+      "purificador",
+      "água",
+      "electrolux"
+    ]
+  },
+  {
+    "product_name": "Furadeira Makita HP1630",
+    "price_brl": 349.9,
+    "commission_pct": 5,
+    "platform": "Amazon Brasil",
+    "category": "ferramentas",
+    "niche": "ferramentas",
+    "keywords": [
+      "furadeira",
+      "makita",
+      "ferramenta"
+    ]
+  },
+  {
+    "product_name": "Chave de Fenda Estrela 10 Peças",
+    "price_brl": 49.9,
+    "commission_pct": 5,
+    "platform": "Mercado Livre",
+    "category": "ferramentas",
+    "niche": "ferramentas",
+    "keywords": [
+      "chave",
+      "fenda",
+      "estrela"
+    ]
+  },
+  {
+    "product_name": "Serra Circular Bosch GKS 190",
+    "price_brl": 629.9,
+    "commission_pct": 5,
+    "platform": "Buscapé",
+    "category": "ferramentas",
+    "niche": "ferramentas",
+    "keywords": [
+      "serra",
+      "circular",
+      "bosch"
+    ]
+  },
+  {
+    "product_name": "Alicate de Bico Ponto 6 Peças",
+    "price_brl": 29.9,
+    "commission_pct": 5,
+    "platform": "Extra",
+    "category": "ferramentas",
+    "niche": "ferramentas",
+    "keywords": [
+      "alicate",
+      "bico",
+      "ponto"
+    ]
+  },
+  {
+    "product_name": "Martelo 500g Tramontina",
+    "price_brl": 39.9,
+    "commission_pct": 5,
+    "platform": "Ponto Frio",
+    "category": "ferramentas",
+    "niche": "ferramentas",
+    "keywords": [
+      "martelo",
+      "tramontina",
+      "500g"
+    ]
+  },
+  {
+    "product_name": "Lupa de Solda 30W",
+    "price_brl": 79.9,
+    "commission_pct": 5,
+    "platform": "Americanas",
+    "category": "ferramentas",
+    "niche": "ferramentas",
+    "keywords": [
+      "lupa",
+      "solda",
+      "30w"
+    ]
+  },
+  {
+    "product_name": "Kit de Chaves de Fenda 20 Peças",
+    "price_brl": 99.9,
+    "commission_pct": 5,
+    "platform": "Submarino",
+    "category": "ferramentas",
+    "niche": "ferramentas",
+    "keywords": [
+      "kit",
+      "chave",
+      "fenda"
+    ]
+  },
+  {
+    "product_name": "Trena 5M Stanley",
+    "price_brl": 19.9,
+    "commission_pct": 5,
+    "platform": "Walmart",
+    "category": "ferramentas",
+    "niche": "ferramentas",
+    "keywords": [
+      "trena",
+      "stanley",
+      "5m"
+    ]
+  },
+  {
+    "product_name": "Óleo de Motor Mobil 1 5W-40",
+    "price_brl": 139.9,
+    "commission_pct": 5,
+    "platform": "Mercado Livre",
+    "category": "automotivo",
+    "niche": "automotivo",
+    "keywords": [
+      "óleo de motor",
+      "mobil 1",
+      "5W-40"
+    ]
+  },
+  {
+    "product_name": "Bateria de Carro Yuasa 55B24L",
+    "price_brl": 249.0,
+    "commission_pct": 3,
+    "platform": "Extra",
+    "category": "automotivo",
+    "niche": "automotivo",
+    "keywords": [
+      "bateria de carro",
+      "yuasa",
+      "55B24L"
+    ]
+  },
+  {
+    "product_name": "Filtro de Ar de Carro Wix 51358",
+    "price_brl": 29.9,
+    "commission_pct": 10,
+    "platform": "Americanas",
+    "category": "automotivo",
+    "niche": "automotivo",
+    "keywords": [
+      "filtro de ar",
+      "wix",
+      "51358"
+    ]
+  },
+  {
+    "product_name": "Lâmpada de Xenônio Philips X-TremeVision",
+    "price_brl": 99.9,
+    "commission_pct": 8,
+    "platform": "Ponto Frio",
+    "category": "automotivo",
+    "niche": "automotivo",
+    "keywords": [
+      "lâmpada de xenônio",
+      "philips",
+      "x-tremevision"
+    ]
+  },
+  {
+    "product_name": "Protetor de Pneu Liqui Moly",
+    "price_brl": 39.9,
+    "commission_pct": 12,
+    "platform": "Buscapé",
+    "category": "automotivo",
+    "niche": "automotivo",
+    "keywords": [
+      "protetor de pneu",
+      "liqui moly"
+    ]
+  },
+  {
+    "product_name": "Chave de Fenda de Carro Stanley 10mm",
+    "price_brl": 19.9,
+    "commission_pct": 15,
+    "platform": "Submarino",
+    "category": "automotivo",
+    "niche": "automotivo",
+    "keywords": [
+      "chave de fenda",
+      "stanley",
+      "10mm"
+    ]
+  },
+  {
+    "product_name": "Cabo de Bateria de Carro Nakata",
+    "price_brl": 49.9,
+    "commission_pct": 10,
+    "platform": "Shoptime",
+    "category": "automotivo",
+    "niche": "automotivo",
+    "keywords": [
+      "cabo de bateria",
+      "nakata"
+    ]
+  },
+  {
+    "product_name": "Kit de Escova de Carro 3M",
+    "price_brl": 69.9,
+    "commission_pct": 8,
+    "platform": "Magazine Luiza",
+    "category": "automotivo",
+    "niche": "automotivo",
+    "keywords": [
+      "kit de escova",
+      "3M"
+    ]
+  },
+  {
+    "product_name": "Bicicleta Infantil Caloi 12 Polegadas",
+    "price_brl": 349.9,
+    "commission_pct": 5,
+    "platform": "Mercado Livre",
+    "category": "brinquedos",
+    "niche": "brinquedos",
+    "keywords": [
+      "bicicleta infantil",
+      "caloi",
+      "brinquedos para crianças"
+    ]
+  },
+  {
+    "product_name": "Conjunto de Lego Duplo Para Crianças",
+    "price_brl": 199.9,
+    "commission_pct": 5,
+    "platform": "Americanas",
+    "category": "brinquedos",
+    "niche": "brinquedos",
+    "keywords": [
+      "lego duplo",
+      "brinquedos educativos",
+      "crianças"
+    ]
+  },
+  {
+    "product_name": "Boneca Barbie Dreamhouse",
+    "price_brl": 499.9,
+    "commission_pct": 5,
+    "platform": "Submarino",
+    "category": "brinquedos",
+    "niche": "brinquedos",
+    "keywords": [
+      "boneca barbie",
+      "dreamhouse",
+      "brinquedos para meninas"
+    ]
+  },
+  {
+    "product_name": "Carrinho de Controle Remoto Lamborghini",
+    "price_brl": 299.9,
+    "commission_pct": 5,
+    "platform": "Mercado Livre",
+    "category": "brinquedos",
+    "niche": "brinquedos",
+    "keywords": [
+      "carrinho de controle remoto",
+      "lamborghini",
+      "brinquedos para meninos"
+    ]
+  },
+  {
+    "product_name": "Jogo de Tabuleiro Monopoly",
+    "price_brl": 99.9,
+    "commission_pct": 5,
+    "platform": "Americanas",
+    "category": "brinquedos",
+    "niche": "brinquedos",
+    "keywords": [
+      "jogo de tabuleiro",
+      "monopoly",
+      "brinquedos para família"
+    ]
+  },
+  {
+    "product_name": "Kit de Construção Magna-Tiles",
+    "price_brl": 249.9,
+    "commission_pct": 5,
+    "platform": "Submarino",
+    "category": "brinquedos",
+    "niche": "brinquedos",
+    "keywords": [
+      "kit de construção",
+      "magna-tiles",
+      "brinquedos educativos"
+    ]
+  },
+  {
+    "product_name": "Passeio de Cavalinho para Crianças",
+    "price_brl": 179.9,
+    "commission_pct": 5,
+    "platform": "Mercado Livre",
+    "category": "brinquedos",
+    "niche": "brinquedos",
+    "keywords": [
+      "passeio de cavalinho",
+      "brinquedos para crianças",
+      "diversão"
+    ]
+  },
+  {
+    "product_name": "Robô Educacional Makeblock",
+    "price_brl": 399.9,
+    "commission_pct": 5,
+    "platform": "Americanas",
+    "category": "brinquedos",
+    "niche": "brinquedos",
+    "keywords": [
+      "robô educacional",
+      "makeblock",
+      "brinquedos para aprender"
+    ]
+  },
+  {
+    "product_name": "O Alquimista",
+    "price_brl": 39.9,
+    "commission_pct": 5,
+    "platform": "Amazon",
+    "category": "livros",
+    "niche": "livros",
+    "keywords": [
+      "Paulo Coelho",
+      "romance",
+      "ficção"
+    ]
+  },
+  {
+    "product_name": "Dom Casmurro",
+    "price_brl": 29.9,
+    "commission_pct": 5,
+    "platform": "Mercado Livre",
+    "category": "livros",
+    "niche": "livros",
+    "keywords": [
+      "Machado de Assis",
+      "clássicos",
+      "literatura brasileira"
+    ]
+  },
+  {
+    "product_name": "O Diário de um Zé-Ninguém",
+    "price_brl": 49.9,
+    "commission_pct": 5,
+    "platform": "Shopee",
+    "category": "livros",
+    "niche": "livros",
+    "keywords": [
+      "Sérgio Porto",
+      "humor",
+      "crônica"
+    ]
+  },
+  {
+    "product_name": "O Pequeno Príncipe",
+    "price_brl": 34.9,
+    "commission_pct": 5,
+    "platform": "Americanas",
+    "category": "livros",
+    "niche": "livros",
+    "keywords": [
+      "Antoine de Saint-Exupéry",
+      "infantil",
+      "fábulas"
+    ]
+  },
+  {
+    "product_name": "A Hora da Estrela",
+    "price_brl": 44.9,
+    "commission_pct": 5,
+    "platform": "Buscapé",
+    "category": "livros",
+    "niche": "livros",
+    "keywords": [
+      "Clarice Lispector",
+      "romance",
+      "literatura brasileira"
+    ]
+  },
+  {
+    "product_name": "O Senhor dos Anéis",
+    "price_brl": 69.9,
+    "commission_pct": 5,
+    "platform": "Submarino",
+    "category": "livros",
+    "niche": "livros",
+    "keywords": [
+      "J.R.R. Tolkien",
+      "fantasia",
+      " aventura"
+    ]
+  },
+  {
+    "product_name": "O Código da Vinci",
+    "price_brl": 59.9,
+    "commission_pct": 5,
+    "platform": "Extra",
+    "category": "livros",
+    "niche": "livros",
+    "keywords": [
+      "Dan Brown",
+      "thriller",
+      "mistério"
+    ]
+  },
+  {
+    "product_name": "A Revolta de Atlas",
+    "price_brl": 79.9,
+    "commission_pct": 5,
+    "platform": "Ponto Frio",
+    "category": "livros",
+    "niche": "livros",
+    "keywords": [
+      "Ayn Rand",
+      "filosofia",
+      "ficção"
+    ]
+  },
+  {
+    "product_name": "Caneta Bic Cristal",
+    "price_brl": 5.9,
+    "commission_pct": 5,
+    "platform": "Mercado Livre",
+    "category": "escritorio",
+    "niche": "escritorio",
+    "keywords": [
+      "caneta",
+      "bic",
+      "cristal"
+    ]
+  },
+  {
+    "product_name": "Caderno Oxford 100 Folhas",
+    "price_brl": 19.9,
+    "commission_pct": 5,
+    "platform": "Amazon Brasil",
+    "category": "escritorio",
+    "niche": "escritorio",
+    "keywords": [
+      "caderno",
+      "oxford",
+      "100 folhas"
+    ]
+  },
+  {
+    "product_name": "Lapiseira Faber-Castell 9000",
+    "price_brl": 12.9,
+    "commission_pct": 5,
+    "platform": "Buscapé",
+    "category": "escritorio",
+    "niche": "escritorio",
+    "keywords": [
+      "lapiseira",
+      "faber-castell",
+      "9000"
+    ]
+  },
+  {
+    "product_name": "Corretor Liquid Paper",
+    "price_brl": 9.9,
+    "commission_pct": 5,
+    "platform": "Mercado Livre",
+    "category": "escritorio",
+    "niche": "escritorio",
+    "keywords": [
+      "corretor",
+      "liquid paper",
+      "tinta corretiva"
+    ]
+  },
+  {
+    "product_name": "Papel A4 500 Folhas",
+    "price_brl": 29.9,
+    "commission_pct": 5,
+    "platform": "Amazon Brasil",
+    "category": "escritorio",
+    "niche": "escritorio",
+    "keywords": [
+      "papel",
+      "a4",
+      "500 folhas"
+    ]
+  },
+  {
+    "product_name": "Tesoura Fiskars 21cm",
+    "price_brl": 24.9,
+    "commission_pct": 5,
+    "platform": "Buscapé",
+    "category": "escritorio",
+    "niche": "escritorio",
+    "keywords": [
+      "tesoura",
+      "fiskars",
+      "21cm"
+    ]
+  },
+  {
+    "product_name": "Cola Quente Gorilla",
+    "price_brl": 39.9,
+    "commission_pct": 5,
+    "platform": "Mercado Livre",
+    "category": "escritorio",
+    "niche": "escritorio",
+    "keywords": [
+      "cola quente",
+      "gorilla",
+      "adhesivo"
+    ]
+  },
+  {
+    "product_name": "Regua 30cm Escola",
+    "price_brl": 7.9,
+    "commission_pct": 5,
+    "platform": "Amazon Brasil",
+    "category": "escritorio",
+    "niche": "escritorio",
+    "keywords": [
+      "regua",
+      "30cm",
+      "escola"
+    ]
+  },
+  {
+    "product_name": "Ração Royal Canin para Cães",
+    "price_brl": 89.9,
+    "commission_pct": 5,
+    "platform": "Americanas",
+    "category": "alimentação",
+    "niche": "pet shop",
+    "keywords": [
+      "ração",
+      "cães",
+      "Royal Canin"
+    ]
+  },
+  {
+    "product_name": "Brinquedo de Pelúcia para Gatos",
+    "price_brl": 29.9,
+    "commission_pct": 8,
+    "platform": "Submarino",
+    "category": "brinquedos",
+    "niche": "pet shop",
+    "keywords": [
+      "brinquedos",
+      "gatos",
+      "pelúcia"
+    ]
+  },
+  {
+    "product_name": "Cama Ortopédica para Cães",
+    "price_brl": 199.9,
+    "commission_pct": 10,
+    "platform": "Extra",
+    "category": "acessórios",
+    "niche": "pet shop",
+    "keywords": [
+      "cama",
+      "cães",
+      "ortopédica"
+    ]
+  },
+  {
+    "product_name": "Shampoo para Cães da marca TropiClean",
+    "price_brl": 49.9,
+    "commission_pct": 12,
+    "platform": "Ponto Frio",
+    "category": "higiene",
+    "niche": "pet shop",
+    "keywords": [
+      "shampoo",
+      "cães",
+      "TropiClean"
+    ]
+  },
+  {
+    "product_name": "Ração Whiskas para Gatos",
+    "price_brl": 69.9,
+    "commission_pct": 5,
+    "platform": "Buscapé",
+    "category": "alimentação",
+    "niche": "pet shop",
+    "keywords": [
+      "ração",
+      "gatos",
+      "Whiskas"
+    ]
+  },
+  {
+    "product_name": "Coleira para Cães da marca Flexi",
+    "price_brl": 99.9,
+    "commission_pct": 8,
+    "platform": "Magazine Luiza",
+    "category": "acessórios",
+    "niche": "pet shop",
+    "keywords": [
+      "coleira",
+      "cães",
+      "Flexi"
+    ]
+  },
+  {
+    "product_name": "Areia Sanitária para Gatos da marca Dr. Elsey's",
+    "price_brl": 39.9,
+    "commission_pct": 10,
+    "platform": "Amazon",
+    "category": "higiene",
+    "niche": "pet shop",
+    "keywords": [
+      "areia",
+      "gatos",
+      "Dr. Elsey's"
+    ]
+  },
+  {
+    "product_name": "Suplemento para Cães da marca Vetnil",
+    "price_brl": 79.9,
+    "commission_pct": 12,
+    "platform": "Dafiti",
+    "category": "saúde",
+    "niche": "pet shop",
+    "keywords": [
+      "suplemento",
+      "cães",
+      "Vetnil"
+    ]
+  },
+  {
+    "product_name": "Regador de Jardim 10L",
+    "price_brl": 49.9,
+    "commission_pct": 5,
+    "platform": "Mercado Livre",
+    "category": "jardim",
+    "niche": "jardim",
+    "keywords": [
+      "regador",
+      "jardim",
+      "irrigação"
+    ]
+  },
+  {
+    "product_name": "Semente de Girassol",
+    "price_brl": 19.9,
+    "commission_pct": 5,
+    "platform": "Americanas",
+    "category": "jardim",
+    "niche": "jardim",
+    "keywords": [
+      "semente",
+      "girassol",
+      "flor"
+    ]
+  },
+  {
+    "product_name": "Adubo Orgânico 5KG",
+    "price_brl": 69.9,
+    "commission_pct": 5,
+    "platform": "Buscapé",
+    "category": "jardim",
+    "niche": "jardim",
+    "keywords": [
+      "adubo",
+      "orgânico",
+      "fertilizante"
+    ]
+  },
+  {
+    "product_name": "Mangueira de Jardim 20M",
+    "price_brl": 99.9,
+    "commission_pct": 5,
+    "platform": "Mercado Livre",
+    "category": "jardim",
+    "niche": "jardim",
+    "keywords": [
+      "mangueira",
+      "jardim",
+      "irrigação"
+    ]
+  },
+  {
+    "product_name": "Pote de Planta 30CM",
+    "price_brl": 39.9,
+    "commission_pct": 5,
+    "platform": "Submarino",
+    "category": "jardim",
+    "niche": "jardim",
+    "keywords": [
+      "pote",
+      "planta",
+      "vaso"
+    ]
+  },
+  {
+    "product_name": "Cortador de Grama Elétrico",
+    "price_brl": 249.9,
+    "commission_pct": 5,
+    "platform": "Americanas",
+    "category": "jardim",
+    "niche": "jardim",
+    "keywords": [
+      "cortador",
+      "grama",
+      "elétrico"
+    ]
+  },
+  {
+    "product_name": "Rolo de Grama 1M²",
+    "price_brl": 79.9,
+    "commission_pct": 5,
+    "platform": "Buscapé",
+    "category": "jardim",
+    "niche": "jardim",
+    "keywords": [
+      "rolo",
+      "grama",
+      "jardim"
+    ]
+  },
+  {
+    "product_name": "Lâmpada de Crescimento para Plantas",
+    "price_brl": 129.9,
+    "commission_pct": 5,
+    "platform": "Mercado Livre",
+    "category": "jardim",
+    "niche": "jardim",
+    "keywords": [
+      "lâmpada",
+      "crescimento",
+      "planta"
+    ]
+  },
+  {
+    "product_name": "Bola de Futebol Adidas Tango",
+    "price_brl": 129.9,
+    "commission_pct": 5,
+    "platform": "Mercado Livre",
+    "category": "esportes",
+    "niche": "esporte",
+    "keywords": [
+      "futebol",
+      "bola",
+      "adidas"
+    ]
+  },
+  {
+    "product_name": "Tênis de Corrida Nike Air Zoom",
+    "price_brl": 349.9,
+    "commission_pct": 5,
+    "platform": "Shopee",
+    "category": "esportes",
+    "niche": "esporte",
+    "keywords": [
+      "corrida",
+      "nike",
+      "tênis"
+    ]
+  },
+  {
+    "product_name": "Bicicleta de Estrada Caloi",
+    "price_brl": 899.0,
+    "commission_pct": 3,
+    "platform": "Americanas",
+    "category": "esportes",
+    "niche": "esporte",
+    "keywords": [
+      "bicicleta",
+      "estrada",
+      "caloi"
+    ]
+  },
+  {
+    "product_name": "Raquete de Tênis Wilson",
+    "price_brl": 199.9,
+    "commission_pct": 5,
+    "platform": "Dafiti",
+    "category": "esportes",
+    "niche": "esporte",
+    "keywords": [
+      "tênis",
+      "raquete",
+      "wilson"
+    ]
+  },
+  {
+    "product_name": "Protetor de Joelho para Futebol Topper",
+    "price_brl": 49.9,
+    "commission_pct": 5,
+    "platform": "Mercado Livre",
+    "category": "esportes",
+    "niche": "esporte",
+    "keywords": [
+      "futebol",
+      "protetor",
+      "joelho"
+    ]
+  },
+  {
+    "product_name": "Cadeira de Luta Livre Luta Pro",
+    "price_brl": 299.0,
+    "commission_pct": 3,
+    "platform": "Shopee",
+    "category": "esportes",
+    "niche": "esporte",
+    "keywords": [
+      "luta",
+      "livre",
+      "cadeira"
+    ]
+  },
+  {
+    "product_name": "Bola de Basquete Spalding",
+    "price_brl": 99.9,
+    "commission_pct": 5,
+    "platform": "Americanas",
+    "category": "esportes",
+    "niche": "esporte",
+    "keywords": [
+      "basquete",
+      "bola",
+      "spalding"
+    ]
+  },
+  {
+    "product_name": "Tênis de Vôlei Mizuno",
+    "price_brl": 249.9,
+    "commission_pct": 5,
+    "platform": "Dafiti",
+    "category": "esportes",
+    "niche": "esporte",
+    "keywords": [
+      "vôlei",
+      "tênis",
+      "mizuno"
+    ]
+  },
+  {
+    "product_name": "Fraldas Pampers Premium Care",
+    "price_brl": 69.9,
+    "commission_pct": 5,
+    "platform": "Mercado Livre",
+    "category": "bebe",
+    "niche": "bebe",
+    "keywords": [
+      "fraldas",
+      "pampers",
+      "bebe"
+    ]
+  },
+  {
+    "product_name": "Carrinho de Bebê Bumblebee",
+    "price_brl": 499.0,
+    "commission_pct": 5,
+    "platform": "Amazon Brasil",
+    "category": "bebe",
+    "niche": "bebe",
+    "keywords": [
+      "carrinho",
+      "bebê",
+      "bumblebee"
+    ]
+  },
+  {
+    "product_name": "Berço Portátil Graco",
+    "price_brl": 299.0,
+    "commission_pct": 5,
+    "platform": "Buscapé",
+    "category": "bebe",
+    "niche": "bebe",
+    "keywords": [
+      "berço",
+      "portátil",
+      "graco"
+    ]
+  },
+  {
+    "product_name": "Mamadeira Philips Avent",
+    "price_brl": 49.9,
+    "commission_pct": 5,
+    "platform": "Shoptime",
+    "category": "bebe",
+    "niche": "bebe",
+    "keywords": [
+      "mamadeira",
+      "philips",
+      "avent"
+    ]
+  },
+  {
+    "product_name": "Assento de Carro Bebê Britax",
+    "price_brl": 799.0,
+    "commission_pct": 5,
+    "platform": "Extra",
+    "category": "bebe",
+    "niche": "bebe",
+    "keywords": [
+      "assento",
+      "carro",
+      "bebê",
+      "britax"
+    ]
+  },
+  {
+    "product_name": "Chupeta Ortodôntica Philips Avent",
+    "price_brl": 29.9,
+    "commission_pct": 5,
+    "platform": "Ponto Frio",
+    "category": "bebe",
+    "niche": "bebe",
+    "keywords": [
+      "chupeta",
+      "ortodôntica",
+      "philips",
+      "avent"
+    ]
+  },
+  {
+    "product_name": "Cadeira de Alimentação Bebê Inglesina",
+    "price_brl": 199.0,
+    "commission_pct": 5,
+    "platform": "Submarino",
+    "category": "bebe",
+    "niche": "bebe",
+    "keywords": [
+      "cadeira",
+      "alimentação",
+      "bebê",
+      "inglesina"
+    ]
+  },
+  {
+    "product_name": "Babá Eletrônica Levana",
+    "price_brl": 399.0,
+    "commission_pct": 5,
+    "platform": "Americanas",
+    "category": "bebe",
+    "niche": "bebe",
+    "keywords": [
+      "babá",
+      "eletrônica",
+      "levana"
+    ]
+  },
+  {
+    "product_name": "Violino Estudantil Giannini 1/4",
+    "price_brl": 349.0,
+    "commission_pct": 5,
+    "platform": "Mercado Livre",
+    "category": "instrumentos de corda",
+    "niche": "instrumentos musicais",
+    "keywords": [
+      "violino",
+      "instrumentos de corda",
+      "estudantil"
+    ]
+  },
+  {
+    "product_name": "Guitarra Elétrica Ibanez GRX20",
+    "price_brl": 999.0,
+    "commission_pct": 5,
+    "platform": "Americanas",
+    "category": "guitarras",
+    "niche": "instrumentos musicais",
+    "keywords": [
+      "guitarra elétrica",
+      "Ibanez",
+      "instrumentos de serra"
+    ]
+  },
+  {
+    "product_name": "Bateria Eletrônica Roland TD-1DMK",
+    "price_brl": 2999.0,
+    "commission_pct": 5,
+    "platform": "Magazine Luiza",
+    "category": "baterias",
+    "niche": "instrumentos musicais",
+    "keywords": [
+      "bateria eletrônica",
+      "Roland",
+      "instrumentos de percussão"
+    ]
+  },
+  {
+    "product_name": "Piano Digital Yamaha PSR-E263",
+    "price_brl": 1299.0,
+    "commission_pct": 5,
+    "platform": "Ponto Frio",
+    "category": "pianos",
+    "niche": "instrumentos musicais",
+    "keywords": [
+      "piano digital",
+      "Yamaha",
+      "instrumentos de teclado"
+    ]
+  },
+  {
+    "product_name": "Baixo Elétrico Fender Squier Affinity",
+    "price_brl": 1499.0,
+    "commission_pct": 5,
+    "platform": "Mercado Livre",
+    "category": "baixos",
+    "niche": "instrumentos musicais",
+    "keywords": [
+      "baixo elétrico",
+      "Fender",
+      "instrumentos de serra"
+    ]
+  },
+  {
+    "product_name": "Amplificador de Guitarra Marshall Code 50",
+    "price_brl": 899.0,
+    "commission_pct": 5,
+    "platform": "Americanas",
+    "category": "amplificadores",
+    "niche": "instrumentos musicais",
+    "keywords": [
+      "amplificador de guitarra",
+      "Marshall",
+      "instrumentos de som"
+    ]
+  },
+  {
+    "product_name": "Microfone Shure SM58",
+    "price_brl": 499.0,
+    "commission_pct": 5,
+    "platform": "Magazine Luiza",
+    "category": "microfones",
+    "niche": "instrumentos musicais",
+    "keywords": [
+      "microfone",
+      "Shure",
+      "instrumentos de som"
+    ]
+  },
+  {
+    "product_name": "Cabo de Guitarra Ernie Ball 10ft",
+    "price_brl": 49.9,
+    "commission_pct": 5,
+    "platform": "Ponto Frio",
+    "category": "acessórios",
+    "niche": "instrumentos musicais",
+    "keywords": [
+      "cabo de guitarra",
+      "Ernie Ball",
+      "acessórios de guitarra"
+    ]
+  }
+]

@@ -1,0 +1,77 @@
+{
+  "name": "organic_content_workflow",
+  "description": "Workflow completo de geração de conteúdo orgânico: pesquisa SEO → ofertas → planejamento → geração de texto → publicação.",
+  "max_workers": 4,
+  "steps": [
+    {
+      "id": "seo_research",
+      "agent": "seo_research",
+      "depends_on": [],
+      "description": "Pesquisar palavras-chave e tópicos no nicho.",
+      "deps": []
+    },
+    {
+      "id": "compliance",
+      "agent": "compliance",
+      "depends_on": [],
+      "description": "Validar nicho e ofertas contra regras de compliance.",
+      "deps": []
+    },
+    {
+      "id": "memory_lookup",
+      "agent": "memory_lookup",
+      "depends_on": [],
+      "description": "Buscar lições de ciclos anteriores.",
+      "deps": []
+    },
+    {
+      "id": "offer_lookup",
+      "agent": "offer_lookup",
+      "depends_on": [
+        "seo_research"
+      ],
+      "description": "Encontrar ofertas de afiliados compatíveis com as keywords.",
+      "deps": []
+    },
+    {
+      "id": "content_planner",
+      "agent": "content_planner",
+      "depends_on": [
+        "seo_research",
+        "offer_lookup",
+        "memory_lookup"
+      ],
+      "description": "Combinar pesquisa + ofertas em briefings de conteúdo.",
+      "deps": []
+    },
+    {
+      "id": "content_generator",
+      "agent": "content_generator",
+      "depends_on": [
+        "content_planner"
+      ],
+      "description": "Gerar texto real dos artigos usando templates ou IA.",
+      "deps": []
+    },
+    {
+      "id": "wp_publisher",
+      "agent": "wp_publisher",
+      "depends_on": [
+        "content_generator",
+        "compliance"
+      ],
+      "description": "Publicar conteúdo gerado (simulado ou WordPress real).",
+      "deps": []
+    }
+  ],
+  "workflow_id": "organic_content_workflow",
+  "entry_points": [
+    "seo_research",
+    "compliance",
+    "memory_lookup",
+    "offer_lookup",
+    "content_planner",
+    "content_generator",
+    "wp_publisher"
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "_instructions": "Configurações de tráfego pago. O sistema ativa automaticamente quando a receita atinge o threshold.",
+  "_threshold_info": "Threshold mínimo de R$ 500/mês por 2 meses consecutivos. Configurável via PAID_TRAFFIC_THRESHOLD no .env",
+
+  "min_monthly_revenue": 500,
+  "min_consecutive_months": 2,
+  "reinvest_percentage": 40,
+  "max_daily_budget": 200,
+  "min_roas": 1.5,
+
+  "platforms": {
+    "google_ads": {
+      "enabled": true,
+      "allocation_pct": 60,
+      "min_daily_budget": 10,
+      "bidding_strategy": "target_cpa",
+      "target_cpa": 25
+    },
+    "meta_ads": {
+      "enabled": true,
+      "allocation_pct": 30,
+      "min_daily_budget": 10,
+      "bidding_strategy": "lowest_cost",
+      "optimization_goal": "conversions"
+    },
+    "native_ads": {
+      "enabled": true,
+      "allocation_pct": 10,
+      "min_daily_budget": 5,
+      "objective": "awareness"
+    }
+  },
+
+  "auto_actions": {
+    "scale_roas_threshold": 3.0,
+    "scale_budget_increase_pct": 75,
+    "maintain_roas_min": 1.5,
+    "reduce_roas_threshold": 1.0,
+    "reduce_budget_decrease_pct": 30,
+    "pause_roas_threshold": 1.0,
+    "pause_days_before_delete": 14
+  },
+
+  "testing": {
+    "budget_pct": 20,
+    "new_creatives_per_week": 3,
+    "test_duration_days": 7
+  },
+
+  "niche_settings": {
+    "tecnologia": {
+      "google_ads_cpc": 3.50,
+      "meta_ads_cpc": 2.80,
+      "native_ads_cpc": 1.50
+    },
+    "financas": {
+      "google_ads_cpc": 5.00,
+      "meta_ads_cpc": 4.00,
+      "native_ads_cpc": 2.00
+    },
+    "saude": {
+      "google_ads_cpc": 2.50,
+      "meta_ads_cpc": 3.00,
+      "native_ads_cpc": 1.20
+    },
+    "carreira": {
+      "google_ads_cpc": 4.00,
+      "meta_ads_cpc": 3.50,
+      "native_ads_cpc": 1.80
+    }
+  }
+}

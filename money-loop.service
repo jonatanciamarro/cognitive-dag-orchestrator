@@ -1,0 +1,21 @@
+[Unit]
+Description=Money Loop — Campaign Autopilot 24/7 Revenue Generator
+After=network.target
+
+[Service]
+Type=simple
+User=root
+WorkingDirectory=/root/Documents/Codex/2026-05-30/New\ Project\ (1)
+ExecStart=/root/Documents/Codex/2026-05-30/New\ Project\ (1)/.venv/bin/python /root/Documents/Codex/2026-05-30/New\ Project\ (1)/scripts/money_loop.py \
+    --workflow workflows/organic_affiliate_cycle.json \
+    --context examples/affiliate_context.json \
+    --db .state/money_loop.db \
+    --output output \
+    --interval 24
+Restart=always
+RestartSec=30
+StandardOutput=append:.state/money_loop.log
+StandardError=append:.state/money_loop.log
+
+[Install]
+WantedBy=multi-user.target

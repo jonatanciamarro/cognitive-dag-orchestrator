@@ -1,0 +1,55 @@
+{
+  "name": "governance",
+  "description": "🏛️ PIPELINE DE GOVERNANÇA DE SEGUNDA ORDEM — Recursos → Qualidade → Riscos → Externo → Rollback → Síntese. Governança completa do sistema com gestão de recursos, QA, riscos, monitoramento externo e rollback.",
+  "max_workers": 4,
+  "steps": [
+    {
+      "id": "resource_manager",
+      "agent": "resource_manager",
+      "depends_on": [],
+      "description": "Gerenciar orçamento de recursos, filas e rate limits.",
+      "deps": []
+    },
+    {
+      "id": "quality_assurance",
+      "agent": "quality_assurance",
+      "depends_on": [],
+      "description": "Validar qualidade dos outputs contra benchmarks.",
+      "deps": []
+    },
+    {
+      "id": "risk_management",
+      "agent": "risk_management",
+      "depends_on": [],
+      "description": "Avaliar riscos operacionais e estratégicos.",
+      "deps": []
+    },
+    {
+      "id": "external_monitor",
+      "agent": "external_monitor",
+      "depends_on": [],
+      "description": "Monitorar mudanças externas e saturação de nicho.",
+      "deps": []
+    },
+    {
+      "id": "rollback_manager",
+      "agent": "rollback_manager",
+      "depends_on": [
+        "resource_manager",
+        "quality_assurance",
+        "risk_management",
+        "external_monitor"
+      ],
+      "description": "Gerenciar versionamento e rollback de mudanças.",
+      "deps": []
+    }
+  ],
+  "workflow_id": "governance_workflow",
+  "entry_points": [
+    "resource_manager",
+    "quality_assurance",
+    "risk_management",
+    "external_monitor",
+    "rollback_manager"
+  ]
+}

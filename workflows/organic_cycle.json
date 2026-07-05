@@ -1,0 +1,56 @@
+{
+  "name": "organic_cycle",
+  "description": "Free organic acquisition workflow with parallel research and content planning.",
+  "max_workers": 4,
+  "steps": [
+    {
+      "id": "research",
+      "agent": "analytics",
+      "depends_on": [],
+      "description": "Assess what topics and channels are currently working.",
+      "deps": []
+    },
+    {
+      "id": "compliance",
+      "agent": "compliance",
+      "depends_on": [],
+      "description": "Validate the content and channel plan against opt-in rules.",
+      "deps": []
+    },
+    {
+      "id": "memory_lookup",
+      "agent": "memory_lookup",
+      "depends_on": [],
+      "description": "Look for winning topics, hooks, and channels from history.",
+      "deps": []
+    },
+    {
+      "id": "optimization",
+      "agent": "optimization",
+      "depends_on": [
+        "research",
+        "compliance",
+        "memory_lookup"
+      ],
+      "description": "Choose the smallest organic improvement to ship next.",
+      "deps": []
+    },
+    {
+      "id": "execution_planning",
+      "agent": "execution_planning",
+      "depends_on": [
+        "optimization"
+      ],
+      "description": "Convert the organic recommendation into a versioned action plan.",
+      "deps": []
+    }
+  ],
+  "workflow_id": "organic_cycle",
+  "entry_points": [
+    "research",
+    "compliance",
+    "memory_lookup",
+    "optimization",
+    "execution_planning"
+  ]
+}

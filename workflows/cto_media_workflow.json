@@ -1,0 +1,61 @@
+{
+  "name": "cto_media_workflow",
+  "description": "Gera mídia real (imagens + áudio + vídeo) usando prompts CTO cinematográficos. Providers gratuitos: Pollinations (imagem), gTTS/edge-tts (áudio), MoviePy (vídeo).",
+  "max_workers": 2,
+  "steps": [
+    {
+      "id": "cto_prompt_generation",
+      "agent": "cto_media_prompt",
+      "depends_on": [],
+      "description": "Fase CTO 0-5: Gera prompts cinematográficos validados para imagem, vídeo e áudio.",
+      "deps": []
+    },
+    {
+      "id": "image_generation",
+      "agent": "cinematic_image_gen",
+      "depends_on": [
+        "cto_prompt_generation"
+      ],
+      "description": "Fase CTO 6: Gera imagens reais via Pollinations usando prompts CTO. 5 formatos: featured, thumbnail, pin, instagram, card.",
+      "deps": []
+    },
+    {
+      "id": "audio_generation",
+      "agent": "audio_production",
+      "depends_on": [
+        "cto_prompt_generation"
+      ],
+      "description": "Fase CTO 6: Gera narração em áudio via gTTS/edge-tts com script do prompt CTO.",
+      "deps": []
+    },
+    {
+      "id": "video_generation",
+      "agent": "cinematic_video_producer",
+      "depends_on": [
+        "image_generation",
+        "audio_generation"
+      ],
+      "description": "Fase CTO 6: Compõe vídeo com imagens + áudio + transições cinematográficas.",
+      "deps": []
+    },
+    {
+      "id": "quality_validation",
+      "agent": "memory_lookup",
+      "depends_on": [
+        "image_generation",
+        "audio_generation",
+        "video_generation"
+      ],
+      "description": "Fase CTO 7-8: Valida qualidade da mídia gerada e registra no BenchmarkDB.",
+      "deps": []
+    }
+  ],
+  "workflow_id": "cto_media_workflow",
+  "entry_points": [
+    "cto_prompt_generation",
+    "image_generation",
+    "audio_generation",
+    "video_generation",
+    "quality_validation"
+  ]
+}

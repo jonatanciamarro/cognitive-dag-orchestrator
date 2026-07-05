@@ -1,0 +1,56 @@
+{
+  "name": "campaign_cycle",
+  "description": "Parallel analytics/compliance/memory lookups followed by optimization and execution planning.",
+  "max_workers": 4,
+  "steps": [
+    {
+      "id": "analytics",
+      "agent": "analytics",
+      "depends_on": [],
+      "description": "Analyze the current campaign performance signals.",
+      "deps": []
+    },
+    {
+      "id": "compliance",
+      "agent": "compliance",
+      "depends_on": [],
+      "description": "Check campaign content and settings against policy.",
+      "deps": []
+    },
+    {
+      "id": "memory_lookup",
+      "agent": "memory_lookup",
+      "depends_on": [],
+      "description": "Search the campaign memory for similar historical runs.",
+      "deps": []
+    },
+    {
+      "id": "optimization",
+      "agent": "optimization",
+      "depends_on": [
+        "analytics",
+        "compliance",
+        "memory_lookup"
+      ],
+      "description": "Synthesize optimization actions from the upstream agents.",
+      "deps": []
+    },
+    {
+      "id": "execution_planning",
+      "agent": "execution_planning",
+      "depends_on": [
+        "optimization"
+      ],
+      "description": "Convert the optimization output into a serializable execution plan.",
+      "deps": []
+    }
+  ],
+  "workflow_id": "campaign_cycle",
+  "entry_points": [
+    "analytics",
+    "compliance",
+    "memory_lookup",
+    "optimization",
+    "execution_planning"
+  ]
+}

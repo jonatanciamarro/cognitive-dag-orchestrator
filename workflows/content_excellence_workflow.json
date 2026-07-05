@@ -1,0 +1,46 @@
+{
+  "name": "content_excellence",
+  "description": "🧠 PIPELINE DE EXCELÊNCIA DE CONTEÚDO — Storytelling → Psicologia → Neuromarketing → Copywriting → Orquestração. Aplica ciência cognitiva, psicologia profunda e neuromarketing para criar conteúdo de alto impacto.",
+  "max_workers": 4,
+  "steps": [
+    {
+      "id": "storytelling_specialist",
+      "agent": "storytelling_specialist",
+      "depends_on": [],
+      "description": "Selecionar estrutura narrativa ideal (Jornada do Herói, 3 Atos, PAS, AIDA).",
+      "deps": []
+    },
+    {
+      "id": "psychology_specialist",
+      "agent": "psychology_specialist",
+      "depends_on": [],
+      "description": "Aplicar vieses cognitivos e princípios de persuasão (Cialdini, Kahneman).",
+      "deps": []
+    },
+    {
+      "id": "neuromarketing_specialist",
+      "agent": "neuromarketing_specialist",
+      "depends_on": [],
+      "description": "Otimizar conteúdo para o cérebro (dopamina, ocitocina, fluência cognitiva).",
+      "deps": []
+    },
+    {
+      "id": "content_excellence",
+      "agent": "content_excellence",
+      "depends_on": [
+        "storytelling_specialist",
+        "psychology_specialist",
+        "neuromarketing_specialist"
+      ],
+      "description": "Orquestrar todas as melhorias: storytelling + psicologia + neuromarketing + arquétipos + copywriting.",
+      "deps": []
+    }
+  ],
+  "workflow_id": "content_excellence_workflow",
+  "entry_points": [
+    "storytelling_specialist",
+    "psychology_specialist",
+    "neuromarketing_specialist",
+    "content_excellence"
+  ]
+}
